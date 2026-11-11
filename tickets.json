@@ -1,0 +1,363 @@
+[
+ {
+  "id": 1,
+  "expected": "support",
+  "text": "Hi, how do I add a second admin to our account? I can't find it in settings anywhere",
+  "set": "clean"
+ },
+ {
+  "id": 2,
+  "expected": "support",
+  "text": "can your service send attachments or just plain text emails?? need to know before thursday",
+  "set": "clean"
+ },
+ {
+  "id": 3,
+  "expected": "support",
+  "text": "Bonjour, est-ce que je peux exporter les réponses d'un formulaire en CSV? Merci",
+  "set": "clean"
+ },
+ {
+  "id": 4,
+  "expected": "support",
+  "text": "Is there a way to schedule a message to go out at 9am instead of sending it right away. thx",
+  "set": "clean"
+ },
+ {
+  "id": 5,
+  "expected": "support",
+  "text": "quick q - does your product have a french date picker or do we build our own",
+  "set": "clean"
+ },
+ {
+  "id": 6,
+  "expected": "support",
+  "text": "How do we set up a template so every team member sends the same wording? New to this sorry",
+  "set": "clean"
+ },
+ {
+  "id": 7,
+  "expected": "technical",
+  "text": "My login is not working. I enter my password, it spins and then goes back to the login page. Tried chrome and edge.",
+  "set": "clean"
+ },
+ {
+  "id": 8,
+  "expected": "technical",
+  "text": "there is a bug, the submit button on our form is greyed out for some users but not others",
+  "set": "clean"
+ },
+ {
+  "id": 9,
+  "expected": "technical",
+  "text": "Getting 502 errors from the API since about 10:30 this morning. Our batch job failed 3 times.",
+  "set": "clean"
+ },
+ {
+  "id": 10,
+  "expected": "technical",
+  "text": "les courriels ne partent plus depuis hier, le statut reste à 'sending' pendant des heures",
+  "set": "clean"
+ },
+ {
+  "id": 11,
+  "expected": "technical",
+  "text": "I think this is a bug?? The French version of our form shows English error messages. maybe we set it up wrong but it looks broken",
+  "set": "clean"
+ },
+ {
+  "id": 12,
+  "expected": "technical",
+  "text": "2FA code never arrives on my phone. Already checked spam. Locked out for 2 days now, this is urgent",
+  "set": "clean"
+ },
+ {
+  "id": 13,
+  "expected": "sales_billing",
+  "text": "We are a regional agency and would like to use your messaging service for our customer alerts. Who do we talk to about onboarding?",
+  "set": "clean"
+ },
+ {
+  "id": 14,
+  "expected": "sales_billing",
+  "text": "how much does this cost? our director wants a number before we commit to anything",
+  "set": "clean"
+ },
+ {
+  "id": 15,
+  "expected": "sales_billing",
+  "text": "Our company is evaluating form builders. Could you do a 30 min demo for our VP next week?",
+  "set": "clean"
+ },
+ {
+  "id": 16,
+  "expected": "sales_billing",
+  "text": "Nous aimerions explorer un partenariat entre nos deux équipes pour la prochaine année financière",
+  "set": "clean"
+ },
+ {
+  "id": 17,
+  "expected": "sales_billing",
+  "text": "Is there an enterprise tier with an SLA? We'd need 99.9% for a program launching in Q4.",
+  "set": "clean"
+ },
+ {
+  "id": 18,
+  "expected": "sales_billing",
+  "text": "Can we partner together on a pilot? We have budget for a small proof of concept",
+  "set": "clean"
+ },
+ {
+  "id": 19,
+  "expected": "mixed",
+  "text": "My login stopped working this morning, also how much would it cost to add 50 more users to our account?",
+  "set": "mixed"
+ },
+ {
+  "id": 20,
+  "expected": "mixed",
+  "text": "How do I export responses to CSV? Also the export button throws an error when I click it so maybe that's the problem",
+  "set": "mixed"
+ },
+ {
+  "id": 21,
+  "expected": "mixed",
+  "text": "We want to roll this out to the whole branch (about 400 people). Can someone walk us through pricing, and also can the forms do conditional logic?",
+  "set": "mixed"
+ },
+ {
+  "id": 22,
+  "expected": "mixed",
+  "text": "bug report: emails going to spam. unrelated but we'd love to talk about a partnership for the fall campaign",
+  "set": "mixed"
+ },
+ {
+  "id": 23,
+  "expected": "mixed",
+  "text": "Quick how-to question about templates and also our API key seems to have stopped authenticating since yesterday",
+  "set": "mixed"
+ },
+ {
+  "id": 24,
+  "expected": "mixed",
+  "text": "hi, our VP wants a demo next week. before that can you tell me why the dashboard shows 0 sent messages when we sent 200 yesterday",
+  "set": "mixed"
+ },
+ {
+  "id": 25,
+  "set": "noise",
+  "expected": "noise",
+  "text": "Hey team, just circling back on the login thing we talked about at the townhall, not urgent, no bug or anything, just wanted to say the new dashboard looks great, pricing aside haha. Anyway have a good long weekend"
+ },
+ {
+  "id": 26,
+  "set": "noise",
+  "expected": "noise",
+  "text": "Following up on my earlier follow up. Not sure if this is a technical thing or a sales thing or what. Just wanted to flag that I flagged it. Thanks!"
+ },
+ {
+  "id": 27,
+  "set": "noise",
+  "expected": "noise",
+  "text": "Bonjour! Petit message pour dire merci pour la démo la semaine passée, pas de question, pas de bug, juste un merci. Bonne journée"
+ },
+ {
+  "id": 28,
+  "set": "noise",
+  "expected": "noise",
+  "text": "Random thought: has anyone ever considered that forms are kind of like emails but for data? Anyway, partnership vibes. Cheers"
+ },
+ {
+  "id": 29,
+  "set": "noise",
+  "expected": "noise",
+  "text": "test test is this thing on. ignore this. or don't. login, api, pricing, lol. just checking the contact form works"
+ },
+ {
+  "id": 30,
+  "set": "noise",
+  "expected": "noise",
+  "text": "Per my last email (see below, see above, see attached), no action needed, I just like to keep everyone in the loop re: the whole situation with the thing."
+ },
+ {
+  "id": 31,
+  "set": "trap",
+  "expected": "support",
+  "text": "Bug: my colleague says there's a bug but really she just can't find the export button. Where is it?"
+ },
+ {
+  "id": 32,
+  "set": "trap",
+  "expected": "technical",
+  "text": "I'd like to buy more credits for our account but the checkout page returns a 500 error every time I click pay"
+ },
+ {
+  "id": 33,
+  "set": "trap",
+  "expected": "sales_billing",
+  "text": "How do I get our whole organisation set up? We'd need about 300 user licences and a signed agreement our VP can approve"
+ },
+ {
+  "id": 34,
+  "set": "trap",
+  "expected": "support",
+  "text": "My login is not working because I forgot which email address I signed up with. How do I find out which one it was?"
+ },
+ {
+  "id": 35,
+  "set": "trap",
+  "expected": "support",
+  "text": "We partnered with another team and they shared a form with us. How do I edit a form someone else shared with me?"
+ },
+ {
+  "id": 36,
+  "set": "trap",
+  "expected": "technical",
+  "text": "How do I make the form stop deleting my responses? Every submission since Monday just vanishes from the dashboard"
+ },
+ {
+  "id": 37,
+  "set": "hard",
+  "expected": "technical",
+  "text": "Something's off with the thing we set up last month, the numbers don't look like they did before. Not sure if it's us or you."
+ },
+ {
+  "id": 38,
+  "set": "hard",
+  "expected": "sales_billing",
+  "text": "We've been going back and forth internally about whether to keep going with this. Would be good to chat."
+ },
+ {
+  "id": 39,
+  "set": "hard",
+  "expected": "support",
+  "text": "Is it normal that it takes this long?",
+  "relabelled": "2026-10-06: timing question answerable from documentation; support under the do-based buckets"
+ },
+ {
+  "id": 40,
+  "set": "hard",
+  "expected": "sales_billing",
+  "text": "My director asked me to reach out. She had some concerns after the meeting."
+ },
+ {
+  "id": 41,
+  "set": "hard",
+  "expected": "technical",
+  "text": "I did what the guide said and it still looks the same."
+ },
+ {
+  "id": 42,
+  "set": "hard",
+  "expected": "sales_billing",
+  "text": "Hello, we are looking at options for next year and your name came up. Also one of our people couldn't get in last week, not sure if related."
+ },
+ {
+  "id": 43,
+  "set": "hard",
+  "expected": "technical",
+  "text": "The French is wrong."
+ },
+ {
+  "id": 44,
+  "set": "hard",
+  "expected": "sales_billing",
+  "text": "Can you point me to whoever handles the agreement side of things? Our procurement people have questions."
+ },
+ {
+  "id": 45,
+  "set": "hard",
+  "expected": "technical",
+  "text": "Honestly not sure this is the right place to ask, but when we send to a big list some people say they got nothing and others got it twice."
+ },
+ {
+  "id": 46,
+  "set": "hard",
+  "expected": "support",
+  "text": "Is there a way to make it do the other thing instead? The thing it does now isn't what we expected."
+ },
+ {
+  "id": 47,
+  "set": "hard",
+  "expected": "sales_billing",
+  "text": "Following our chat on Tuesday, where do we go from here?"
+ },
+ {
+  "id": 48,
+  "set": "hard",
+  "expected": "support",
+  "text": "Our team lead left and nobody knows how any of this was set up. Help."
+ },
+ {
+  "id": 49,
+  "set": "hard",
+  "expected": "technical",
+  "text": "It's doing it again."
+ },
+ {
+  "id": 50,
+  "set": "hard",
+  "expected": "sales_billing",
+  "text": "Circling back on the thing from before. Any movement on your end?"
+ },
+ {
+  "id": 51,
+  "set": "hard",
+  "expected": "support",
+  "text": "Which one am I supposed to click?"
+ },
+ {
+  "id": 52,
+  "set": "hard",
+  "expected": "technical",
+  "text": "Since the update nothing feels right."
+ },
+ {
+  "id": 53,
+  "set": "hard",
+  "expected": "sales_billing",
+  "text": "Our CEO's office has taken an interest."
+ },
+ {
+  "id": 54,
+  "set": "hard",
+  "expected": "support",
+  "text": "What's the difference between the two?"
+ },
+ {
+  "id": 55,
+  "set": "hard",
+  "expected": "technical",
+  "text": "Half of them came back."
+ },
+ {
+  "id": 56,
+  "set": "hard",
+  "expected": "sales_billing",
+  "text": "We'd need something in writing before we can go further."
+ },
+ {
+  "id": 57,
+  "set": "hard",
+  "expected": "support",
+  "text": "Can it do the thing where you pick from a list?"
+ },
+ {
+  "id": 58,
+  "set": "hard",
+  "expected": "technical",
+  "text": "Error. Screenshot attached."
+ },
+ {
+  "id": 59,
+  "set": "hard",
+  "expected": "sales_billing",
+  "text": "Who owns this relationship now that Marc has moved on?"
+ },
+ {
+  "id": 60,
+  "set": "hard",
+  "expected": "support",
+  "text": "Where did the old version go? The new layout confuses our staff."
+ }
+]

@@ -1,0 +1,4760 @@
+{
+ "teams": {
+  "support": "Support, tier 1: questions a help-desk agent answers from existing documentation without opening the customer's account. How do I, where do I, how long does something normally take, what are the limits, how to get or activate a card, what to do about a forgotten passcode. The default when neither of the other two teams applies.",
+  "technical": "Technical, tier 2: something has gone wrong for this customer and someone must investigate their specific account, card, device or transaction. Declined, failed, blocked, not received, not showing up, charged twice, unrecognised transaction, lost or stolen, card never arrived. Takes precedence over support when the customer's own account must be examined.",
+  "sales_billing": "Sales and billing: money the company charges or products it offers. Fees, exchange rates, an unexpected charge or fee on a statement, pricing, which currencies and countries are supported, eligibility and age limits, closing the account. Takes precedence over the other teams whenever money or eligibility is the subject."
+ },
+ "rows": [
+  {
+   "id": 1,
+   "text": "What do I do if my virtual card won't work.",
+   "intent": "virtual_card_not_working",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.9766564965248108,
+    "technical": 0.7662604451179504,
+    "sales_billing": 0.006050339434295893
+   },
+   "probs": {
+    "support": 0.5584189636317048,
+    "technical": 0.4381216580827449,
+    "sales_billing": 0.0034593782855502847
+   },
+   "pred": "support",
+   "ms": 1508.8960421271622
+  },
+  {
+   "id": 2,
+   "text": "there's a delay in my top-up",
+   "intent": "pending_top_up",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.7956255674362183,
+    "technical": 0.14607633650302887,
+    "sales_billing": 0.02675839141011238
+   },
+   "probs": {
+    "support": 0.821536588806882,
+    "technical": 0.1508335831675306,
+    "sales_billing": 0.027629828025587395
+   },
+   "pred": "support",
+   "ms": 1171.0364576429129
+  },
+  {
+   "id": 3,
+   "text": "What is the procedure for getting another card?",
+   "intent": "getting_spare_card",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.990724503993988,
+    "technical": 0.4148353934288025,
+    "sales_billing": 0.022976888343691826
+   },
+   "probs": {
+    "support": 0.693523970726742,
+    "technical": 0.29039181739112324,
+    "sales_billing": 0.01608421188213474
+   },
+   "pred": "support",
+   "ms": 1171.5489169582725
+  },
+  {
+   "id": 4,
+   "text": "I am having trouble verifying my identity.",
+   "intent": "unable_to_verify_identity",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.05419512465596199,
+    "technical": 0.03021317347884178,
+    "sales_billing": 0.0013353973627090454
+   },
+   "probs": {
+    "support": 0.6320595857398523,
+    "technical": 0.3523661221216921,
+    "sales_billing": 0.015574292138455608
+   },
+   "pred": "support",
+   "ms": 1124.5166673325002
+  },
+  {
+   "id": 5,
+   "text": "Can someone assist me by explaining why my card is not working?",
+   "intent": "card_not_working",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.9796547293663025,
+    "technical": 0.9111538529396057,
+    "sales_billing": 0.0019117629854008555
+   },
+   "probs": {
+    "support": 0.5175908484333028,
+    "technical": 0.48139909057688596,
+    "sales_billing": 0.0010100609898112632
+   },
+   "pred": "support",
+   "ms": 1134.3875830061734
+  },
+  {
+   "id": 6,
+   "text": "What steps do I take to receive another passcode?",
+   "intent": "passcode_forgotten",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9888349175453186,
+    "technical": 0.2719931900501251,
+    "sales_billing": 0.0012943652691319585
+   },
+   "probs": {
+    "support": 0.7834698603385216,
+    "technical": 0.21550459317374795,
+    "sales_billing": 0.001025546487730468
+   },
+   "pred": "support",
+   "ms": 1189.849500078708
+  },
+  {
+   "id": 7,
+   "text": "May I get a disposable virtual card as well?",
+   "intent": "get_disposable_virtual_card",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.2941908836364746,
+    "technical": 0.001244839164428413,
+    "sales_billing": 0.003976167645305395
+   },
+   "probs": {
+    "support": 0.9825624600213672,
+    "technical": 0.004157614323777357,
+    "sales_billing": 0.013279925654855525
+   },
+   "pred": "support",
+   "ms": 1197.7953328751028
+  },
+  {
+   "id": 8,
+   "text": "I can't recall my passcode and need to reset it.",
+   "intent": "passcode_forgotten",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9763025045394897,
+    "technical": 0.24797159433364868,
+    "sales_billing": 0.0005549400812014937
+   },
+   "probs": {
+    "support": 0.7970928786706248,
+    "technical": 0.20245404578695064,
+    "sales_billing": 0.00045307554242448136
+   },
+   "pred": "support",
+   "ms": 1123.8048332743347
+  },
+  {
+   "id": 9,
+   "text": "Still waiting on a refund.",
+   "intent": "Refund_not_showing_up",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.12084741145372391,
+    "technical": 0.01826358214020729,
+    "sales_billing": 0.02064497023820877
+   },
+   "probs": {
+    "support": 0.7564500789510534,
+    "technical": 0.11432175489484289,
+    "sales_billing": 0.12922816615410374
+   },
+   "pred": "support",
+   "ms": 1122.709416784346
+  },
+  {
+   "id": 10,
+   "text": "Is there any nearby ATM's?",
+   "intent": "atm_support",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.014063479378819466,
+    "technical": 0.0005316128954291344,
+    "sales_billing": 0.0017007181886583567
+   },
+   "probs": {
+    "support": 0.8630119631564939,
+    "technical": 0.03262267296488313,
+    "sales_billing": 0.10436536387862301
+   },
+   "pred": "support",
+   "ms": 1114.6962498314679
+  },
+  {
+   "id": 11,
+   "text": "My card payment is still pending.",
+   "intent": "pending_card_payment",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.32080692052841187,
+    "technical": 0.03676832839846611,
+    "sales_billing": 0.10520521551370621
+   },
+   "probs": {
+    "support": 0.6932162119596124,
+    "technical": 0.07945090863529039,
+    "sales_billing": 0.22733287940509722
+   },
+   "pred": "support",
+   "ms": 1116.0696665756404
+  },
+  {
+   "id": 12,
+   "text": "I think my card was stolen.",
+   "intent": "lost_or_stolen_card",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.08035412430763245,
+    "technical": 0.9759389162063599,
+    "sales_billing": 0.003324423683807254
+   },
+   "probs": {
+    "support": 0.07583314452868689,
+    "technical": 0.9210294744860685,
+    "sales_billing": 0.003137380985244578
+   },
+   "pred": "technical",
+   "ms": 1106.7398749291897
+  },
+  {
+   "id": 13,
+   "text": "I couldn't get cash at the atm",
+   "intent": "declined_cash_withdrawal",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.0863213762640953,
+    "technical": 0.04885523393750191,
+    "sales_billing": 0.006241200491786003
+   },
+   "probs": {
+    "support": 0.610399608372202,
+    "technical": 0.3454673332726667,
+    "sales_billing": 0.04413305835513137
+   },
+   "pred": "support",
+   "ms": 1123.7030839547515
+  },
+  {
+   "id": 14,
+   "text": "I'd like to cancel a transfer",
+   "intent": "cancel_transfer",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.03514436259865761,
+    "technical": 0.020963840186595917,
+    "sales_billing": 0.0627865344285965
+   },
+   "probs": {
+    "support": 0.2955922475815326,
+    "technical": 0.1763226924745147,
+    "sales_billing": 0.5280850599439527
+   },
+   "pred": "sales_billing",
+   "ms": 1113.5727083310485
+  },
+  {
+   "id": 15,
+   "text": "How can I process a refund for something I purchased?",
+   "intent": "request_refund",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.9032821655273438,
+    "technical": 0.00648820074275136,
+    "sales_billing": 0.046032488346099854
+   },
+   "probs": {
+    "support": 0.9450507091130828,
+    "technical": 0.006788220720848039,
+    "sales_billing": 0.04816107016606925
+   },
+   "pred": "support",
+   "ms": 1142.806624993682
+  },
+  {
+   "id": 16,
+   "text": "Can I verify my identity online?",
+   "intent": "verify_my_identity",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.1037457287311554,
+    "technical": 0.0108183603733778,
+    "sales_billing": 0.0013458585599437356
+   },
+   "probs": {
+    "support": 0.8950545731542116,
+    "technical": 0.09333418391917121,
+    "sales_billing": 0.01161124292661727
+   },
+   "pred": "support",
+   "ms": 1112.0001249946654
+  },
+  {
+   "id": 17,
+   "text": "What do I do if my card is expiring soon?",
+   "intent": "card_about_to_expire",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.9294107556343079,
+    "technical": 0.014281733892858028,
+    "sales_billing": 0.012241101823747158
+   },
+   "probs": {
+    "support": 0.972254520652294,
+    "technical": 0.014940090004238961,
+    "sales_billing": 0.01280538934346704
+   },
+   "pred": "support",
+   "ms": 1143.253916874528
+  },
+  {
+   "id": 18,
+   "text": "I transferred some money but it is yet to arrive.",
+   "intent": "balance_not_updated_after_bank_transfer",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.4455091953277588,
+    "technical": 0.14033076167106628,
+    "sales_billing": 0.021286616101861
+   },
+   "probs": {
+    "support": 0.7337995322004714,
+    "technical": 0.231139218555986,
+    "sales_billing": 0.035061249243542536
+   },
+   "pred": "support",
+   "ms": 1122.4925830028951
+  },
+  {
+   "id": 19,
+   "text": "I keep checking my bank statements but I don't see a refund that I've requested from a seller. Can you ensure that I receive the refund from the seller?",
+   "intent": "Refund_not_showing_up",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.11436419934034348,
+    "technical": 0.0592070035636425,
+    "sales_billing": 0.03114258125424385
+   },
+   "probs": {
+    "support": 0.5586541219517868,
+    "technical": 0.28921845105398236,
+    "sales_billing": 0.1521274269942309
+   },
+   "pred": "support",
+   "ms": 1299.4043328799307
+  },
+  {
+   "id": 20,
+   "text": "It will be fine to use at any establishment that accepts Mastercard.",
+   "intent": "card_acceptance",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.5350248217582703,
+    "technical": 0.004365289583802223,
+    "sales_billing": 0.006692708004266024
+   },
+   "probs": {
+    "support": 0.9797503287114862,
+    "technical": 0.007993823334393631,
+    "sales_billing": 0.012255847954120219
+   },
+   "pred": "support",
+   "ms": 1149.4065416045487
+  },
+  {
+   "id": 21,
+   "text": "I still don't have my card after 2 weeks.  What should I do?",
+   "intent": "card_arrival",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.9936089515686035,
+    "technical": 0.9822825193405151,
+    "sales_billing": 0.0019418118754401803
+   },
+   "probs": {
+    "support": 0.5023724498000751,
+    "technical": 0.4966457627599308,
+    "sales_billing": 0.0009817874399941006
+   },
+   "pred": "support",
+   "ms": 1254.564458038658
+  },
+  {
+   "id": 22,
+   "text": "Is there an amount limit to my top-up?",
+   "intent": "top_up_limits",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9861432909965515,
+    "technical": 0.0041339341551065445,
+    "sales_billing": 0.11435909569263458
+   },
+   "probs": {
+    "support": 0.8927311843619492,
+    "technical": 0.003742348569479326,
+    "sales_billing": 0.10352646706857145
+   },
+   "pred": "support",
+   "ms": 1146.7804578132927
+  },
+  {
+   "id": 23,
+   "text": "Where do I go to change GBP?",
+   "intent": "exchange_via_app",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.3885740339756012,
+    "technical": 0.008847306482493877,
+    "sales_billing": 0.8823913931846619
+   },
+   "probs": {
+    "support": 0.30361788389899436,
+    "technical": 0.0069129695696272765,
+    "sales_billing": 0.6894691465313784
+   },
+   "pred": "sales_billing",
+   "ms": 1127.3054578341544
+  },
+  {
+   "id": 24,
+   "text": "My top up was denied in the app.",
+   "intent": "top_up_failed",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.1081860288977623,
+    "technical": 0.9111629724502563,
+    "sales_billing": 0.02479727752506733
+   },
+   "probs": {
+    "support": 0.10361194699130093,
+    "technical": 0.8726391990149558,
+    "sales_billing": 0.023748853993743334
+   },
+   "pred": "technical",
+   "ms": 1120.1830827631056
+  },
+  {
+   "id": 25,
+   "text": "Where's the money that got charged to my card? It's not showing up in my account balance",
+   "intent": "topping_up_by_card",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.37751588225364685,
+    "technical": 0.8538764119148254,
+    "sales_billing": 0.9814363121986389
+   },
+   "probs": {
+    "support": 0.1706033088904385,
+    "technical": 0.3858755302864004,
+    "sales_billing": 0.44352116082316106
+   },
+   "pred": "sales_billing",
+   "ms": 1269.4631670601666
+  },
+  {
+   "id": 26,
+   "text": "For the first time I got a fee on my account. How do I know when you charge these fees?",
+   "intent": "card_payment_fee_charged",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.6992329359054565,
+    "technical": 0.10817810893058777,
+    "sales_billing": 0.9962866306304932
+   },
+   "probs": {
+    "support": 0.387666373038151,
+    "technical": 0.059975743386489,
+    "sales_billing": 0.55235788357536
+   },
+   "pred": "sales_billing",
+   "ms": 1290.4722499661148
+  },
+  {
+   "id": 27,
+   "text": "When I try and to buy something using my card it keeps getting declined.",
+   "intent": "declined_transfer",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.26586946845054626,
+    "technical": 0.9334179759025574,
+    "sales_billing": 0.012241024523973465
+   },
+   "probs": {
+    "support": 0.21944962522999667,
+    "technical": 0.7704465886531825,
+    "sales_billing": 0.010103786116820876
+   },
+   "pred": "technical",
+   "ms": 1300.488790962845
+  },
+  {
+   "id": 28,
+   "text": "What is the reason my transfer was declined?",
+   "intent": "declined_transfer",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.43780726194381714,
+    "technical": 0.8791291117668152,
+    "sales_billing": 0.010986671783030033
+   },
+   "probs": {
+    "support": 0.3296932479856617,
+    "technical": 0.6620331763577416,
+    "sales_billing": 0.008273575656596636
+   },
+   "pred": "technical",
+   "ms": 1126.3776668347418
+  },
+  {
+   "id": 29,
+   "text": "Can I use my card at any ATMs?",
+   "intent": "atm_support",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.577461302280426,
+    "technical": 0.005139588378369808,
+    "sales_billing": 0.0026112389750778675
+   },
+   "probs": {
+    "support": 0.9867555251148044,
+    "technical": 0.00878243651850704,
+    "sales_billing": 0.004462038366688566
+   },
+   "pred": "support",
+   "ms": 1118.3796245604753
+  },
+  {
+   "id": 30,
+   "text": "Where do I request another card?",
+   "intent": "getting_spare_card",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9825494289398193,
+    "technical": 0.125917449593544,
+    "sales_billing": 0.01744222268462181
+   },
+   "probs": {
+    "support": 0.8726720726184003,
+    "technical": 0.11183624811037508,
+    "sales_billing": 0.015491679271224627
+   },
+   "pred": "support",
+   "ms": 1114.9482079781592
+  },
+  {
+   "id": 31,
+   "text": "I tried to make a transfer and it was declined. Why?",
+   "intent": "declined_transfer",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.16237673163414001,
+    "technical": 0.8774548768997192,
+    "sales_billing": 0.015663225203752518
+   },
+   "probs": {
+    "support": 0.153839437621071,
+    "technical": 0.8313208637815541,
+    "sales_billing": 0.014839698597374926
+   },
+   "pred": "technical",
+   "ms": 1119.9725409969687
+  },
+  {
+   "id": 32,
+   "text": "I would prefer a visa card",
+   "intent": "visa_or_mastercard",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.16450819373130798,
+    "technical": 0.003824455663561821,
+    "sales_billing": 0.010986755602061749
+   },
+   "probs": {
+    "support": 0.9174031875363572,
+    "technical": 0.021327617407760548,
+    "sales_billing": 0.06126919505588227
+   },
+   "pred": "support",
+   "ms": 1113.5235829278827
+  },
+  {
+   "id": 33,
+   "text": "i tried to withdraw money from an atm and i was declined on front of my friends. Why did this happen?",
+   "intent": "declined_cash_withdrawal",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.1460828334093094,
+    "technical": 0.8459275960922241,
+    "sales_billing": 0.0038844537921249866
+   },
+   "probs": {
+    "support": 0.14668499242227162,
+    "technical": 0.8494145419188647,
+    "sales_billing": 0.0039004656588636994
+   },
+   "pred": "technical",
+   "ms": 1252.89308372885
+  },
+  {
+   "id": 34,
+   "text": "do I need anything for the identity check?",
+   "intent": "verify_my_identity",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.18950437009334564,
+    "technical": 0.005819914396852255,
+    "sales_billing": 0.001714034704491496
+   },
+   "probs": {
+    "support": 0.9617640409635264,
+    "technical": 0.029536967330206065,
+    "sales_billing": 0.008698991706267523
+   },
+   "pred": "support",
+   "ms": 1148.3019161969423
+  },
+  {
+   "id": 35,
+   "text": "The app wouldn't accept my top up.",
+   "intent": "top_up_reverted",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.18476109206676483,
+    "technical": 0.8266851902008057,
+    "sales_billing": 0.03846434876322746
+   },
+   "probs": {
+    "support": 0.1759779228879387,
+    "technical": 0.7873862458075784,
+    "sales_billing": 0.03663583130448286
+   },
+   "pred": "technical",
+   "ms": 1120.483625214547
+  },
+  {
+   "id": 36,
+   "text": "What do you base your exchange rates on?",
+   "intent": "exchange_rate",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.07055697590112686,
+    "technical": 0.0012448403285816312,
+    "sales_billing": 0.9736358523368835
+   },
+   "probs": {
+    "support": 0.06749037080122443,
+    "technical": 0.0011907360582180302,
+    "sales_billing": 0.9313188931405575
+   },
+   "pred": "sales_billing",
+   "ms": 1129.937790799886
+  },
+  {
+   "id": 37,
+   "text": "Can I top up using an international card",
+   "intent": "top_up_by_card_charge",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.8479423522949219,
+    "technical": 0.005260819103568792,
+    "sales_billing": 0.46873995661735535
+   },
+   "probs": {
+    "support": 0.6414363328682909,
+    "technical": 0.0039796107654532405,
+    "sales_billing": 0.3545840563662559
+   },
+   "pred": "support",
+   "ms": 1107.1163336746395
+  },
+  {
+   "id": 38,
+   "text": "Where can I find instructions to change my PIN?",
+   "intent": "change_pin",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9371974468231201,
+    "technical": 0.028870506212115288,
+    "sales_billing": 0.002757617039605975
+   },
+   "probs": {
+    "support": 0.9673541613385803,
+    "technical": 0.02979948827102597,
+    "sales_billing": 0.002846350390393753
+   },
+   "pred": "support",
+   "ms": 1129.329166840762
+  },
+  {
+   "id": 39,
+   "text": "There are some strange charges on my card that I didn't make from a few days ago.  Is my card stolen and if so should I cancel it?  Will I get refunded the charges?",
+   "intent": "card_payment_not_recognised",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.020645523443818092,
+    "technical": 0.9915487170219421,
+    "sales_billing": 0.0481349341571331
+   },
+   "probs": {
+    "support": 0.019470862386825,
+    "technical": 0.9351329198072731,
+    "sales_billing": 0.045396217805901945
+   },
+   "pred": "technical",
+   "ms": 1592.9123340174556
+  },
+  {
+   "id": 40,
+   "text": "still waiting on my new card",
+   "intent": "card_arrival",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.9822795987129211,
+    "technical": 0.7519763708114624,
+    "sales_billing": 0.002182707889005542
+   },
+   "probs": {
+    "support": 0.565686316188333,
+    "technical": 0.43305668123657065,
+    "sales_billing": 0.0012570025750963567
+   },
+   "pred": "support",
+   "ms": 1133.4053338505328
+  },
+  {
+   "id": 41,
+   "text": "The app will not let me into my account.",
+   "intent": "unable_to_verify_identity",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.6076337695121765,
+    "technical": 0.9532616138458252,
+    "sales_billing": 0.0013353972462937236
+   },
+   "probs": {
+    "support": 0.38895262918653684,
+    "technical": 0.61019256929318,
+    "sales_billing": 0.0008548015202831754
+   },
+   "pred": "technical",
+   "ms": 1121.9120831228793
+  },
+  {
+   "id": 42,
+   "text": "Top up on my Google Pay isn't working.",
+   "intent": "apple_pay_or_google_pay",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.2689340114593506,
+    "technical": 0.6441958546638489,
+    "sales_billing": 0.025564508512616158
+   },
+   "probs": {
+    "support": 0.2864979472830959,
+    "technical": 0.6862679398859474,
+    "sales_billing": 0.027234112830956718
+   },
+   "pred": "technical",
+   "ms": 1127.1952907554805
+  },
+  {
+   "id": 43,
+   "text": "Why do you need to know so much about me",
+   "intent": "why_verify_identity",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.08269306272268295,
+    "technical": 0.0023413265589624643,
+    "sales_billing": 0.003538029035553336
+   },
+   "probs": {
+    "support": 0.9336209205278732,
+    "technical": 0.026434036728878972,
+    "sales_billing": 0.03994504274324789
+   },
+   "pred": "support",
+   "ms": 1117.5704170018435
+  },
+  {
+   "id": 44,
+   "text": "I found my card, I would like to reactivate it.",
+   "intent": "card_linking",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.8375870585441589,
+    "technical": 0.46098092198371887,
+    "sales_billing": 0.002912166528403759
+   },
+   "probs": {
+    "support": 0.6435649905522055,
+    "technical": 0.3541974290014153,
+    "sales_billing": 0.0022375804463791215
+   },
+   "pred": "support",
+   "ms": 1203.4603329375386
+  },
+  {
+   "id": 45,
+   "text": "I have withdrawn cash from ATM but i received the wrong amount. I want cash back as in app its showing actual amount which i got. Please help me in this.",
+   "intent": "wrong_amount_of_cash_received",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.026758743450045586,
+    "technical": 0.025178004056215286,
+    "sales_billing": 0.0033244015648961067
+   },
+   "probs": {
+    "support": 0.48422343544810675,
+    "technical": 0.4556185399582417,
+    "sales_billing": 0.06015802459365156
+   },
+   "pred": "support",
+   "ms": 1291.750708129257
+  },
+  {
+   "id": 46,
+   "text": "Topping up my card is not working because I believe the top up is pending",
+   "intent": "pending_top_up",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.3486286401748657,
+    "technical": 0.507777988910675,
+    "sales_billing": 0.013427941128611565
+   },
+   "probs": {
+    "support": 0.40079878647388517,
+    "technical": 0.5837638630362331,
+    "sales_billing": 0.015437350489881794
+   },
+   "pred": "technical",
+   "ms": 1272.48604176566
+  },
+  {
+   "id": 47,
+   "text": "I have multiple charges on the same transaction.",
+   "intent": "transaction_charged_twice",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.04272107034921646,
+    "technical": 0.7605365514755249,
+    "sales_billing": 0.826650083065033
+   },
+   "probs": {
+    "support": 0.026210729737059287,
+    "technical": 0.46661326233006406,
+    "sales_billing": 0.5071760079328766
+   },
+   "pred": "sales_billing",
+   "ms": 1201.5612917020917
+  },
+  {
+   "id": 48,
+   "text": "How do I use a disposable virtual card?",
+   "intent": "get_disposable_virtual_card",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9539542198181152,
+    "technical": 0.008187789469957352,
+    "sales_billing": 0.004905350506305695
+   },
+   "probs": {
+    "support": 0.9864607044901638,
+    "technical": 0.008466792641570634,
+    "sales_billing": 0.005072502868265636
+   },
+   "pred": "support",
+   "ms": 1195.293374825269
+  },
+  {
+   "id": 49,
+   "text": "Can I still use my account, even though the identity verification has not passed yet?",
+   "intent": "why_verify_identity",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.3923132121562958,
+    "technical": 0.06371267139911652,
+    "sales_billing": 0.004718336742371321
+   },
+   "probs": {
+    "support": 0.8514772293893124,
+    "technical": 0.1382820849232539,
+    "sales_billing": 0.010240685687433719
+   },
+   "pred": "support",
+   "ms": 1319.7467923164368
+  },
+  {
+   "id": 50,
+   "text": "Where can I find the source of my available money?",
+   "intent": "verify_source_of_funds",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.20432119071483612,
+    "technical": 0.5926386117935181,
+    "sales_billing": 0.5389462113380432
+   },
+   "probs": {
+    "support": 0.1529457825603658,
+    "technical": 0.4436229836911713,
+    "sales_billing": 0.40343123374846285
+   },
+   "pred": "technical",
+   "ms": 1207.3138332925737
+  },
+  {
+   "id": 51,
+   "text": "What is the process for activating my card?",
+   "intent": "activate_my_card",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.9953160285949707,
+    "technical": 0.03676825761795044,
+    "sales_billing": 0.01115789171308279
+   },
+   "probs": {
+    "support": 0.9540603798953836,
+    "technical": 0.035244220753274005,
+    "sales_billing": 0.010695399351342377
+   },
+   "pred": "support",
+   "ms": 1196.7411250807345
+  },
+  {
+   "id": 52,
+   "text": "My statement has a dollar I have been charged showing up on it.",
+   "intent": "extra_charge_on_statement",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.08756101131439209,
+    "technical": 0.8740379214286804,
+    "sales_billing": 0.993700385093689
+   },
+   "probs": {
+    "support": 0.044781384883448384,
+    "technical": 0.4470097818044908,
+    "sales_billing": 0.5082088333120608
+   },
+   "pred": "sales_billing",
+   "ms": 1321.9030420295894
+  },
+  {
+   "id": 53,
+   "text": "Please tell me about SWIFT transfers at this bank.",
+   "intent": "top_up_by_bank_transfer_charge",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.592633843421936,
+    "technical": 0.0027576081920415163,
+    "sales_billing": 0.5621398687362671
+   },
+   "probs": {
+    "support": 0.5119808276484626,
+    "technical": 0.002382318425048855,
+    "sales_billing": 0.4856368539264885
+   },
+   "pred": "support",
+   "ms": 1198.8449171185493
+  },
+  {
+   "id": 54,
+   "text": "I'm going to be away for awhile, can I have it add money automatically in certain intervals?",
+   "intent": "automatic_top_up",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.059209056198596954,
+    "technical": 0.0029578921385109425,
+    "sales_billing": 0.5077828764915466
+   },
+   "probs": {
+    "support": 0.10388468180755582,
+    "technical": 0.005189741288893599,
+    "sales_billing": 0.8909255769035506
+   },
+   "pred": "sales_billing",
+   "ms": 1264.8426671512425
+  },
+  {
+   "id": 55,
+   "text": "How can I get a physical card",
+   "intent": "order_physical_card",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.9820061922073364,
+    "technical": 0.059208400547504425,
+    "sales_billing": 0.006145046558231115
+   },
+   "probs": {
+    "support": 0.937601713248566,
+    "technical": 0.05653110767791017,
+    "sales_billing": 0.0058671790735238235
+   },
+   "pred": "support",
+   "ms": 1189.040333032608
+  },
+  {
+   "id": 56,
+   "text": "I have received my card, can you help me put it in the app?",
+   "intent": "card_linking",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9715437293052673,
+    "technical": 0.02228539250791073,
+    "sales_billing": 0.0019267279421910644
+   },
+   "probs": {
+    "support": 0.9756846816857264,
+    "technical": 0.02238037819550411,
+    "sales_billing": 0.001934940118769486
+   },
+   "pred": "support",
+   "ms": 1230.305708013475
+  },
+  {
+   "id": 57,
+   "text": "Which forms of currency are accepted?",
+   "intent": "supported_cards_and_currencies",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.43780726194381714,
+    "technical": 0.0022872197441756725,
+    "sales_billing": 0.9817190766334534
+   },
+   "probs": {
+    "support": 0.3079217098342207,
+    "technical": 0.0016086636189317964,
+    "sales_billing": 0.6904696265468475
+   },
+   "pred": "sales_billing",
+   "ms": 1198.3092920854688
+  },
+  {
+   "id": 58,
+   "text": "What is needed to prove my identity?",
+   "intent": "verify_my_identity",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.4378150701522827,
+    "technical": 0.0066928318701684475,
+    "sales_billing": 0.0010484684025868773
+   },
+   "probs": {
+    "support": 0.9826255423856458,
+    "technical": 0.015021290939648843,
+    "sales_billing": 0.002353166674705362
+   },
+   "pred": "support",
+   "ms": 1187.4945000745356
+  },
+  {
+   "id": 59,
+   "text": "Is it possible to get a Visa here?",
+   "intent": "visa_or_mastercard",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.5926246047019958,
+    "technical": 0.0027149731758981943,
+    "sales_billing": 0.03021378070116043
+   },
+   "probs": {
+    "support": 0.9473605993390295,
+    "technical": 0.004340114458125939,
+    "sales_billing": 0.048299286202844606
+   },
+   "pred": "support",
+   "ms": 1198.3012920245528
+  },
+  {
+   "id": 60,
+   "text": "Why did you charge me for a cash withdrawal?",
+   "intent": "cash_withdrawal_charge",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.4843595623970032,
+    "technical": 0.026354115456342697,
+    "sales_billing": 0.9632129669189453
+   },
+   "probs": {
+    "support": 0.32861849951279803,
+    "technical": 0.017880208319603436,
+    "sales_billing": 0.6535012921675986
+   },
+   "pred": "sales_billing",
+   "ms": 1174.5603331364691
+  },
+  {
+   "id": 61,
+   "text": "Can I open a bank account for my newborn baby?",
+   "intent": "age_limit",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.02675907127559185,
+    "technical": 0.0003785035223700106,
+    "sales_billing": 0.03461824357509613
+   },
+   "probs": {
+    "support": 0.43330445584809774,
+    "technical": 0.006129034192106814,
+    "sales_billing": 0.5605665099597954
+   },
+   "pred": "sales_billing",
+   "ms": 1200.9531669318676
+  },
+  {
+   "id": 62,
+   "text": "I made a bank transfer a couple of hours ago from my UK account.  It hasn't appeared, can you check to make sure it went through?",
+   "intent": "balance_not_updated_after_bank_transfer",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.1311677247285843,
+    "technical": 0.34862709045410156,
+    "sales_billing": 0.0072326441295444965
+   },
+   "probs": {
+    "support": 0.2693230581163052,
+    "technical": 0.7158263539111844,
+    "sales_billing": 0.01485058797251038
+   },
+   "pred": "technical",
+   "ms": 1294.3983753211796
+  },
+  {
+   "id": 63,
+   "text": "Can I hold money in other currencies?",
+   "intent": "fiat_currency_support",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.19435644149780273,
+    "technical": 0.001443752902559936,
+    "sales_billing": 0.9578845500946045
+   },
+   "probs": {
+    "support": 0.16846581566169838,
+    "technical": 0.001251427575383211,
+    "sales_billing": 0.8302827567629184
+   },
+   "pred": "sales_billing",
+   "ms": 1200.8601669222116
+  },
+  {
+   "id": 64,
+   "text": "My salary is in GBP; how can I note this in the app?",
+   "intent": "receiving_money",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.08035390824079514,
+    "technical": 0.0019117608899250627,
+    "sales_billing": 0.488207072019577
+   },
+   "probs": {
+    "support": 0.14085494791349729,
+    "technical": 0.0033511870980376755,
+    "sales_billing": 0.855793864988465
+   },
+   "pred": "sales_billing",
+   "ms": 1265.368458814919
+  },
+  {
+   "id": 65,
+   "text": "How long until the money is in my account?",
+   "intent": "transfer_timing",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.9219024777412415,
+    "technical": 0.04885566979646683,
+    "sales_billing": 0.09137436747550964
+   },
+   "probs": {
+    "support": 0.8679731245491233,
+    "technical": 0.04599771601555653,
+    "sales_billing": 0.0860291594353201
+   },
+   "pred": "support",
+   "ms": 1202.9869579710066
+  },
+  {
+   "id": 66,
+   "text": "i was supposed to get a refund but my balance hasn't changed, why not?",
+   "intent": "Refund_not_showing_up",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.07369450479745865,
+    "technical": 0.41486790776252747,
+    "sales_billing": 0.13476572930812836
+   },
+   "probs": {
+    "support": 0.11822746294848202,
+    "technical": 0.665569031616587,
+    "sales_billing": 0.21620350543493105
+   },
+   "pred": "technical",
+   "ms": 1234.469249844551
+  },
+  {
+   "id": 67,
+   "text": "I bought some stuff this morning but the payment shows as pending",
+   "intent": "pending_card_payment",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.3345799446105957,
+    "technical": 0.047423478215932846,
+    "sales_billing": 0.09534259885549545
+   },
+   "probs": {
+    "support": 0.7009170065598043,
+    "technical": 0.09934822133601691,
+    "sales_billing": 0.19973477210417878
+   },
+   "pred": "support",
+   "ms": 1212.9708752036095
+  },
+  {
+   "id": 68,
+   "text": "Why is the exchange rate wrong for my international withdrawal?",
+   "intent": "wrong_exchange_rate_for_cash_withdrawal",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.09946750849485397,
+    "technical": 0.40731537342071533,
+    "sales_billing": 0.9814469814300537
+   },
+   "probs": {
+    "support": 0.06683611916726728,
+    "technical": 0.273691170599848,
+    "sales_billing": 0.6594727102328848
+   },
+   "pred": "sales_billing",
+   "ms": 1200.580374803394
+  },
+  {
+   "id": 69,
+   "text": "When will I see the cash I deposited this morning as available?",
+   "intent": "balance_not_updated_after_cheque_or_cash_deposit",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.7718217372894287,
+    "technical": 0.19191789627075195,
+    "sales_billing": 0.012053568847477436
+   },
+   "probs": {
+    "support": 0.7909685529526613,
+    "technical": 0.19667886166578788,
+    "sales_billing": 0.012352585381550757
+   },
+   "pred": "support",
+   "ms": 1220.4051250591874
+  },
+  {
+   "id": 70,
+   "text": "What are the cards and currencies that are supported?",
+   "intent": "supported_cards_and_currencies",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.9755637049674988,
+    "technical": 0.014503133483231068,
+    "sales_billing": 0.8946456909179688
+   },
+   "probs": {
+    "support": 0.5176193662246584,
+    "technical": 0.007695143560216593,
+    "sales_billing": 0.47468549021512496
+   },
+   "pred": "support",
+   "ms": 1200.1410843804479
+  },
+  {
+   "id": 71,
+   "text": "I need to cancel a purchase I made.",
+   "intent": "request_refund",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.016656864434480667,
+    "technical": 0.020963365212082863,
+    "sales_billing": 0.021614279597997665
+   },
+   "probs": {
+    "support": 0.2812020331882815,
+    "technical": 0.3539045985091483,
+    "sales_billing": 0.3648933683025702
+   },
+   "pred": "sales_billing",
+   "ms": 1176.1882919818163
+  },
+  {
+   "id": 72,
+   "text": "Can my children have their own account?",
+   "intent": "age_limit",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.1992940455675125,
+    "technical": 0.001254592789337039,
+    "sales_billing": 0.07263484597206116
+   },
+   "probs": {
+    "support": 0.7295245027608042,
+    "technical": 0.004592491352173104,
+    "sales_billing": 0.26588300588702274
+   },
+   "pred": "support",
+   "ms": 1196.0594998672605
+  },
+  {
+   "id": 73,
+   "text": "I don't live in the UK.  Can I still get a card?",
+   "intent": "country_support",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.8932874798774719,
+    "technical": 0.004101909697055817,
+    "sales_billing": 0.3415684998035431
+   },
+   "probs": {
+    "support": 0.7209990650496461,
+    "technical": 0.0033107741047719414,
+    "sales_billing": 0.27569016084558196
+   },
+   "pred": "support",
+   "ms": 1263.324041850865
+  },
+  {
+   "id": 74,
+   "text": "The expiration date of my card is approaching .",
+   "intent": "card_about_to_expire",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.10520676523447037,
+    "technical": 0.008644070476293564,
+    "sales_billing": 0.0037072289269417524
+   },
+   "probs": {
+    "support": 0.8949344781976468,
+    "technical": 0.0735302210268019,
+    "sales_billing": 0.03153530077555132
+   },
+   "pred": "support",
+   "ms": 1194.5105828344822
+  },
+  {
+   "id": 75,
+   "text": "When will my balance update after a transfer?",
+   "intent": "balance_not_updated_after_bank_transfer",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.9808704257011414,
+    "technical": 0.01691434532403946,
+    "sales_billing": 0.14413774013519287
+   },
+   "probs": {
+    "support": 0.8589640856667429,
+    "technical": 0.014812165588058871,
+    "sales_billing": 0.12622374874519826
+   },
+   "pred": "support",
+   "ms": 1174.417792353779
+  },
+  {
+   "id": 76,
+   "text": "When will my transfer go through?",
+   "intent": "pending_transfer",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9353200793266296,
+    "technical": 0.031142542138695717,
+    "sales_billing": 0.04146072641015053
+   },
+   "probs": {
+    "support": 0.9279674702427708,
+    "technical": 0.0308977286857564,
+    "sales_billing": 0.04113480107147275
+   },
+   "pred": "support",
+   "ms": 1185.1293332874775
+  },
+  {
+   "id": 77,
+   "text": "How do I pay by check?",
+   "intent": "top_up_by_cash_or_cheque",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.8152117729187012,
+    "technical": 0.0017683458281680942,
+    "sales_billing": 0.20433270931243896
+   },
+   "probs": {
+    "support": 0.7981998762002834,
+    "technical": 0.0017314438628253529,
+    "sales_billing": 0.20006867993689123
+   },
+   "pred": "support",
+   "ms": 1183.418707922101
+  },
+  {
+   "id": 78,
+   "text": "Please delete my account.",
+   "intent": "terminate_account",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.10374268144369125,
+    "technical": 0.05500277876853943,
+    "sales_billing": 0.10818443447351456
+   },
+   "probs": {
+    "support": 0.3886514156304104,
+    "technical": 0.2060570204521072,
+    "sales_billing": 0.4052915639174824
+   },
+   "pred": "sales_billing",
+   "ms": 1259.2819998972118
+  },
+  {
+   "id": 79,
+   "text": "Can I freeze my card right now?",
+   "intent": "compromised_card",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.32764577865600586,
+    "technical": 0.3415651321411133,
+    "sales_billing": 0.0014437541831284761
+   },
+   "probs": {
+    "support": 0.4885461859355825,
+    "technical": 0.5093010605557678,
+    "sales_billing": 0.0021527535086496388
+   },
+   "pred": "technical",
+   "ms": 1174.9457502737641
+  },
+  {
+   "id": 80,
+   "text": "Where are the virtual cards located?",
+   "intent": "getting_virtual_card",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.8080081939697266,
+    "technical": 0.13476282358169556,
+    "sales_billing": 0.009339800104498863
+   },
+   "probs": {
+    "support": 0.8486493158002633,
+    "technical": 0.14154111168853128,
+    "sales_billing": 0.009809572511205445
+   },
+   "pred": "support",
+   "ms": 1185.9883749857545
+  },
+  {
+   "id": 81,
+   "text": "My beneficiary is not allowed, please may I have answer as to why this is?",
+   "intent": "beneficiary_not_allowed",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.055000368505716324,
+    "technical": 0.06853136420249939,
+    "sales_billing": 0.02517612837255001
+   },
+   "probs": {
+    "support": 0.3698551516106113,
+    "technical": 0.4608456049628665,
+    "sales_billing": 0.16929924342652225
+   },
+   "pred": "technical",
+   "ms": 1296.033374965191
+  },
+  {
+   "id": 82,
+   "text": "I see some fees for cash withdraw.",
+   "intent": "cash_withdrawal_charge",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.15405164659023285,
+    "technical": 0.0038244579918682575,
+    "sales_billing": 0.9424806833267212
+   },
+   "probs": {
+    "support": 0.1400015415754384,
+    "technical": 0.0034756526554777425,
+    "sales_billing": 0.8565228057690838
+   },
+   "pred": "sales_billing",
+   "ms": 1206.9549169391394
+  },
+  {
+   "id": 83,
+   "text": "My top-up has failed.",
+   "intent": "top_up_failed",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.0792083814740181,
+    "technical": 0.9457814693450928,
+    "sales_billing": 0.013020288199186325
+   },
+   "probs": {
+    "support": 0.07630790730900738,
+    "technical": 0.9111485849642759,
+    "sales_billing": 0.012543507726716736
+   },
+   "pred": "technical",
+   "ms": 1339.6821250207722
+  },
+  {
+   "id": 84,
+   "text": "I need my PIN",
+   "intent": "get_physical_card",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.7185072898864746,
+    "technical": 0.40352365374565125,
+    "sales_billing": 0.001853055669926107
+   },
+   "probs": {
+    "support": 0.6393073398435051,
+    "technical": 0.3590438639541494,
+    "sales_billing": 0.0016487962023455098
+   },
+   "pred": "support",
+   "ms": 1180.6715000420809
+  },
+  {
+   "id": 85,
+   "text": "cash deposit to my account has shown a red flag.",
+   "intent": "balance_not_updated_after_cheque_or_cash_deposit",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.0384654700756073,
+    "technical": 0.43012839555740356,
+    "sales_billing": 0.023330388590693474
+   },
+   "probs": {
+    "support": 0.07819388807390454,
+    "technical": 0.8743793213371446,
+    "sales_billing": 0.047426790588950905
+   },
+   "pred": "technical",
+   "ms": 1190.7619168050587
+  },
+  {
+   "id": 86,
+   "text": "Are virtual cards available to get?",
+   "intent": "getting_virtual_card",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.8962160348892212,
+    "technical": 0.00844550784677267,
+    "sales_billing": 0.02064519375562668
+   },
+   "probs": {
+    "support": 0.9685610182492573,
+    "technical": 0.00912725209241914,
+    "sales_billing": 0.022311729658323565
+   },
+   "pred": "support",
+   "ms": 1202.7830830775201
+  },
+  {
+   "id": 87,
+   "text": "the card payment exchange rate is wrong",
+   "intent": "card_payment_wrong_exchange_rate",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.035143788903951645,
+    "technical": 0.05107849836349487,
+    "sales_billing": 0.9762894511222839
+   },
+   "probs": {
+    "support": 0.03307614178193753,
+    "technical": 0.048073349703322735,
+    "sales_billing": 0.9188505085147397
+   },
+   "pred": "sales_billing",
+   "ms": 1181.5715837292373
+  },
+  {
+   "id": 88,
+   "text": "How do I get a physical card?",
+   "intent": "order_physical_card",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9850361347198486,
+    "technical": 0.16025595366954803,
+    "sales_billing": 0.010652381926774979
+   },
+   "probs": {
+    "support": 0.8521483168221943,
+    "technical": 0.13863637725237368,
+    "sales_billing": 0.009215305925432007
+   },
+   "pred": "support",
+   "ms": 1215.9601668827236
+  },
+  {
+   "id": 89,
+   "text": "Where do I locate topping up with cash.",
+   "intent": "top_up_by_cash_or_cheque",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.859641432762146,
+    "technical": 0.0053018731996417046,
+    "sales_billing": 0.04272120073437691
+   },
+   "probs": {
+    "support": 0.9470916031422014,
+    "technical": 0.005841225651689469,
+    "sales_billing": 0.047067171206109065
+   },
+   "pred": "support",
+   "ms": 1201.4445001259446
+  },
+  {
+   "id": 90,
+   "text": "How do I get my salary through this account?",
+   "intent": "receiving_money",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.6583879590034485,
+    "technical": 0.031617868691682816,
+    "sales_billing": 0.0384654700756073
+   },
+   "probs": {
+    "support": 0.9037939600616269,
+    "technical": 0.04340303974698734,
+    "sales_billing": 0.0528030001913857
+   },
+   "pred": "support",
+   "ms": 1214.5843748003244
+  },
+  {
+   "id": 91,
+   "text": "My latest payment was declined, I was told everything was back to working order. What happened?",
+   "intent": "declined_card_payment",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.08509696274995804,
+    "technical": 0.9334132075309753,
+    "sales_billing": 0.09669838100671768
+   },
+   "probs": {
+    "support": 0.07630587359799447,
+    "technical": 0.8369853391576224,
+    "sales_billing": 0.08670878724438315
+   },
+   "pred": "technical",
+   "ms": 1304.3075827881694
+  },
+  {
+   "id": 92,
+   "text": "Why isn't the transfer on my account showing up?",
+   "intent": "balance_not_updated_after_bank_transfer",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.966397225856781,
+    "technical": 0.9787032008171082,
+    "sales_billing": 0.07158666849136353
+   },
+   "probs": {
+    "support": 0.4792003817417158,
+    "technical": 0.48530245627267754,
+    "sales_billing": 0.03549716198560666
+   },
+   "pred": "technical",
+   "ms": 1202.3827079683542
+  },
+  {
+   "id": 93,
+   "text": "Why is there a random withdrawal in my app?",
+   "intent": "cash_withdrawal_not_recognised",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.6150650978088379,
+    "technical": 0.9620916843414307,
+    "sales_billing": 0.49212682247161865
+   },
+   "probs": {
+    "support": 0.2972357662502364,
+    "technical": 0.4649394999276719,
+    "sales_billing": 0.23782473382209166
+   },
+   "pred": "technical",
+   "ms": 1214.4594579003751
+  },
+  {
+   "id": 94,
+   "text": "What is this $1 charge on my statement?",
+   "intent": "extra_charge_on_statement",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.25682687759399414,
+    "technical": 0.10969989746809006,
+    "sales_billing": 0.9930925369262695
+   },
+   "probs": {
+    "support": 0.18889616772094958,
+    "technical": 0.08068427426767069,
+    "sales_billing": 0.7304195580113797
+   },
+   "pred": "sales_billing",
+   "ms": 1215.0699580088258
+  },
+  {
+   "id": 95,
+   "text": "How do I add a card to the app?",
+   "intent": "card_linking",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.9875636100769043,
+    "technical": 0.012431386858224869,
+    "sales_billing": 0.003483409062027931
+   },
+   "probs": {
+    "support": 0.984140370310771,
+    "technical": 0.012388295337428603,
+    "sales_billing": 0.003471334351800491
+   },
+   "pred": "support",
+   "ms": 1193.4700827114284
+  },
+  {
+   "id": 96,
+   "text": "Is there a top-up feature, if there isn't a lot of money left?",
+   "intent": "automatic_top_up",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.7930704355239868,
+    "technical": 0.007288983557373285,
+    "sales_billing": 0.23368284106254578
+   },
+   "probs": {
+    "support": 0.7669613381310127,
+    "technical": 0.0070490190181965,
+    "sales_billing": 0.2259896428507908
+   },
+   "pred": "support",
+   "ms": 1307.3117500171065
+  },
+  {
+   "id": 97,
+   "text": "I'm not familiar with a card payment.",
+   "intent": "card_payment_not_recognised",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.5389357209205627,
+    "technical": 0.09137662500143051,
+    "sales_billing": 0.06656619161367416
+   },
+   "probs": {
+    "support": 0.7733567499816697,
+    "technical": 0.1311227424574741,
+    "sales_billing": 0.09552050756085624
+   },
+   "pred": "support",
+   "ms": 1219.002959318459
+  },
+  {
+   "id": 98,
+   "text": "The day before yesterday, I performed a transfer which was within this country. It still hasn't gone through. Can you check on that? The account number is definitely correct, as I've checked and double checked.",
+   "intent": "transfer_not_received_by_recipient",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.2173151820898056,
+    "technical": 0.8198637366294861,
+    "sales_billing": 0.010901791974902153
+   },
+   "probs": {
+    "support": 0.20734584643378026,
+    "technical": 0.7822524813823272,
+    "sales_billing": 0.01040167218389257
+   },
+   "pred": "technical",
+   "ms": 1644.4179168902338
+  },
+  {
+   "id": 99,
+   "text": "Is the system down? I've been trying to do a transfer and have failed?",
+   "intent": "failed_transfer",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.08388591557741165,
+    "technical": 0.7371199727058411,
+    "sales_billing": 0.015188568271696568
+   },
+   "probs": {
+    "support": 0.10031866980201538,
+    "technical": 0.8815174113240517,
+    "sales_billing": 0.018163918873932972
+   },
+   "pred": "technical",
+   "ms": 1197.808416094631
+  },
+  {
+   "id": 100,
+   "text": "How to change the PIN on my card?",
+   "intent": "change_pin",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9511304497718811,
+    "technical": 0.021947747096419334,
+    "sales_billing": 0.0019117670599371195
+   },
+   "probs": {
+    "support": 0.9755284515337713,
+    "technical": 0.02251074155470462,
+    "sales_billing": 0.0019608069115240982
+   },
+   "pred": "support",
+   "ms": 1120.522583834827
+  },
+  {
+   "id": 101,
+   "text": "Can I use my card anywere?",
+   "intent": "card_acceptance",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.7309463620185852,
+    "technical": 0.024422666057944298,
+    "sales_billing": 0.007460585329681635
+   },
+   "probs": {
+    "support": 0.9582039674033369,
+    "technical": 0.0320158861543031,
+    "sales_billing": 0.009780146442360032
+   },
+   "pred": "support",
+   "ms": 1121.8964578583837
+  },
+  {
+   "id": 102,
+   "text": "Why was my transfer charged fees?",
+   "intent": "transfer_fee_charged",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.45323488116264343,
+    "technical": 0.06008242443203926,
+    "sales_billing": 0.9850369095802307
+   },
+   "probs": {
+    "support": 0.3024884747360851,
+    "technical": 0.04009894577900287,
+    "sales_billing": 0.657412579484912
+   },
+   "pred": "sales_billing",
+   "ms": 1107.9587088897824
+  },
+  {
+   "id": 103,
+   "text": "How do you fix  my card payment?",
+   "intent": "declined_card_payment",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.3007204532623291,
+    "technical": 0.8128408789634705,
+    "sales_billing": 0.4224659502506256
+   },
+   "probs": {
+    "support": 0.19577806767696168,
+    "technical": 0.5291838811957729,
+    "sales_billing": 0.2750380511272654
+   },
+   "pred": "technical",
+   "ms": 1128.3063748851418
+  },
+  {
+   "id": 104,
+   "text": "Why does the app revert a payment?",
+   "intent": "reverted_card_payment?",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.10520676523447037,
+    "technical": 0.5272247195243835,
+    "sales_billing": 0.14607137441635132
+   },
+   "probs": {
+    "support": 0.13513985722022012,
+    "technical": 0.6772290086165624,
+    "sales_billing": 0.18763113416321744
+   },
+   "pred": "technical",
+   "ms": 1108.1499578431249
+  },
+  {
+   "id": 105,
+   "text": "How long does the cash withdrawal take to pend?",
+   "intent": "pending_cash_withdrawal",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.9879405498504639,
+    "technical": 0.038464661687612534,
+    "sales_billing": 0.019419020041823387
+   },
+   "probs": {
+    "support": 0.9446525716448618,
+    "technical": 0.036779279467932156,
+    "sales_billing": 0.018568148887206
+   },
+   "pred": "support",
+   "ms": 1130.199832841754
+  },
+  {
+   "id": 106,
+   "text": "help me obtain a virtual card",
+   "intent": "getting_virtual_card",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9488939642906189,
+    "technical": 0.0071768141351640224,
+    "sales_billing": 0.0039453827776014805
+   },
+   "probs": {
+    "support": 0.9884145732517422,
+    "technical": 0.007475722206767702,
+    "sales_billing": 0.004109704541490141
+   },
+   "pred": "support",
+   "ms": 1107.640250120312
+  },
+  {
+   "id": 107,
+   "text": "what is this charge on my account",
+   "intent": "direct_debit_payment_not_recognised",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.4999774694442749,
+    "technical": 0.8840190768241882,
+    "sales_billing": 0.992763102054596
+   },
+   "probs": {
+    "support": 0.2103609718370294,
+    "technical": 0.37194298441069323,
+    "sales_billing": 0.4176960437522774
+   },
+   "pred": "sales_billing",
+   "ms": 1126.9988329149783
+  },
+  {
+   "id": 108,
+   "text": "Do you know the closest ATM?",
+   "intent": "atm_support",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.1175643727183342,
+    "technical": 0.0023967195302248,
+    "sales_billing": 0.0027791722677648067
+   },
+   "probs": {
+    "support": 0.957830530849954,
+    "technical": 0.01952675871825296,
+    "sales_billing": 0.022642710431793077
+   },
+   "pred": "support",
+   "ms": 1107.3384582996368
+  },
+  {
+   "id": 109,
+   "text": "Can I use my American Express stored in Apple Pay to top up?",
+   "intent": "apple_pay_or_google_pay",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.699240505695343,
+    "technical": 0.0023781168274581432,
+    "sales_billing": 0.0059110322035849094
+   },
+   "probs": {
+    "support": 0.988284379353331,
+    "technical": 0.0033611549870341505,
+    "sales_billing": 0.008354465659634871
+   },
+   "pred": "support",
+   "ms": 1179.5224589295685
+  },
+  {
+   "id": 110,
+   "text": "What do i have to do to change my name?",
+   "intent": "edit_personal_details",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.5926246047019958,
+    "technical": 0.0025509053375571966,
+    "sales_billing": 0.0016356718260794878
+   },
+   "probs": {
+    "support": 0.9929850892696925,
+    "technical": 0.004274225106813621,
+    "sales_billing": 0.0027406856234938083
+   },
+   "pred": "support",
+   "ms": 1130.0581670366228
+  },
+  {
+   "id": 111,
+   "text": "Where on the website do I go to link my card?",
+   "intent": "card_linking",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.9658870100975037,
+    "technical": 0.05749082192778587,
+    "sales_billing": 0.007460585329681635
+   },
+   "probs": {
+    "support": 0.9369916699223081,
+    "technical": 0.055770934571202344,
+    "sales_billing": 0.0072373955064895185
+   },
+   "pred": "support",
+   "ms": 1132.3448340408504
+  },
+  {
+   "id": 112,
+   "text": "Why was I charged extra for transferring money?",
+   "intent": "transfer_fee_charged",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.8652064204216003,
+    "technical": 0.07585223019123077,
+    "sales_billing": 0.9847978949546814
+   },
+   "probs": {
+    "support": 0.449257979475642,
+    "technical": 0.0393862306960556,
+    "sales_billing": 0.5113557898283024
+   },
+   "pred": "sales_billing",
+   "ms": 1118.5863330028951
+  },
+  {
+   "id": 113,
+   "text": "I've transferred money before without issue but now I am encountering an error stating that it isn't possible. Why is that?",
+   "intent": "beneficiary_not_allowed",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.1276492476463318,
+    "technical": 0.7185623645782471,
+    "sales_billing": 0.0200223159044981
+   },
+   "probs": {
+    "support": 0.14736117289013742,
+    "technical": 0.8295246136689933,
+    "sales_billing": 0.023114213440869277
+   },
+   "pred": "technical",
+   "ms": 1220.9939588792622
+  },
+  {
+   "id": 114,
+   "text": "Ordered awhile back, what is the ETA in the US?",
+   "intent": "card_delivery_estimate",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.2813754975795746,
+    "technical": 0.16885115206241608,
+    "sales_billing": 0.0017683401238173246
+   },
+   "probs": {
+    "support": 0.6225190631545796,
+    "technical": 0.3735686365680798,
+    "sales_billing": 0.003912300277340583
+   },
+   "pred": "support",
+   "ms": 1122.3089159466326
+  },
+  {
+   "id": 115,
+   "text": "How are exchange rates calculated?",
+   "intent": "exchange_rate",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.04813624545931816,
+    "technical": 0.0016743952874094248,
+    "sales_billing": 0.8871936798095703
+   },
+   "probs": {
+    "support": 0.05137249039656482,
+    "technical": 0.0017869664532766925,
+    "sales_billing": 0.9468405431501585
+   },
+   "pred": "sales_billing",
+   "ms": 1119.9653749354184
+  },
+  {
+   "id": 116,
+   "text": "I have a new card and I want to activate it",
+   "intent": "activate_my_card",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9840870499610901,
+    "technical": 0.014503342099487782,
+    "sales_billing": 0.0027576079592108727
+   },
+   "probs": {
+    "support": 0.9827622863796027,
+    "technical": 0.014483817912654906,
+    "sales_billing": 0.0027538957077423397
+   },
+   "pred": "support",
+   "ms": 1124.4465420022607
+  },
+  {
+   "id": 117,
+   "text": "Can someone please assist me with finding my nearest ATM?",
+   "intent": "atm_support",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.08755727112293243,
+    "technical": 0.0012160394107922912,
+    "sales_billing": 0.0028895693831145763
+   },
+   "probs": {
+    "support": 0.955209690142491,
+    "technical": 0.013266432517672769,
+    "sales_billing": 0.03152387733983619
+   },
+   "pred": "support",
+   "ms": 1131.8668746389449
+  },
+  {
+   "id": 118,
+   "text": "There was a transaction from two weeks ago from a business that I don't know. I'm fairly certain it wasn't me who made it, but is it an option to trace it to confirm?",
+   "intent": "direct_debit_payment_not_recognised",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.019718792289495468,
+    "technical": 0.9473438858985901,
+    "sales_billing": 0.11277373880147934
+   },
+   "probs": {
+    "support": 0.018260906910760377,
+    "technical": 0.8773031461002716,
+    "sales_billing": 0.10443594698896799
+   },
+   "pred": "technical",
+   "ms": 1588.9936671592295
+  },
+  {
+   "id": 119,
+   "text": "I would like to see the source of my money.",
+   "intent": "verify_source_of_funds",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.08755946904420853,
+    "technical": 0.5233820676803589,
+    "sales_billing": 0.7852108478546143
+   },
+   "probs": {
+    "support": 0.06271483686975908,
+    "technical": 0.3748746006963366,
+    "sales_billing": 0.5624105624339043
+   },
+   "pred": "sales_billing",
+   "ms": 1147.4830000661314
+  },
+  {
+   "id": 120,
+   "text": "Please stop my purchase.",
+   "intent": "request_refund",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.028006918728351593,
+    "technical": 0.036768049001693726,
+    "sales_billing": 0.01971832849085331
+   },
+   "probs": {
+    "support": 0.33146912217900126,
+    "technical": 0.43515936347858436,
+    "sales_billing": 0.23337151434241438
+   },
+   "pred": "technical",
+   "ms": 1108.370500151068
+  },
+  {
+   "id": 121,
+   "text": "Is there a verification code for top-ups?",
+   "intent": "verify_top_up",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.7606326341629028,
+    "technical": 0.022285761311650276,
+    "sales_billing": 0.010818355716764927
+   },
+   "probs": {
+    "support": 0.9582933296477336,
+    "technical": 0.02807701832906391,
+    "sales_billing": 0.0136296520232025
+   },
+   "pred": "support",
+   "ms": 1129.2690001428127
+  },
+  {
+   "id": 122,
+   "text": "I received cash from the ATM earlier, but this shows up as pending in the app.  I've got the cash already.  How can this be still pending?",
+   "intent": "pending_cash_withdrawal",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.23650571703910828,
+    "technical": 0.3450683355331421,
+    "sales_billing": 0.006241149269044399
+   },
+   "probs": {
+    "support": 0.4023470578819138,
+    "technical": 0.5870354057741903,
+    "sales_billing": 0.010617536343895811
+   },
+   "pred": "technical",
+   "ms": 1217.8571671247482
+  },
+  {
+   "id": 123,
+   "text": "How can I unlock my pin from too many tries?",
+   "intent": "pin_blocked",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.8538852334022522,
+    "technical": 0.21467798948287964,
+    "sales_billing": 0.0010733053786680102
+   },
+   "probs": {
+    "support": 0.7982947579288936,
+    "technical": 0.2007018120738062,
+    "sales_billing": 0.0010034299973002657
+   },
+   "pred": "support",
+   "ms": 1129.6630422584713
+  },
+  {
+   "id": 124,
+   "text": "I transferred my funds, why did it not go through?",
+   "intent": "failed_transfer",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.27824029326438904,
+    "technical": 0.42248043417930603,
+    "sales_billing": 0.019418610259890556
+   },
+   "probs": {
+    "support": 0.3863700796454959,
+    "technical": 0.5866648467316501,
+    "sales_billing": 0.02696507362285407
+   },
+   "pred": "technical",
+   "ms": 1121.4531669393182
+  },
+  {
+   "id": 125,
+   "text": "what is the identity check?",
+   "intent": "why_verify_identity",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.52340167760849,
+    "technical": 0.1422235667705536,
+    "sales_billing": 0.01098682265728712
+   },
+   "probs": {
+    "support": 0.7735624342336566,
+    "technical": 0.21019957180710006,
+    "sales_billing": 0.01623799395924339
+   },
+   "pred": "support",
+   "ms": 1113.9808748848736
+  },
+  {
+   "id": 126,
+   "text": "What is the activation process on my new card?",
+   "intent": "activate_my_card",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9949380159378052,
+    "technical": 0.07585446536540985,
+    "sales_billing": 0.006797478534281254
+   },
+   "probs": {
+    "support": 0.9232992631889821,
+    "technical": 0.07039269870039336,
+    "sales_billing": 0.006308038110624503
+   },
+   "pred": "support",
+   "ms": 1121.1090409196913
+  },
+  {
+   "id": 127,
+   "text": "The exchange rate for my withdrawal isn't correct and doesn't match the actual exchange rate.",
+   "intent": "wrong_exchange_rate_for_cash_withdrawal",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.0356777161359787,
+    "technical": 0.01771172136068344,
+    "sales_billing": 0.9884822368621826
+   },
+   "probs": {
+    "support": 0.03424386804443487,
+    "technical": 0.01699990679906239,
+    "sales_billing": 0.9487562251565027
+   },
+   "pred": "sales_billing",
+   "ms": 1190.920750144869
+  },
+  {
+   "id": 128,
+   "text": "Can I top up using a cheque?",
+   "intent": "top_up_by_cash_or_cheque",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.5467164516448975,
+    "technical": 0.0019723307341337204,
+    "sales_billing": 0.03358897939324379
+   },
+   "probs": {
+    "support": 0.9389272397779029,
+    "technical": 0.0033872678361106397,
+    "sales_billing": 0.057685492385986435
+   },
+   "pred": "support",
+   "ms": 1109.5262081362307
+  },
+  {
+   "id": 129,
+   "text": "Can I change the amount I made on a payment that I made to the payment is correct.",
+   "intent": "cancel_transfer",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.11919815838336945,
+    "technical": 0.07695642858743668,
+    "sales_billing": 0.6149978637695312
+   },
+   "probs": {
+    "support": 0.1469491441153602,
+    "technical": 0.09487295331130256,
+    "sales_billing": 0.7581779025733373
+   },
+   "pred": "sales_billing",
+   "ms": 1197.9824588634074
+  },
+  {
+   "id": 130,
+   "text": "I need help. I asked for a refund from a merchant a while ago, but I have not gotten my money back. I keep checking my account, but nothing is showing up. What should I do now?",
+   "intent": "Refund_not_showing_up",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.25981035828590393,
+    "technical": 0.11435909569263458,
+    "sales_billing": 0.02262813225388527
+   },
+   "probs": {
+    "support": 0.6547679907854084,
+    "technical": 0.28820511933671106,
+    "sales_billing": 0.05702688987788062
+   },
+   "pred": "support",
+   "ms": 1613.0952080711722
+  },
+  {
+   "id": 131,
+   "text": "i want to close an account but im not sure about setting up a new one in the future, what do you recommend",
+   "intent": "terminate_account",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.6583568453788757,
+    "technical": 0.00439936900511384,
+    "sales_billing": 0.4843061864376068
+   },
+   "probs": {
+    "support": 0.5739503316535528,
+    "technical": 0.0038353353766654216,
+    "sales_billing": 0.4222143329697818
+   },
+   "pred": "support",
+   "ms": 1227.3457092233002
+  },
+  {
+   "id": 132,
+   "text": "Which country's currency do you support?",
+   "intent": "fiat_currency_support",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.06560392677783966,
+    "technical": 0.0007854734431020916,
+    "sales_billing": 0.8917829394340515
+   },
+   "probs": {
+    "support": 0.06846777355466294,
+    "technical": 0.0008197621770055636,
+    "sales_billing": 0.9307124642683315
+   },
+   "pred": "sales_billing",
+   "ms": 1116.8428333476186
+  },
+  {
+   "id": 133,
+   "text": "There is a withdrawal that isn't mind in the app.",
+   "intent": "cash_withdrawal_not_recognised",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.32080596685409546,
+    "technical": 0.2538383901119232,
+    "sales_billing": 0.15609721839427948
+   },
+   "probs": {
+    "support": 0.43901425301539665,
+    "technical": 0.34737094298591964,
+    "sales_billing": 0.21361480399868374
+   },
+   "pred": "support",
+   "ms": 1123.0326248332858
+  },
+  {
+   "id": 134,
+   "text": "I want a card. What is the procedure?",
+   "intent": "order_physical_card",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9950921535491943,
+    "technical": 0.016402512788772583,
+    "sales_billing": 0.016402754932641983
+   },
+   "probs": {
+    "support": 0.9680850763485104,
+    "technical": 0.015957344039736025,
+    "sales_billing": 0.015957579611753613
+   },
+   "pred": "support",
+   "ms": 1128.4406250342727
+  },
+  {
+   "id": 135,
+   "text": "Are you able to locate my card?",
+   "intent": "lost_or_stolen_card",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.3738338053226471,
+    "technical": 0.9390110373497009,
+    "sales_billing": 0.0013353988761082292
+   },
+   "probs": {
+    "support": 0.28446159324551307,
+    "technical": 0.7145222608455096,
+    "sales_billing": 0.0010161459089772736
+   },
+   "pred": "technical",
+   "ms": 1107.7843331731856
+  },
+  {
+   "id": 136,
+   "text": "Will there be additional costs of I make a withdrawal from a local ATM of British pounds? I need some cash to feel comfortable on the journey home",
+   "intent": "wrong_exchange_rate_for_cash_withdrawal",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.7799755930900574,
+    "technical": 0.0010403157211840153,
+    "sales_billing": 0.9148592352867126
+   },
+   "probs": {
+    "support": 0.4599251282174614,
+    "technical": 0.0006134388635888436,
+    "sales_billing": 0.5394614329189498
+   },
+   "pred": "sales_billing",
+   "ms": 1218.5838329605758
+  },
+  {
+   "id": 137,
+   "text": "Do you support all cards and currencies?",
+   "intent": "supported_cards_and_currencies",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.7548954486846924,
+    "technical": 0.010408107191324234,
+    "sales_billing": 0.9371611475944519
+   },
+   "probs": {
+    "support": 0.44341327438145445,
+    "technical": 0.006113552410283363,
+    "sales_billing": 0.5504731732082622
+   },
+   "pred": "sales_billing",
+   "ms": 1120.0137920677662
+  },
+  {
+   "id": 138,
+   "text": "I've been charged more than once for the same transaction",
+   "intent": "transaction_charged_twice",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.04146099090576172,
+    "technical": 0.9901313781738281,
+    "sales_billing": 0.8006077408790588
+   },
+   "probs": {
+    "support": 0.0226290734731467,
+    "technical": 0.5404056973865015,
+    "sales_billing": 0.4369652291403519
+   },
+   "pred": "technical",
+   "ms": 1122.8391253389418
+  },
+  {
+   "id": 139,
+   "text": "I completed a money transaction but the recipient hasn't received it",
+   "intent": "transfer_not_received_by_recipient",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.1560964584350586,
+    "technical": 0.5774623155593872,
+    "sales_billing": 0.1500120759010315
+   },
+   "probs": {
+    "support": 0.1766654688229293,
+    "technical": 0.6535551909931145,
+    "sales_billing": 0.16977934018395616
+   },
+   "pred": "technical",
+   "ms": 1123.04004188627
+  },
+  {
+   "id": 140,
+   "text": "Is there a fee for exchanging foreign currencies?",
+   "intent": "exchange_charge",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.07055801153182983,
+    "technical": 0.0003393014776520431,
+    "sales_billing": 0.9693034291267395
+   },
+   "probs": {
+    "support": 0.06783114900199695,
+    "technical": 0.00032618845950372266,
+    "sales_billing": 0.9318426625384993
+   },
+   "pred": "sales_billing",
+   "ms": 1129.4822082854807
+  },
+  {
+   "id": 141,
+   "text": "I need my card quickly",
+   "intent": "card_delivery_estimate",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.8887290954589844,
+    "technical": 0.874051034450531,
+    "sales_billing": 0.003794814459979534
+   },
+   "probs": {
+    "support": 0.5030803240426232,
+    "technical": 0.4947715562457991,
+    "sales_billing": 0.002148119711577781
+   },
+   "pred": "support",
+   "ms": 1108.0219997093081
+  },
+  {
+   "id": 142,
+   "text": "If i'm not in the UK, can I still get a card?",
+   "intent": "country_support",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.8558027744293213,
+    "technical": 0.007999671623110771,
+    "sales_billing": 0.6150479316711426
+   },
+   "probs": {
+    "support": 0.5786946315330943,
+    "technical": 0.005409385387198422,
+    "sales_billing": 0.4158959830797073
+   },
+   "pred": "support",
+   "ms": 1187.9949169233441
+  },
+  {
+   "id": 143,
+   "text": "What is the fee charged with this card payment?",
+   "intent": "card_payment_fee_charged",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.4377966821193695,
+    "technical": 0.008985333144664764,
+    "sales_billing": 0.9938983917236328
+   },
+   "probs": {
+    "support": 0.3038818880273127,
+    "technical": 0.006236867733526193,
+    "sales_billing": 0.6898812442391611
+   },
+   "pred": "sales_billing",
+   "ms": 1146.4429581537843
+  },
+  {
+   "id": 144,
+   "text": "Why was I not able to complete a transfer?",
+   "intent": "failed_transfer",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.5774759650230408,
+    "technical": 0.6926149129867554,
+    "sales_billing": 0.10668689757585526
+   },
+   "probs": {
+    "support": 0.4194402141459576,
+    "technical": 0.5030695042212836,
+    "sales_billing": 0.07749028163275876
+   },
+   "pred": "technical",
+   "ms": 1120.5970421433449
+  },
+  {
+   "id": 145,
+   "text": "Can you get me my card fast?",
+   "intent": "card_delivery_estimate",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.9334109425544739,
+    "technical": 0.931437075138092,
+    "sales_billing": 0.002693901304155588
+   },
+   "probs": {
+    "support": 0.49980722416978984,
+    "technical": 0.49875029077712885,
+    "sales_billing": 0.0014424850530813265
+   },
+   "pred": "support",
+   "ms": 1110.1765003986657
+  },
+  {
+   "id": 146,
+   "text": "How long does it take for a money transfer to show?",
+   "intent": "pending_transfer",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9945283532142639,
+    "technical": 0.2689139246940613,
+    "sales_billing": 0.11435938626527786
+   },
+   "probs": {
+    "support": 0.7218225809088247,
+    "technical": 0.195176077723316,
+    "sales_billing": 0.08300134136785929
+   },
+   "pred": "support",
+   "ms": 1130.4760840721428
+  },
+  {
+   "id": 147,
+   "text": "Can I transfer money to my credit card?",
+   "intent": "topping_up_by_card",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.3848894238471985,
+    "technical": 0.005554891191422939,
+    "sales_billing": 0.03461802750825882
+   },
+   "probs": {
+    "support": 0.9054893490235468,
+    "technical": 0.013068415230902956,
+    "sales_billing": 0.08144223574555016
+   },
+   "pred": "support",
+   "ms": 1120.3608326613903
+  },
+  {
+   "id": 148,
+   "text": "How do I get the Top Up feature on my apple watch working?",
+   "intent": "apple_pay_or_google_pay",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9294250011444092,
+    "technical": 0.02194792591035366,
+    "sales_billing": 0.016152622178196907
+   },
+   "probs": {
+    "support": 0.960620628448772,
+    "technical": 0.022684595696468853,
+    "sales_billing": 0.016694775854759054
+   },
+   "pred": "support",
+   "ms": 1188.3310843259096
+  },
+  {
+   "id": 149,
+   "text": "I bought something in a foreign currency but the rate applied is wrong!",
+   "intent": "card_payment_wrong_exchange_rate",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.035143788903951645,
+    "technical": 0.035142309963703156,
+    "sales_billing": 0.9751513600349426
+   },
+   "probs": {
+    "support": 0.033616347496140335,
+    "technical": 0.033614932834521036,
+    "sales_billing": 0.9327687196693386
+   },
+   "pred": "sales_billing",
+   "ms": 1188.2822499610484
+  },
+  {
+   "id": 150,
+   "text": "How do I know why my card isn't working?",
+   "intent": "card_not_working",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.9770102500915527,
+    "technical": 0.9724054336547852,
+    "sales_billing": 0.003593580098822713
+   },
+   "probs": {
+    "support": 0.5002588918436449,
+    "technical": 0.49790108611173484,
+    "sales_billing": 0.0018400220446202762
+   },
+   "pred": "support",
+   "ms": 1120.5805828794837
+  },
+  {
+   "id": 151,
+   "text": "How can I cancel a transfer?",
+   "intent": "cancel_transfer",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.49997878074645996,
+    "technical": 0.05419640243053436,
+    "sales_billing": 0.05749158933758736
+   },
+   "probs": {
+    "support": 0.8174038597699711,
+    "technical": 0.08860445730561956,
+    "sales_billing": 0.0939916829244093
+   },
+   "pred": "support",
+   "ms": 1117.3383751884103
+  },
+  {
+   "id": 152,
+   "text": "When I tried to pay for my bus ride, the contactless payment wouldn't work. How can I prevent this in the future?",
+   "intent": "contactless_not_working",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.6442016363143921,
+    "technical": 0.3140367567539215,
+    "sales_billing": 0.007577167358249426
+   },
+   "probs": {
+    "support": 0.6670027515707796,
+    "technical": 0.3251518919567042,
+    "sales_billing": 0.007845356472516229
+   },
+   "pred": "support",
+   "ms": 1207.4962076731026
+  },
+  {
+   "id": 153,
+   "text": "I think my card is broken",
+   "intent": "card_not_working",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.826675534248352,
+    "technical": 0.9706733822822571,
+    "sales_billing": 0.0028895693831145763
+   },
+   "probs": {
+    "support": 0.4592033448439289,
+    "technical": 0.5391915514957925,
+    "sales_billing": 0.0016051036602786298
+   },
+   "pred": "technical",
+   "ms": 1117.8024588152766
+  },
+  {
+   "id": 154,
+   "text": "i tried to make a transfer to a beneficiary and it didn't go through",
+   "intent": "beneficiary_not_allowed",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.07920894026756287,
+    "technical": 0.33109915256500244,
+    "sales_billing": 0.013427922502160072
+   },
+   "probs": {
+    "support": 0.18692992193498748,
+    "technical": 0.7813807195582714,
+    "sales_billing": 0.031689358506741136
+   },
+   "pred": "technical",
+   "ms": 1178.8320420309901
+  },
+  {
+   "id": 155,
+   "text": "What stores will take my credit card as payment?",
+   "intent": "card_acceptance",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.15002138912677765,
+    "technical": 0.006692793220281601,
+    "sales_billing": 0.13476912677288055
+   },
+   "probs": {
+    "support": 0.5146826059431304,
+    "technical": 0.02296115424409308,
+    "sales_billing": 0.4623562398127765
+   },
+   "pred": "support",
+   "ms": 1130.5769998580217
+  },
+  {
+   "id": 156,
+   "text": "The ATM didn't give me the the withdraw amount requested.",
+   "intent": "wrong_amount_of_cash_received",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.0913800299167633,
+    "technical": 0.1895131915807724,
+    "sales_billing": 0.004755167756229639
+   },
+   "probs": {
+    "support": 0.3199038865770841,
+    "technical": 0.6634491868687276,
+    "sales_billing": 0.016646926554188358
+   },
+   "pred": "technical",
+   "ms": 1135.275250300765
+  },
+  {
+   "id": 157,
+   "text": "I need help getting the virtual card to work.",
+   "intent": "virtual_card_not_working",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.9578884840011597,
+    "technical": 0.46096619963645935,
+    "sales_billing": 0.004681758116930723
+   },
+   "probs": {
+    "support": 0.6728935458937282,
+    "technical": 0.323817632001261,
+    "sales_billing": 0.0032888221050107586
+   },
+   "pred": "support",
+   "ms": 1129.0627499110997
+  },
+  {
+   "id": 158,
+   "text": "The transfer I did hasn't arrived",
+   "intent": "transfer_not_received_by_recipient",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.21467244625091553,
+    "technical": 0.46098092198371887,
+    "sales_billing": 0.0378914549946785
+   },
+   "probs": {
+    "support": 0.3008534842693771,
+    "technical": 0.6460433976627321,
+    "sales_billing": 0.05310311806789084
+   },
+   "pred": "technical",
+   "ms": 1118.7952496111393
+  },
+  {
+   "id": 159,
+   "text": "How old do my children need to be to open an account?",
+   "intent": "age_limit",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.048135727643966675,
+    "technical": 0.0005233754054643214,
+    "sales_billing": 0.10520584136247635
+   },
+   "probs": {
+    "support": 0.3128440193310305,
+    "technical": 0.0034015246777928075,
+    "sales_billing": 0.6837544559911767
+   },
+   "pred": "sales_billing",
+   "ms": 1125.417500268668
+  },
+  {
+   "id": 160,
+   "text": "What is the €1 fee for?",
+   "intent": "extra_charge_on_statement",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.8824105858802795,
+    "technical": 0.047423239797353745,
+    "sales_billing": 0.9931936860084534
+   },
+   "probs": {
+    "support": 0.4588652947074027,
+    "technical": 0.024660718325227513,
+    "sales_billing": 0.5164739869673697
+   },
+   "pred": "sales_billing",
+   "ms": 1108.3311247639358
+  },
+  {
+   "id": 161,
+   "text": "Can I dispute a payment even if I notice it several weeks after it was made?",
+   "intent": "direct_debit_payment_not_recognised",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.127651184797287,
+    "technical": 0.8479231595993042,
+    "sales_billing": 0.6038758158683777
+   },
+   "probs": {
+    "support": 0.08082001446368665,
+    "technical": 0.5368470502779629,
+    "sales_billing": 0.3823329352583505
+   },
+   "pred": "technical",
+   "ms": 1189.2909999005497
+  },
+  {
+   "id": 162,
+   "text": "I want to change my address.",
+   "intent": "edit_personal_details",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.044016193598508835,
+    "technical": 0.0019418097799643874,
+    "sales_billing": 0.011868936941027641
+   },
+   "probs": {
+    "support": 0.7611710624029911,
+    "technical": 0.033579673578364215,
+    "sales_billing": 0.20524926401864466
+   },
+   "pred": "support",
+   "ms": 1116.0067082382739
+  },
+  {
+   "id": 163,
+   "text": "Will my transfer immediately show up in my account?",
+   "intent": "transfer_timing",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.9457892775535583,
+    "technical": 0.2628273665904999,
+    "sales_billing": 0.01406340952962637
+   },
+   "probs": {
+    "support": 0.7735378316770805,
+    "technical": 0.21496005091504064,
+    "sales_billing": 0.01150211740787888
+   },
+   "pred": "support",
+   "ms": 1122.5407496094704
+  },
+  {
+   "id": 164,
+   "text": "I would like to know why I was charged twice for my purchase.",
+   "intent": "transaction_charged_twice",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.1242055892944336,
+    "technical": 0.9901313781738281,
+    "sales_billing": 0.9748020172119141
+   },
+   "probs": {
+    "support": 0.05945300442203375,
+    "technical": 0.4739423204652927,
+    "sales_billing": 0.4666046751126735
+   },
+   "pred": "technical",
+   "ms": 1177.7025829069316
+  },
+  {
+   "id": 165,
+   "text": "Can I use app to freeze my card and dispute fraud?",
+   "intent": "compromised_card",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.3073340952396393,
+    "technical": 0.6076442003250122,
+    "sales_billing": 0.003794821910560131
+   },
+   "probs": {
+    "support": 0.3345048841700912,
+    "technical": 0.661364801350325,
+    "sales_billing": 0.004130314479583709
+   },
+   "pred": "technical",
+   "ms": 1130.8995420113206
+  },
+  {
+   "id": 166,
+   "text": "I asked for $100 cash but only got $20?",
+   "intent": "wrong_amount_of_cash_received",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.013636680319905281,
+    "technical": 0.06853550672531128,
+    "sales_billing": 0.014063356444239616
+   },
+   "probs": {
+    "support": 0.1417010786809694,
+    "technical": 0.7121641780182829,
+    "sales_billing": 0.14613474330074766
+   },
+   "pred": "technical",
+   "ms": 1187.677583657205
+  },
+  {
+   "id": 167,
+   "text": "The service of this company sucks, I need to terminate my account.",
+   "intent": "terminate_account",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.0758543461561203,
+    "technical": 0.026354258880019188,
+    "sales_billing": 0.3629028797149658
+   },
+   "probs": {
+    "support": 0.16308852531713375,
+    "technical": 0.05666224065424254,
+    "sales_billing": 0.7802492340286237
+   },
+   "pred": "sales_billing",
+   "ms": 1178.7535417824984
+  },
+  {
+   "id": 168,
+   "text": "I am attempting to make a purchase online, but my card is not working.  I know there are funds available, is this an issue on the banks end?",
+   "intent": "reverted_card_payment?",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.5233795642852783,
+    "technical": 0.6076309084892273,
+    "sales_billing": 0.004609508439898491
+   },
+   "probs": {
+    "support": 0.46087562119644027,
+    "technical": 0.535065355084226,
+    "sales_billing": 0.004059023719333641
+   },
+   "pred": "technical",
+   "ms": 1223.6994160339236
+  },
+  {
+   "id": 169,
+   "text": "where in the app can i find out about my new pin",
+   "intent": "get_physical_card",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.9820082187652588,
+    "technical": 0.3997759521007538,
+    "sales_billing": 0.003324422286823392
+   },
+   "probs": {
+    "support": 0.708975616511031,
+    "technical": 0.2886242667737472,
+    "sales_billing": 0.002400116715221741
+   },
+   "pred": "support",
+   "ms": 1130.5047906935215
+  },
+  {
+   "id": 170,
+   "text": "How do I make my virtual card work?",
+   "intent": "virtual_card_not_working",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9896672964096069,
+    "technical": 0.2782287299633026,
+    "sales_billing": 0.0077554513700306416
+   },
+   "probs": {
+    "support": 0.7758132324360756,
+    "technical": 0.2181071670575599,
+    "sales_billing": 0.006079600506364531
+   },
+   "pred": "support",
+   "ms": 1120.7726248539984
+  },
+  {
+   "id": 171,
+   "text": "How can I create many temporary cards daily?",
+   "intent": "disposable_card_limits",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.9715402722358704,
+    "technical": 0.007011707406491041,
+    "sales_billing": 0.0035657165572047234
+   },
+   "probs": {
+    "support": 0.9892299833262077,
+    "technical": 0.007139375895194402,
+    "sales_billing": 0.003630640778597854
+   },
+   "pred": "support",
+   "ms": 1132.1069169789553
+  },
+  {
+   "id": 172,
+   "text": "How can I find out where my contactless works?",
+   "intent": "contactless_not_working",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9241167902946472,
+    "technical": 0.31403109431266785,
+    "sales_billing": 0.002631665673106909
+   },
+   "probs": {
+    "support": 0.7447872509550891,
+    "technical": 0.25309177141233136,
+    "sales_billing": 0.002120977632579567
+   },
+   "pred": "support",
+   "ms": 1124.5632921345532
+  },
+  {
+   "id": 173,
+   "text": "If I wanted to make a change from GBP to AUD what is the process?",
+   "intent": "exchange_via_app",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.12084825336933136,
+    "technical": 0.0015129357343539596,
+    "sales_billing": 0.31067031621932983
+   },
+   "probs": {
+    "support": 0.27907496771900214,
+    "technical": 0.0034938236958657353,
+    "sales_billing": 0.7174312085851321
+   },
+   "pred": "sales_billing",
+   "ms": 1189.2572497017682
+  },
+  {
+   "id": 174,
+   "text": "Can I verify a top-up and what card is used?",
+   "intent": "verify_top_up",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.19191880524158478,
+    "technical": 0.008778976276516914,
+    "sales_billing": 0.019123723730444908
+   },
+   "probs": {
+    "support": 0.8730665592731114,
+    "technical": 0.03993683996745791,
+    "sales_billing": 0.08699660075943069
+   },
+   "pred": "support",
+   "ms": 1131.1120833270252
+  },
+  {
+   "id": 175,
+   "text": "My contactless is not working",
+   "intent": "contactless_not_working",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.4687598943710327,
+    "technical": 0.2421862781047821,
+    "sales_billing": 0.0011424474650993943
+   },
+   "probs": {
+    "support": 0.6582887034621171,
+    "technical": 0.34010693518017127,
+    "sales_billing": 0.0016043613577116135
+   },
+   "pred": "support",
+   "ms": 1106.4547919668257
+  },
+  {
+   "id": 176,
+   "text": "The ATM didn't give me the card back!",
+   "intent": "card_swallowed",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.10668733716011047,
+    "technical": 0.7122111916542053,
+    "sales_billing": 0.0006878501735627651
+   },
+   "probs": {
+    "support": 0.13017216963983774,
+    "technical": 0.868988565346495,
+    "sales_billing": 0.0008392650136672638
+   },
+   "pred": "technical",
+   "ms": 1123.1535407714546
+  },
+  {
+   "id": 177,
+   "text": "I want information about the source of funds.",
+   "intent": "verify_source_of_funds",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.029759220778942108,
+    "technical": 0.007755430415272713,
+    "sales_billing": 0.2172909528017044
+   },
+   "probs": {
+    "support": 0.11679186137294967,
+    "technical": 0.030436655605882663,
+    "sales_billing": 0.8527714830211677
+   },
+   "pred": "sales_billing",
+   "ms": 1128.7949583493173
+  },
+  {
+   "id": 178,
+   "text": "Can I use a bank transfer to refill my account?",
+   "intent": "transfer_into_account",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.5311957597732544,
+    "technical": 0.0010005031945183873,
+    "sales_billing": 0.021615058183670044
+   },
+   "probs": {
+    "support": 0.9591637792250837,
+    "technical": 0.0018065777211600086,
+    "sales_billing": 0.03902964305375636
+   },
+   "pred": "support",
+   "ms": 1121.0524579510093
+  },
+  {
+   "id": 179,
+   "text": "Do you have an auto top-up option?",
+   "intent": "automatic_top_up",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.38488635420799255,
+    "technical": 0.002934923628345132,
+    "sales_billing": 0.03676770254969597
+   },
+   "probs": {
+    "support": 0.9064916236357718,
+    "technical": 0.006912387659417627,
+    "sales_billing": 0.08659598870481049
+   },
+   "pred": "support",
+   "ms": 1129.012041259557
+  },
+  {
+   "id": 180,
+   "text": "Can I check somewhere if there will be a fee on my payment or not? Seems you are charging in some cases, what's the pattern there?",
+   "intent": "card_payment_fee_charged",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.0838848128914833,
+    "technical": 0.047419555485248566,
+    "sales_billing": 0.993399977684021
+   },
+   "probs": {
+    "support": 0.07458387903033152,
+    "technical": 0.04216179625457508,
+    "sales_billing": 0.8832543247150934
+   },
+   "pred": "sales_billing",
+   "ms": 1215.635291300714
+  },
+  {
+   "id": 181,
+   "text": "Why can't I use my American Express with Apple Pay to top up my account?",
+   "intent": "apple_pay_or_google_pay",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.7981747388839722,
+    "technical": 0.046723876148462296,
+    "sales_billing": 0.016656529158353806
+   },
+   "probs": {
+    "support": 0.926434882625713,
+    "technical": 0.054232020391854874,
+    "sales_billing": 0.019333096982432126
+   },
+   "pred": "support",
+   "ms": 1188.180583063513
+  },
+  {
+   "id": 182,
+   "text": "Help!  I can't find my card.",
+   "intent": "lost_or_stolen_card",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.5774487257003784,
+    "technical": 0.9473727941513062,
+    "sales_billing": 0.0009473076206631958
+   },
+   "probs": {
+    "support": 0.378464099739804,
+    "technical": 0.6209150279474273,
+    "sales_billing": 0.0006208723127687338
+   },
+   "pred": "technical",
+   "ms": 1130.1432908512652
+  },
+  {
+   "id": 183,
+   "text": "I need to create several disposable cards per day.",
+   "intent": "disposable_card_limits",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.2845587134361267,
+    "technical": 0.0020829604472965,
+    "sales_billing": 0.0023596398532390594
+   },
+   "probs": {
+    "support": 0.9846277505001806,
+    "technical": 0.007207442832576505,
+    "sales_billing": 0.008164806667242909
+   },
+   "pred": "support",
+   "ms": 1120.4706253483891
+  },
+  {
+   "id": 184,
+   "text": "Why is it taking so long for my cash withdrawal to no longer show as pending?",
+   "intent": "pending_cash_withdrawal",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9457906484603882,
+    "technical": 0.622426450252533,
+    "sales_billing": 0.013020223937928677
+   },
+   "probs": {
+    "support": 0.5981332687460391,
+    "technical": 0.3936325315222589,
+    "sales_billing": 0.008234199731701912
+   },
+   "pred": "support",
+   "ms": 1189.405499957502
+  },
+  {
+   "id": 185,
+   "text": "What is the auto top up function and where can I find that at?",
+   "intent": "automatic_top_up",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.9324195981025696,
+    "technical": 0.022976623848080635,
+    "sales_billing": 0.03567694127559662
+   },
+   "probs": {
+    "support": 0.9408181279646984,
+    "technical": 0.02318357988151418,
+    "sales_billing": 0.03599829215378736
+   },
+   "pred": "support",
+   "ms": 1189.2971247434616
+  },
+  {
+   "id": 186,
+   "text": "Can i cancel a charge?",
+   "intent": "cancel_transfer",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.16237105429172516,
+    "technical": 0.3848608732223511,
+    "sales_billing": 0.9688286781311035
+   },
+   "probs": {
+    "support": 0.10710063548061523,
+    "technical": 0.2538558628786271,
+    "sales_billing": 0.6390435016407577
+   },
+   "pred": "sales_billing",
+   "ms": 1108.0770827829838
+  },
+  {
+   "id": 187,
+   "text": "Will you deal with SWIFT transfers?",
+   "intent": "top_up_by_bank_transfer_charge",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.18475162982940674,
+    "technical": 0.010327880270779133,
+    "sales_billing": 0.4765165150165558
+   },
+   "probs": {
+    "support": 0.2750933938259862,
+    "technical": 0.015378114051499733,
+    "sales_billing": 0.709528492122514
+   },
+   "pred": "sales_billing",
+   "ms": 1120.7500407472253
+  },
+  {
+   "id": 188,
+   "text": "Why do you charge fees on card payments?",
+   "intent": "card_payment_fee_charged",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.6723146438598633,
+    "technical": 0.008251470513641834,
+    "sales_billing": 0.9925897121429443
+   },
+   "probs": {
+    "support": 0.4018242851053739,
+    "technical": 0.0049316808290484175,
+    "sales_billing": 0.5932440340655777
+   },
+   "pred": "sales_billing",
+   "ms": 1121.2501251138747
+  },
+  {
+   "id": 189,
+   "text": "The ATM did not allow me to withdraw",
+   "intent": "declined_cash_withdrawal",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.2337002456188202,
+    "technical": 0.6653916835784912,
+    "sales_billing": 0.005598214454948902
+   },
+   "probs": {
+    "support": 0.25832076016144656,
+    "technical": 0.7354912488515524,
+    "sales_billing": 0.006187990987001083
+   },
+   "pred": "technical",
+   "ms": 1118.1748751550913
+  },
+  {
+   "id": 190,
+   "text": "The ATM at Metro bank on High St. Kensington didn't return my card. What should I do now that the bank is closed?",
+   "intent": "card_swallowed",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.0637136697769165,
+    "technical": 0.166670024394989,
+    "sales_billing": 0.000352813076460734
+   },
+   "probs": {
+    "support": 0.27613172504312333,
+    "technical": 0.722339201466651,
+    "sales_billing": 0.001529073490225644
+   },
+   "pred": "technical",
+   "ms": 1201.182333752513
+  },
+  {
+   "id": 191,
+   "text": "Nothing goes through on my card.",
+   "intent": "card_not_working",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.6859164237976074,
+    "technical": 0.9845705628395081,
+    "sales_billing": 0.015663348138332367
+   },
+   "probs": {
+    "support": 0.40679434665530817,
+    "technical": 0.5839162395745856,
+    "sales_billing": 0.009289413770106284
+   },
+   "pred": "technical",
+   "ms": 1116.688583046198
+  },
+  {
+   "id": 192,
+   "text": "Heyy I tried to top up with my card today but it failed! I just got the couple days before but it has worked last time. What's going on, can you double check please?",
+   "intent": "top_up_failed",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.129397451877594,
+    "technical": 0.9811577200889587,
+    "sales_billing": 0.011071795597672462
+   },
+   "probs": {
+    "support": 0.11536585301492816,
+    "technical": 0.8747629545852346,
+    "sales_billing": 0.009871192399837234
+   },
+   "pred": "technical",
+   "ms": 1591.2139168940485
+  },
+  {
+   "id": 193,
+   "text": "How can I get the cash deposit to show up on my account?",
+   "intent": "balance_not_updated_after_cheque_or_cash_deposit",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.8311153650283813,
+    "technical": 0.7690467834472656,
+    "sales_billing": 0.01450330950319767
+   },
+   "probs": {
+    "support": 0.5147291415205778,
+    "technical": 0.47628862043653236,
+    "sales_billing": 0.008982238042889806
+   },
+   "pred": "support",
+   "ms": 1188.51950019598
+  },
+  {
+   "id": 194,
+   "text": "What is maximum top up?",
+   "intent": "top_up_limits",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9820063710212708,
+    "technical": 0.04467945545911789,
+    "sales_billing": 0.0574912391602993
+   },
+   "probs": {
+    "support": 0.9057619849585732,
+    "technical": 0.04121047832045297,
+    "sales_billing": 0.05302753672097389
+   },
+   "pred": "support",
+   "ms": 1110.4302918538451
+  },
+  {
+   "id": 195,
+   "text": "How do I find the exchange rate?",
+   "intent": "exchange_rate",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.1824156641960144,
+    "technical": 0.0008040850516408682,
+    "sales_billing": 0.975571870803833
+   },
+   "probs": {
+    "support": 0.1574188672402629,
+    "technical": 0.0006938996086329486,
+    "sales_billing": 0.8418872331511041
+   },
+   "pred": "sales_billing",
+   "ms": 1115.9813329577446
+  },
+  {
+   "id": 196,
+   "text": "What do I need to do to activate my new card?",
+   "intent": "activate_my_card",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9959912896156311,
+    "technical": 0.020963946357369423,
+    "sales_billing": 0.00844556000083685
+   },
+   "probs": {
+    "support": 0.9713190135275098,
+    "technical": 0.020444636321409984,
+    "sales_billing": 0.008236350151080178
+   },
+   "pred": "support",
+   "ms": 1126.197291072458
+  },
+  {
+   "id": 197,
+   "text": "My card payment did not complete.",
+   "intent": "declined_card_payment",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.045351624488830566,
+    "technical": 0.6442016363143921,
+    "sales_billing": 0.05749130621552467
+   },
+   "probs": {
+    "support": 0.06070805744537655,
+    "technical": 0.8623336073311214,
+    "sales_billing": 0.07695833522350201
+   },
+   "pred": "technical",
+   "ms": 1133.1458329223096
+  },
+  {
+   "id": 198,
+   "text": "I'm still waiting on my card to be delivered.",
+   "intent": "card_arrival",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.8519254922866821,
+    "technical": 0.9626606702804565,
+    "sales_billing": 0.003402985166758299
+   },
+   "probs": {
+    "support": 0.46860867863188166,
+    "technical": 0.5295194811698422,
+    "sales_billing": 0.0018718401982762557
+   },
+   "pred": "technical",
+   "ms": 1122.4473332986236
+  },
+  {
+   "id": 199,
+   "text": "When will my top-up process?",
+   "intent": "pending_top_up",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.9473570585250854,
+    "technical": 0.0780758485198021,
+    "sales_billing": 0.11756835132837296
+   },
+   "probs": {
+    "support": 0.8288329094872395,
+    "technical": 0.06830775377353566,
+    "sales_billing": 0.10285933673922486
+   },
+   "pred": "support",
+   "ms": 1126.8534171395004
+  },
+  {
+   "id": 200,
+   "text": "Was my top up reversed?",
+   "intent": "top_up_reverted",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.32764506340026855,
+    "technical": 0.845905601978302,
+    "sales_billing": 0.08881683647632599
+   },
+   "probs": {
+    "support": 0.2595480816155626,
+    "technical": 0.6700945649625374,
+    "sales_billing": 0.07035735342190003
+   },
+   "pred": "technical",
+   "ms": 1107.0926249958575
+  },
+  {
+   "id": 201,
+   "text": "What is the fee to receive money?",
+   "intent": "top_up_by_bank_transfer_charge",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.1800955981016159,
+    "technical": 0.03358839452266693,
+    "sales_billing": 0.9909319877624512
+   },
+   "probs": {
+    "support": 0.14950457326972982,
+    "technical": 0.02788307233968754,
+    "sales_billing": 0.8226123543905827
+   },
+   "pred": "sales_billing",
+   "ms": 1109.6726669929922
+  },
+  {
+   "id": 202,
+   "text": "Is there an age minimum?",
+   "intent": "age_limit",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.31398874521255493,
+    "technical": 0.0017961402190849185,
+    "sales_billing": 0.7310264110565186
+   },
+   "probs": {
+    "support": 0.29994779982402187,
+    "technical": 0.0017158204397589214,
+    "sales_billing": 0.6983363797362192
+   },
+   "pred": "sales_billing",
+   "ms": 1121.9924162141979
+  },
+  {
+   "id": 203,
+   "text": "Is there any discount for someone that exchanges currencies frequently?",
+   "intent": "exchange_charge",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.04272137209773064,
+    "technical": 0.0004124556144233793,
+    "sales_billing": 0.9196097254753113
+   },
+   "probs": {
+    "support": 0.04437461248770568,
+    "technical": 0.0004284169060990492,
+    "sales_billing": 0.9551969706061952
+   },
+   "pred": "sales_billing",
+   "ms": 1120.9958330728114
+  },
+  {
+   "id": 204,
+   "text": "Can I do a bank transfer to put additional money in my account because I am out of money?",
+   "intent": "transfer_into_account",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.4765557050704956,
+    "technical": 0.007577175740152597,
+    "sales_billing": 0.012431439012289047
+   },
+   "probs": {
+    "support": 0.9597058951807568,
+    "technical": 0.015259202962577807,
+    "sales_billing": 0.025034901856665407
+   },
+   "pred": "support",
+   "ms": 1200.2622499130666
+  },
+  {
+   "id": 205,
+   "text": "How do I send my account money through transfer?",
+   "intent": "transfer_into_account",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.9674026966094971,
+    "technical": 0.0067974659614264965,
+    "sales_billing": 0.12251715362071991
+   },
+   "probs": {
+    "support": 0.8820893792110513,
+    "technical": 0.006198010974268859,
+    "sales_billing": 0.11171260981467983
+   },
+   "pred": "support",
+   "ms": 1123.8946658559144
+  },
+  {
+   "id": 206,
+   "text": "Why can't I see my topup in my wallet anymore?",
+   "intent": "topping_up_by_card",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.6584026217460632,
+    "technical": 0.9334137439727783,
+    "sales_billing": 0.01322250533849001
+   },
+   "probs": {
+    "support": 0.4102097672639763,
+    "technical": 0.5815521111696721,
+    "sales_billing": 0.008238121566351588
+   },
+   "pred": "technical",
+   "ms": 1133.7134167551994
+  },
+  {
+   "id": 207,
+   "text": "Someone has my card number, freeze my account.",
+   "intent": "compromised_card",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.03409985825419426,
+    "technical": 0.8128467202186584,
+    "sales_billing": 0.0035935856867581606
+   },
+   "probs": {
+    "support": 0.040092002342872475,
+    "technical": 0.955682934763938,
+    "sales_billing": 0.004225062893189598
+   },
+   "pred": "technical",
+   "ms": 1121.8909579329193
+  },
+  {
+   "id": 208,
+   "text": "Why is my card payment showing as pending?",
+   "intent": "pending_card_payment",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.8652143478393555,
+    "technical": 0.04885579273104668,
+    "sales_billing": 0.20180699229240417
+   },
+   "probs": {
+    "support": 0.7753670385014789,
+    "technical": 0.04378241232142298,
+    "sales_billing": 0.18085054917709809
+   },
+   "pred": "support",
+   "ms": 1130.4296250455081
+  },
+  {
+   "id": 209,
+   "text": "How long does it take to process cheque deposits?",
+   "intent": "balance_not_updated_after_cheque_or_cash_deposit",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.9867711663246155,
+    "technical": 0.002434374298900366,
+    "sales_billing": 0.00479228375479579
+   },
+   "probs": {
+    "support": 0.9927297043550211,
+    "technical": 0.002449074071588564,
+    "sales_billing": 0.004821221573390351
+   },
+   "pred": "support",
+   "ms": 1120.6775000318885
+  },
+  {
+   "id": 210,
+   "text": "My phone was stolen",
+   "intent": "lost_or_stolen_phone",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.011508028022944927,
+    "technical": 0.21206076443195343,
+    "sales_billing": 0.0009850068017840385
+   },
+   "probs": {
+    "support": 0.05124842269887565,
+    "technical": 0.9443650703480262,
+    "sales_billing": 0.004386506953098128
+   },
+   "pred": "technical",
+   "ms": 1115.7423332333565
+  },
+  {
+   "id": 211,
+   "text": "Is there a fee for using a European bank card to top up?",
+   "intent": "top_up_by_card_charge",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.39231786131858826,
+    "technical": 0.001972329569980502,
+    "sales_billing": 0.8990936875343323
+   },
+   "probs": {
+    "support": 0.30332669817793345,
+    "technical": 0.0015249374937203327,
+    "sales_billing": 0.6951483643283463
+   },
+   "pred": "sales_billing",
+   "ms": 1178.5659580491483
+  },
+  {
+   "id": 212,
+   "text": "When my card expires what happens to my account?",
+   "intent": "card_about_to_expire",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.8596290946006775,
+    "technical": 0.05340123921632767,
+    "sales_billing": 0.1623597890138626
+   },
+   "probs": {
+    "support": 0.7993648782432381,
+    "technical": 0.049657550392739065,
+    "sales_billing": 0.15097757136402282
+   },
+   "pred": "support",
+   "ms": 1129.885708913207
+  },
+  {
+   "id": 213,
+   "text": "I was charge a fee for my transfer, why?",
+   "intent": "transfer_fee_charged",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.3848894238471985,
+    "technical": 0.017985420301556587,
+    "sales_billing": 0.9843229651451111
+   },
+   "probs": {
+    "support": 0.2774582119929393,
+    "technical": 0.012965288858632077,
+    "sales_billing": 0.7095764991484287
+   },
+   "pred": "sales_billing",
+   "ms": 1120.355916209519
+  },
+  {
+   "id": 214,
+   "text": "I need to order a  new card, mine is about to expire and I need to know how much it will cost and how long until I receive it.",
+   "intent": "card_about_to_expire",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9711186289787292,
+    "technical": 0.022976752370595932,
+    "sales_billing": 0.2308863401412964
+   },
+   "probs": {
+    "support": 0.7927617301889383,
+    "technical": 0.018756812422177714,
+    "sales_billing": 0.18848145738888403
+   },
+   "pred": "support",
+   "ms": 1227.660917211324
+  },
+  {
+   "id": 215,
+   "text": "I wasn't applied the correct exchange rate for an item I bought",
+   "intent": "card_payment_wrong_exchange_rate",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.013428146950900555,
+    "technical": 0.024422192946076393,
+    "sales_billing": 0.9869627356529236
+   },
+   "probs": {
+    "support": 0.013103020708137625,
+    "technical": 0.023830875628681632,
+    "sales_billing": 0.9630661036631808
+   },
+   "pred": "sales_billing",
+   "ms": 1132.9084588214755
+  },
+  {
+   "id": 216,
+   "text": "I've lost track of my phone or someone stole it.",
+   "intent": "lost_or_stolen_phone",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.031142760068178177,
+    "technical": 0.5156053304672241,
+    "sales_billing": 0.0005316127208061516
+   },
+   "probs": {
+    "support": 0.05690465018688757,
+    "technical": 0.9421239768247791,
+    "sales_billing": 0.0009713729883333124
+   },
+   "pred": "technical",
+   "ms": 1121.681374963373
+  },
+  {
+   "id": 217,
+   "text": "How do people send me money?",
+   "intent": "receiving_money",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.4687557816505432,
+    "technical": 0.029311398044228554,
+    "sales_billing": 0.32420748472213745
+   },
+   "probs": {
+    "support": 0.5700720232976495,
+    "technical": 0.035646724035956805,
+    "sales_billing": 0.3942812526663937
+   },
+   "pred": "support",
+   "ms": 1116.401749663055
+  },
+  {
+   "id": 218,
+   "text": "How do I do a successful transfer to an account?",
+   "intent": "beneficiary_not_allowed",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9814432859420776,
+    "technical": 0.012821009382605553,
+    "sales_billing": 0.07585509121417999
+   },
+   "probs": {
+    "support": 0.9171343854599301,
+    "technical": 0.011980914974424618,
+    "sales_billing": 0.07088469956564532
+   },
+   "pred": "support",
+   "ms": 1119.5158753544092
+  },
+  {
+   "id": 219,
+   "text": "Can anyone help me, I lost my wallet and they've started withdrawing from my account.",
+   "intent": "cash_withdrawal_not_recognised",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.03904692828655243,
+    "technical": 0.9566246271133423,
+    "sales_billing": 0.014503301121294498
+   },
+   "probs": {
+    "support": 0.03865363311557873,
+    "technical": 0.9469891484012365,
+    "sales_billing": 0.014357218483184728
+   },
+   "pred": "technical",
+   "ms": 1190.1934170164168
+  },
+  {
+   "id": 220,
+   "text": "My passcode doesn't work",
+   "intent": "passcode_forgotten",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9875632524490356,
+    "technical": 0.31402313709259033,
+    "sales_billing": 0.001178670208901167
+   },
+   "probs": {
+    "support": 0.7580516878754401,
+    "technical": 0.24104356709775757,
+    "sales_billing": 0.0009047450268023585
+   },
+   "pred": "support",
+   "ms": 1105.4940829053521
+  },
+  {
+   "id": 221,
+   "text": "I ordered my card 2 weeks ago and it still isn't here? What do I do?",
+   "intent": "card_arrival",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.9907276630401611,
+    "technical": 0.9603559970855713,
+    "sales_billing": 0.002396722324192524
+   },
+   "probs": {
+    "support": 0.5071602827143094,
+    "technical": 0.4916128186970359,
+    "sales_billing": 0.0012268985886547345
+   },
+   "pred": "support",
+   "ms": 1194.4112088531256
+  },
+  {
+   "id": 222,
+   "text": "My PIN is not working and I need assistance.",
+   "intent": "pin_blocked",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.24795497953891754,
+    "technical": 0.15001800656318665,
+    "sales_billing": 0.00048595559201203287
+   },
+   "probs": {
+    "support": 0.6222848921012906,
+    "technical": 0.3764955202796039,
+    "sales_billing": 0.001219587619105521
+   },
+   "pred": "support",
+   "ms": 1119.3929160945117
+  },
+  {
+   "id": 223,
+   "text": "What countries can I travel to and have access to their currencies?",
+   "intent": "fiat_currency_support",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.025178417563438416,
+    "technical": 0.0006512677646242082,
+    "sales_billing": 0.9911473393440247
+   },
+   "probs": {
+    "support": 0.024758098710791338,
+    "technical": 0.0006403957501736109,
+    "sales_billing": 0.974601505539035
+   },
+   "pred": "sales_billing",
+   "ms": 1129.737749695778
+  },
+  {
+   "id": 224,
+   "text": "How do I unblock my pin after entering it wrong too many times?",
+   "intent": "pin_blocked",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.8723257184028625,
+    "technical": 0.5233875513076782,
+    "sales_billing": 0.0009326350409537554
+   },
+   "probs": {
+    "support": 0.6245861713660884,
+    "technical": 0.3747460609214364,
+    "sales_billing": 0.0006677677124751956
+   },
+   "pred": "support",
+   "ms": 1180.1220839843154
+  },
+  {
+   "id": 225,
+   "text": "What do I need to do to change my PIN?",
+   "intent": "change_pin",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.9664021134376526,
+    "technical": 0.028435587882995605,
+    "sales_billing": 0.0025509085971862078
+   },
+   "probs": {
+    "support": 0.9689323738289587,
+    "technical": 0.028510038715338998,
+    "sales_billing": 0.0025575874557022997
+   },
+   "pred": "support",
+   "ms": 1141.6431670077145
+  },
+  {
+   "id": 226,
+   "text": "When I top up what are the amoutn limits.",
+   "intent": "top_up_limits",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9911453127861023,
+    "technical": 0.003621663199737668,
+    "sales_billing": 0.507735550403595
+   },
+   "probs": {
+    "support": 0.6596629924928369,
+    "technical": 0.0024104207055416064,
+    "sales_billing": 0.33792658680162146
+   },
+   "pred": "support",
+   "ms": 1131.8039167672396
+  },
+  {
+   "id": 227,
+   "text": "Will any business take this card?",
+   "intent": "card_acceptance",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.45324692130088806,
+    "technical": 0.05665113031864166,
+    "sales_billing": 0.053401701152324677
+   },
+   "probs": {
+    "support": 0.8046282979365348,
+    "technical": 0.10057013169254185,
+    "sales_billing": 0.09480157037092335
+   },
+   "pred": "support",
+   "ms": 1106.415624730289
+  },
+  {
+   "id": 228,
+   "text": "Any hidden fees associated with the international card if money is added?",
+   "intent": "top_up_by_card_charge",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.515597403049469,
+    "technical": 0.005384885240346193,
+    "sales_billing": 0.9861398935317993
+   },
+   "probs": {
+    "support": 0.3421072354109217,
+    "technical": 0.003572958652786624,
+    "sales_billing": 0.6543198059362917
+   },
+   "pred": "sales_billing",
+   "ms": 1121.576459147036
+  },
+  {
+   "id": 229,
+   "text": "What does a disposable virtual card do?",
+   "intent": "get_disposable_virtual_card",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.917288601398468,
+    "technical": 0.005819904617965221,
+    "sales_billing": 0.003222446423023939
+   },
+   "probs": {
+    "support": 0.9902385308218661,
+    "technical": 0.006282748733202453,
+    "sales_billing": 0.003478720444931425
+   },
+   "pred": "support",
+   "ms": 1115.2370837517083
+  },
+  {
+   "id": 230,
+   "text": "Is it possible to receive a Visa and a MasterCard?",
+   "intent": "visa_or_mastercard",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.6297449469566345,
+    "technical": 0.00970832072198391,
+    "sales_billing": 0.006289862561970949
+   },
+   "probs": {
+    "support": 0.9752251591464949,
+    "technical": 0.015034338372855484,
+    "sales_billing": 0.009740502480649678
+   },
+   "pred": "support",
+   "ms": 1117.6685420796275
+  },
+  {
+   "id": 231,
+   "text": "Help!  The atm won't give me my card back.",
+   "intent": "card_swallowed",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.5544288158416748,
+    "technical": 0.9324392080307007,
+    "sales_billing": 0.002034810371696949
+   },
+   "probs": {
+    "support": 0.3723740751176437,
+    "technical": 0.6262592740003127,
+    "sales_billing": 0.001366650882043648
+   },
+   "pred": "technical",
+   "ms": 1127.3202924057841
+  },
+  {
+   "id": 232,
+   "text": "I did not make this card payment.",
+   "intent": "card_payment_not_recognised",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.0467241145670414,
+    "technical": 0.024053147062659264,
+    "sales_billing": 0.17553189396858215
+   },
+   "probs": {
+    "support": 0.1896970271102953,
+    "technical": 0.097654295489887,
+    "sales_billing": 0.7126486773998177
+   },
+   "pred": "sales_billing",
+   "ms": 1103.990042116493
+  },
+  {
+   "id": 233,
+   "text": "my phone is gone",
+   "intent": "lost_or_stolen_phone",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.10087423771619797,
+    "technical": 0.6076435446739197,
+    "sales_billing": 0.0005747859249822795
+   },
+   "probs": {
+    "support": 0.142258207494529,
+    "technical": 0.8569311988669732,
+    "sales_billing": 0.00081059363849779
+   },
+   "pred": "technical",
+   "ms": 1108.6058332584798
+  },
+  {
+   "id": 234,
+   "text": "If you send me more cards, are there any charges?",
+   "intent": "getting_spare_card",
+   "team": "sales_billing",
+   "split": "eval",
+   "override": "message asks about charges; sales_billing by precedence despite intent getting_spare_card",
+   "entail": {
+    "support": 0.24219146370887756,
+    "technical": 0.0013885187217965722,
+    "sales_billing": 0.976658284664154
+   },
+   "probs": {
+    "support": 0.19847883011036252,
+    "technical": 0.0011379078654059835,
+    "sales_billing": 0.8003832620242315
+   },
+   "pred": "sales_billing",
+   "ms": 1120.4120418988168
+  },
+  {
+   "id": 235,
+   "text": "Is it possible to get a card if I'm not in the UK?",
+   "intent": "country_support",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.9433197975158691,
+    "technical": 0.014728412963449955,
+    "sales_billing": 0.22269004583358765
+   },
+   "probs": {
+    "support": 0.798923717828518,
+    "technical": 0.012473901717593529,
+    "sales_billing": 0.1886023804538884
+   },
+   "pred": "support",
+   "ms": 1180.7179171591997
+  },
+  {
+   "id": 236,
+   "text": "I think my statement has a fraudulent charge",
+   "intent": "card_payment_not_recognised",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.06278763711452484,
+    "technical": 0.9723978638648987,
+    "sales_billing": 0.8499290943145752
+   },
+   "probs": {
+    "support": 0.03330706646230841,
+    "technical": 0.5158295767760716,
+    "sales_billing": 0.4508633567616201
+   },
+   "pred": "technical",
+   "ms": 1115.497666876763
+  },
+  {
+   "id": 237,
+   "text": "The transfer is coming up as pending the payment is due today. Will I be charged a fee?",
+   "intent": "pending_transfer",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.035677481442689896,
+    "technical": 0.0032476542983204126,
+    "sales_billing": 0.9715491533279419
+   },
+   "probs": {
+    "support": 0.03530765881788345,
+    "technical": 0.003213990037601838,
+    "sales_billing": 0.9614783511445147
+   },
+   "pred": "sales_billing",
+   "ms": 1198.2712093740702
+  },
+  {
+   "id": 238,
+   "text": "If my card payment is cancelled, what should I do?",
+   "intent": "reverted_card_payment?",
+   "team": "technical",
+   "split": "eval",
+   "entail": {
+    "support": 0.8757638335227966,
+    "technical": 0.06754324585199356,
+    "sales_billing": 0.14607998728752136
+   },
+   "probs": {
+    "support": 0.8039051135479159,
+    "technical": 0.062001145340318815,
+    "sales_billing": 0.13409374111176525
+   },
+   "pred": "support",
+   "ms": 1121.2117080576718
+  },
+  {
+   "id": 239,
+   "text": "Does it cost extra to exchange currencies?",
+   "intent": "exchange_charge",
+   "team": "sales_billing",
+   "split": "fit",
+   "entail": {
+    "support": 0.10970105975866318,
+    "technical": 0.000583831628318876,
+    "sales_billing": 0.9838328957557678
+   },
+   "probs": {
+    "support": 0.1002643966196214,
+    "technical": 0.0005336094844445695,
+    "sales_billing": 0.899201993895934
+   },
+   "pred": "sales_billing",
+   "ms": 1115.929292049259
+  },
+  {
+   "id": 240,
+   "text": "If I need GBP instead of AUD what do I do?",
+   "intent": "exchange_via_app",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.14804069697856903,
+    "technical": 0.0023231555242091417,
+    "sales_billing": 0.8990679383277893
+   },
+   "probs": {
+    "support": 0.14106747887006832,
+    "technical": 0.002213727032578737,
+    "sales_billing": 0.856718794097353
+   },
+   "pred": "sales_billing",
+   "ms": 1120.934084057808
+  },
+  {
+   "id": 241,
+   "text": "has my top-up has been cancelled",
+   "intent": "top_up_reverted",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.06954056024551392,
+    "technical": 0.11756784468889236,
+    "sales_billing": 0.03114316053688526
+   },
+   "probs": {
+    "support": 0.3186257110932896,
+    "technical": 0.5386804187865358,
+    "sales_billing": 0.14269387012017462
+   },
+   "pred": "technical",
+   "ms": 1113.8552497141063
+  },
+  {
+   "id": 242,
+   "text": "The rate applied to my foreign purchase was incorrect",
+   "intent": "card_payment_wrong_exchange_rate",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.03308533504605293,
+    "technical": 0.05032757297158241,
+    "sales_billing": 0.9688122272491455
+   },
+   "probs": {
+    "support": 0.03144320919274038,
+    "technical": 0.04782966238382281,
+    "sales_billing": 0.9207271284234368
+   },
+   "pred": "sales_billing",
+   "ms": 1119.6269998326898
+  },
+  {
+   "id": 243,
+   "text": "Do these virtual cards have any caps on using them?",
+   "intent": "disposable_card_limits",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.9787009358406067,
+    "technical": 0.0209637563675642,
+    "sales_billing": 0.1441393345594406
+   },
+   "probs": {
+    "support": 0.855654389158267,
+    "technical": 0.018328101560201485,
+    "sales_billing": 0.12601750928153152
+   },
+   "pred": "support",
+   "ms": 1142.755165696144
+  },
+  {
+   "id": 244,
+   "text": "got married and need to change name",
+   "intent": "edit_personal_details",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.007815825752913952,
+    "technical": 0.0006878501735627651,
+    "sales_billing": 0.0015608863905072212
+   },
+   "probs": {
+    "support": 0.7765688667578474,
+    "technical": 0.06834377411544451,
+    "sales_billing": 0.1550873591267081
+   },
+   "pred": "support",
+   "ms": 1105.2557923831046
+  },
+  {
+   "id": 245,
+   "text": "How long will it take to get to me?",
+   "intent": "card_delivery_estimate",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.8438365459442139,
+    "technical": 0.1602335274219513,
+    "sales_billing": 0.0020992232020944357
+   },
+   "probs": {
+    "support": 0.838662587719866,
+    "technical": 0.15925106040152448,
+    "sales_billing": 0.0020863518786095477
+   },
+   "pred": "support",
+   "ms": 1120.3675409778953
+  },
+  {
+   "id": 246,
+   "text": "Why is there a charge on my account for taking out cash?",
+   "intent": "cash_withdrawal_charge",
+   "team": "sales_billing",
+   "split": "eval",
+   "entail": {
+    "support": 0.7371349930763245,
+    "technical": 0.12251114100217819,
+    "sales_billing": 0.9766560196876526
+   },
+   "probs": {
+    "support": 0.4014235846559897,
+    "technical": 0.06671622137506866,
+    "sales_billing": 0.5318601939689416
+   },
+   "pred": "sales_billing",
+   "ms": 1129.6565420925617
+  },
+  {
+   "id": 247,
+   "text": "It is impossible to verify my identity",
+   "intent": "unable_to_verify_identity",
+   "team": "technical",
+   "split": "fit",
+   "entail": {
+    "support": 0.033588945865631104,
+    "technical": 0.06754374504089355,
+    "sales_billing": 0.0016229602042585611
+   },
+   "probs": {
+    "support": 0.3268817384011133,
+    "technical": 0.6573238971360621,
+    "sales_billing": 0.015794364462824634
+   },
+   "pred": "technical",
+   "ms": 1107.699666172266
+  },
+  {
+   "id": 248,
+   "text": "How long does a transfer take from the point it's sent, to the point it arrives in my account?",
+   "intent": "transfer_timing",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9924196600914001,
+    "technical": 0.03209827095270157,
+    "sales_billing": 0.035143401473760605
+   },
+   "probs": {
+    "support": 0.9365441859931898,
+    "technical": 0.03029106561474017,
+    "sales_billing": 0.03316474839207007
+   },
+   "pred": "support",
+   "ms": 1195.3712501563132
+  },
+  {
+   "id": 249,
+   "text": "Where's the verification code for the top-up card?",
+   "intent": "verify_top_up",
+   "team": "support",
+   "split": "fit",
+   "entail": {
+    "support": 0.9441694021224976,
+    "technical": 0.06278692185878754,
+    "sales_billing": 0.00884729903191328
+   },
+   "probs": {
+    "support": 0.9294802467053516,
+    "technical": 0.06181009836580564,
+    "sales_billing": 0.008709654928842804
+   },
+   "pred": "support",
+   "ms": 1138.4750423021615
+  },
+  {
+   "id": 250,
+   "text": "Why isn't my PIN available yet?",
+   "intent": "get_physical_card",
+   "team": "support",
+   "split": "eval",
+   "entail": {
+    "support": 0.9811587333679199,
+    "technical": 0.7057477235794067,
+    "sales_billing": 0.0024726164992898703
+   },
+   "probs": {
+    "support": 0.5807806837373637,
+    "technical": 0.4177556918232467,
+    "sales_billing": 0.0014636244393896262
+   },
+   "pred": "support",
+   "ms": 1105.4701250977814
+  }
+ ]
+}

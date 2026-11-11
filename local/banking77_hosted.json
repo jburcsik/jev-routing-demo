@@ -1,0 +1,6016 @@
+{
+ "rows": [
+  {
+   "id": 1,
+   "text": "What do I do if my virtual card won't work.",
+   "intent": "virtual_card_not_working",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.97,
+    "probs": {
+     "support": 0.02,
+     "technical": 0.98,
+     "sales_billing": 0
+    },
+    "ms": 324.280709028244,
+    "cost": 2.2386e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.55,
+    "ms": 3055.695915594697,
+    "cost": 0.003528
+   }
+  },
+  {
+   "id": 2,
+   "text": "there's a delay in my top-up",
+   "intent": "pending_top_up",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.85,
+    "probs": {
+     "support": 0.01,
+     "technical": 0.9,
+     "sales_billing": 0.09
+    },
+    "ms": 357.33083356171846,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.72,
+    "ms": 1806.0342082753778,
+    "cost": 0.0021
+   }
+  },
+  {
+   "id": 3,
+   "text": "What is the procedure for getting another card?",
+   "intent": "getting_spare_card",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 331.21724985539913,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.8,
+    "ms": 1492.8338751196861,
+    "cost": 0.001924
+   }
+  },
+  {
+   "id": 4,
+   "text": "I am having trouble verifying my identity.",
+   "intent": "unable_to_verify_identity",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.58,
+    "probs": {
+     "support": 0.72,
+     "technical": 0.28,
+     "sales_billing": 0
+    },
+    "ms": 430.5358752608299,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.6,
+    "ms": 2065.984707325697,
+    "cost": 0.002346
+   }
+  },
+  {
+   "id": 5,
+   "text": "Can someone assist me by explaining why my card is not working?",
+   "intent": "card_not_working",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 1,
+     "sales_billing": 0
+    },
+    "ms": 283.04683323949575,
+    "cost": 2.2428e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.8,
+    "ms": 998.4845826402307,
+    "cost": 0.001006
+   }
+  },
+  {
+   "id": 6,
+   "text": "What steps do I take to receive another passcode?",
+   "intent": "passcode_forgotten",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.99,
+     "technical": 0.01,
+     "sales_billing": 0
+    },
+    "ms": 286.5147916600108,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.9,
+    "ms": 977.6057917624712,
+    "cost": 0.000988
+   }
+  },
+  {
+   "id": 7,
+   "text": "May I get a disposable virtual card as well?",
+   "intent": "get_disposable_virtual_card",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.79,
+    "probs": {
+     "support": 0.86,
+     "technical": 0,
+     "sales_billing": 0.14
+    },
+    "ms": 362.55995742976665,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.5,
+    "ms": 2671.136707998812,
+    "cost": 0.003058
+   }
+  },
+  {
+   "id": 8,
+   "text": "I can't recall my passcode and need to reset it.",
+   "intent": "passcode_forgotten",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 299.3591669946909,
+    "cost": 2.2428e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.96,
+    "ms": 982.2623748332262,
+    "cost": 0.000992
+   }
+  },
+  {
+   "id": 9,
+   "text": "Still waiting on a refund.",
+   "intent": "Refund_not_showing_up",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.96,
+    "probs": {
+     "support": 0,
+     "technical": 0.03,
+     "sales_billing": 0.97
+    },
+    "ms": 242.54658352583647,
+    "cost": 2.2134e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.7,
+    "ms": 1975.132250227034,
+    "cost": 0.00222
+   }
+  },
+  {
+   "id": 10,
+   "text": "Is there any nearby ATM's?",
+   "intent": "atm_support",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 407.51033276319504,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.88,
+    "ms": 1533.7202912196517,
+    "cost": 0.001764
+   }
+  },
+  {
+   "id": 11,
+   "text": "My card payment is still pending.",
+   "intent": "pending_card_payment",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.14,
+    "probs": {
+     "support": 0.22,
+     "technical": 0.43,
+     "sales_billing": 0.35
+    },
+    "ms": 339.991208165884,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.62,
+    "ms": 1584.8042909055948,
+    "cost": 0.001838
+   }
+  },
+  {
+   "id": 12,
+   "text": "I think my card was stolen.",
+   "intent": "lost_or_stolen_card",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 1,
+     "sales_billing": 0
+    },
+    "ms": 271.9044592231512,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.95,
+    "ms": 888.1167089566588,
+    "cost": 0.000988
+   }
+  },
+  {
+   "id": 13,
+   "text": "I couldn't get cash at the atm",
+   "intent": "declined_cash_withdrawal",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.85,
+    "probs": {
+     "support": 0.1,
+     "technical": 0.9,
+     "sales_billing": 0
+    },
+    "ms": 278.42466719448566,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.8,
+    "ms": 902.4868747219443,
+    "cost": 0.000994
+   }
+  },
+  {
+   "id": 14,
+   "text": "I'd like to cancel a transfer",
+   "intent": "cancel_transfer",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.43,
+    "probs": {
+     "support": 0.21,
+     "technical": 0.17,
+     "sales_billing": 0.62
+    },
+    "ms": 266.33450016379356,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.6,
+    "ms": 2070.602208375931,
+    "cost": 0.002484
+   }
+  },
+  {
+   "id": 15,
+   "text": "How can I process a refund for something I purchased?",
+   "intent": "request_refund",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.67,
+    "probs": {
+     "support": 0.22,
+     "technical": 0,
+     "sales_billing": 0.78
+    },
+    "ms": 301.6342902556062,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.62,
+    "ms": 1787.7201652154326,
+    "cost": 0.002348
+   }
+  },
+  {
+   "id": 16,
+   "text": "Can I verify my identity online?",
+   "intent": "verify_my_identity",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 263.547208160162,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.85,
+    "ms": 931.9532094523311,
+    "cost": 0.00098
+   }
+  },
+  {
+   "id": 17,
+   "text": "What do I do if my card is expiring soon?",
+   "intent": "card_about_to_expire",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.99,
+     "technical": 0,
+     "sales_billing": 0.01
+    },
+    "ms": 255.69375045597553,
+    "cost": 2.2386e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.9,
+    "ms": 907.8522091731429,
+    "cost": 0.000988
+   }
+  },
+  {
+   "id": 18,
+   "text": "I transferred some money but it is yet to arrive.",
+   "intent": "balance_not_updated_after_bank_transfer",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.85,
+    "probs": {
+     "support": 0.05,
+     "technical": 0.9,
+     "sales_billing": 0.05
+    },
+    "ms": 277.75737550109625,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.8,
+    "ms": 1781.8152084946632,
+    "cost": 0.002002
+   }
+  },
+  {
+   "id": 19,
+   "text": "I keep checking my bank statements but I don't see a refund that I've requested from a seller. Can you ensure that I receive the refund from the seller?",
+   "intent": "Refund_not_showing_up",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.38,
+    "probs": {
+     "support": 0.02,
+     "technical": 0.39,
+     "sales_billing": 0.59
+    },
+    "ms": 428.0739575624466,
+    "cost": 2.3268e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.8,
+    "ms": 1943.5337502509356,
+    "cost": 0.002132
+   }
+  },
+  {
+   "id": 20,
+   "text": "It will be fine to use at any establishment that accepts Mastercard.",
+   "intent": "card_acceptance",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.72,
+    "probs": {
+     "support": 0.81,
+     "technical": 0,
+     "sales_billing": 0.19
+    },
+    "ms": 618.8928745687008,
+    "cost": 2.2428e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.6,
+    "ms": 2035.0291253998876,
+    "cost": 0.001704
+   }
+  },
+  {
+   "id": 21,
+   "text": "I still don't have my card after 2 weeks.  What should I do?",
+   "intent": "card_arrival",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.01,
+     "technical": 0.99,
+     "sales_billing": 0
+    },
+    "ms": 332.4597915634513,
+    "cost": 2.2638e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.82,
+    "ms": 1364.6258749067783,
+    "cost": 0.001602
+   }
+  },
+  {
+   "id": 22,
+   "text": "Is there an amount limit to my top-up?",
+   "intent": "top_up_limits",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.77,
+    "probs": {
+     "support": 0.85,
+     "technical": 0,
+     "sales_billing": 0.15
+    },
+    "ms": 333.75800028443336,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.8,
+    "ms": 1877.6988750323653,
+    "cost": 0.001688
+   }
+  },
+  {
+   "id": 23,
+   "text": "Where do I go to change GBP?",
+   "intent": "exchange_via_app",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.42,
+    "probs": {
+     "support": 0.39,
+     "technical": 0,
+     "sales_billing": 0.61
+    },
+    "ms": 312.0284155011177,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.72,
+    "ms": 2385.2985836565495,
+    "cost": 0.001932
+   }
+  },
+  {
+   "id": 24,
+   "text": "My top up was denied in the app.",
+   "intent": "top_up_failed",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.92,
+    "probs": {
+     "support": 0,
+     "technical": 0.95,
+     "sales_billing": 0.05
+    },
+    "ms": 290.8186251297593,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.88,
+    "ms": 927.6769999414682,
+    "cost": 0.00099
+   }
+  },
+  {
+   "id": 25,
+   "text": "Where's the money that got charged to my card? It's not showing up in my account balance",
+   "intent": "topping_up_by_card",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.28,
+    "probs": {
+     "support": 0.01,
+     "technical": 0.52,
+     "sales_billing": 0.47
+    },
+    "ms": 355.0832085311413,
+    "cost": 2.2722e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.8,
+    "ms": 2422.4612079560757,
+    "cost": 0.002008
+   }
+  },
+  {
+   "id": 26,
+   "text": "For the first time I got a fee on my account. How do I know when you charge these fees?",
+   "intent": "card_payment_fee_charged",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.01,
+     "technical": 0,
+     "sales_billing": 0.99
+    },
+    "ms": 292.3414157703519,
+    "cost": 2.2806e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.9,
+    "ms": 948.6632095649838,
+    "cost": 0.00105
+   }
+  },
+  {
+   "id": 27,
+   "text": "When I try and to buy something using my card it keeps getting declined.",
+   "intent": "declined_transfer",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 1,
+     "sales_billing": 0
+    },
+    "ms": 261.3026248291135,
+    "cost": 2.2512e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.93,
+    "ms": 979.468041099608,
+    "cost": 0.00101
+   }
+  },
+  {
+   "id": 28,
+   "text": "What is the reason my transfer was declined?",
+   "intent": "declined_transfer",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.98,
+    "probs": {
+     "support": 0,
+     "technical": 0.99,
+     "sales_billing": 0.01
+    },
+    "ms": 312.4453332275152,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.88,
+    "ms": 907.532375305891,
+    "cost": 0.000996
+   }
+  },
+  {
+   "id": 29,
+   "text": "Can I use my card at any ATMs?",
+   "intent": "atm_support",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.97,
+    "probs": {
+     "support": 0.98,
+     "technical": 0,
+     "sales_billing": 0.02
+    },
+    "ms": 269.79720778763294,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.85,
+    "ms": 1486.7588337510824,
+    "cost": 0.001826
+   }
+  },
+  {
+   "id": 30,
+   "text": "Where do I request another card?",
+   "intent": "getting_spare_card",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 322.1718752756715,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.86,
+    "ms": 1541.8817084282637,
+    "cost": 0.001936
+   }
+  },
+  {
+   "id": 31,
+   "text": "I tried to make a transfer and it was declined. Why?",
+   "intent": "declined_transfer",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 1,
+     "sales_billing": 0
+    },
+    "ms": 311.89766619354486,
+    "cost": 2.2428e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.9,
+    "ms": 975.6909999996424,
+    "cost": 0.001006
+   }
+  },
+  {
+   "id": 32,
+   "text": "I would prefer a visa card",
+   "intent": "visa_or_mastercard",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.67,
+    "probs": {
+     "support": 0.22,
+     "technical": 0,
+     "sales_billing": 0.78
+    },
+    "ms": 265.6870409846306,
+    "cost": 2.2134e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.5,
+    "ms": 1643.4606248512864,
+    "cost": 0.001938
+   }
+  },
+  {
+   "id": 33,
+   "text": "i tried to withdraw money from an atm and i was declined on front of my friends. Why did this happen?",
+   "intent": "declined_cash_withdrawal",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 1,
+     "sales_billing": 0
+    },
+    "ms": 290.0901669636369,
+    "cost": 2.2848e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.88,
+    "ms": 966.4577078074217,
+    "cost": 0.001034
+   }
+  },
+  {
+   "id": 34,
+   "text": "do I need anything for the identity check?",
+   "intent": "verify_my_identity",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 257.87491630762815,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.85,
+    "ms": 1508.8371243327856,
+    "cost": 0.000982
+   }
+  },
+  {
+   "id": 35,
+   "text": "The app wouldn't accept my top up.",
+   "intent": "top_up_reverted",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.94,
+    "probs": {
+     "support": 0,
+     "technical": 0.96,
+     "sales_billing": 0.04
+    },
+    "ms": 320.24866715073586,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.8,
+    "ms": 1403.1886663287878,
+    "cost": 0.001706
+   }
+  },
+  {
+   "id": 36,
+   "text": "What do you base your exchange rates on?",
+   "intent": "exchange_rate",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 0,
+     "sales_billing": 1
+    },
+    "ms": 267.0147493481636,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.93,
+    "ms": 1006.2518753111362,
+    "cost": 0.001024
+   }
+  },
+  {
+   "id": 37,
+   "text": "Can I top up using an international card",
+   "intent": "top_up_by_card_charge",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.52,
+    "probs": {
+     "support": 0.32,
+     "technical": 0,
+     "sales_billing": 0.68
+    },
+    "ms": 300.41708424687386,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.5,
+    "ms": 3611.0751247033477,
+    "cost": 0.004018
+   }
+  },
+  {
+   "id": 38,
+   "text": "Where can I find instructions to change my PIN?",
+   "intent": "change_pin",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 280.455500818789,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.96,
+    "ms": 1050.6254164502025,
+    "cost": 0.00099
+   }
+  },
+  {
+   "id": 39,
+   "text": "There are some strange charges on my card that I didn't make from a few days ago.  Is my card stolen and if so should I cancel it?  Will I get refunded the charges?",
+   "intent": "card_payment_not_recognised",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.89,
+    "probs": {
+     "support": 0.01,
+     "technical": 0.93,
+     "sales_billing": 0.06
+    },
+    "ms": 316.97737518697977,
+    "cost": 2.3562e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.88,
+    "ms": 1867.80337523669,
+    "cost": 0.001806
+   }
+  },
+  {
+   "id": 40,
+   "text": "still waiting on my new card",
+   "intent": "card_arrival",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 1,
+     "sales_billing": 0
+    },
+    "ms": 324.0039171651006,
+    "cost": 2.2134e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.6,
+    "ms": 1774.5690001174808,
+    "cost": 0.002156
+   }
+  },
+  {
+   "id": 41,
+   "text": "The app will not let me into my account.",
+   "intent": "unable_to_verify_identity",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.68,
+    "probs": {
+     "support": 0.21,
+     "technical": 0.79,
+     "sales_billing": 0
+    },
+    "ms": 282.3981661349535,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.55,
+    "ms": 1759.2313745990396,
+    "cost": 0.00213
+   }
+  },
+  {
+   "id": 42,
+   "text": "Top up on my Google Pay isn't working.",
+   "intent": "apple_pay_or_google_pay",
+   "team": "technical",
+   "split": "eval",
+   "override": "2026-10-06 review: message reports top-up not working; intent apple_pay_or_google_pay is a how-to",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.94,
+    "probs": {
+     "support": 0.02,
+     "technical": 0.96,
+     "sales_billing": 0.02
+    },
+    "ms": 281.64041694253683,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.8,
+    "ms": 1489.0888324007392,
+    "cost": 0.00192
+   }
+  },
+  {
+   "id": 43,
+   "text": "Why do you need to know so much about me",
+   "intent": "why_verify_identity",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.88,
+    "probs": {
+     "support": 0.92,
+     "technical": 0.07,
+     "sales_billing": 0.01
+    },
+    "ms": 667.5670836120844,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.8,
+    "ms": 1201.7611246556044,
+    "cost": 0.001612
+   }
+  },
+  {
+   "id": 44,
+   "text": "I found my card, I would like to reactivate it.",
+   "intent": "card_linking",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.76,
+    "probs": {
+     "support": 0.84,
+     "technical": 0.16,
+     "sales_billing": 0
+    },
+    "ms": 355.4841252043843,
+    "cost": 2.247e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.6,
+    "ms": 1798.34695905447,
+    "cost": 0.00214
+   }
+  },
+  {
+   "id": 45,
+   "text": "I have withdrawn cash from ATM but i received the wrong amount. I want cash back as in app its showing actual amount which i got. Please help me in this.",
+   "intent": "wrong_amount_of_cash_received",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.88,
+    "probs": {
+     "support": 0.01,
+     "technical": 0.92,
+     "sales_billing": 0.07
+    },
+    "ms": 634.6784578636289,
+    "cost": 2.331e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.88,
+    "ms": 1920.3171664848924,
+    "cost": 0.001888
+   }
+  },
+  {
+   "id": 46,
+   "text": "Topping up my card is not working because I believe the top up is pending",
+   "intent": "pending_top_up",
+   "team": "technical",
+   "split": "eval",
+   "override": "2026-10-06 review: top-up not working, customer's own transaction must be examined",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.92,
+    "probs": {
+     "support": 0.01,
+     "technical": 0.95,
+     "sales_billing": 0.04
+    },
+    "ms": 256.9680418819189,
+    "cost": 2.2596e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.86,
+    "ms": 991.5338326245546,
+    "cost": 0.001008
+   }
+  },
+  {
+   "id": 47,
+   "text": "I have multiple charges on the same transaction.",
+   "intent": "transaction_charged_twice",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.37,
+    "probs": {
+     "support": 0,
+     "technical": 0.58,
+     "sales_billing": 0.42
+    },
+    "ms": 283.8542079553008,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.72,
+    "ms": 2360.7448330149055,
+    "cost": 0.002218
+   }
+  },
+  {
+   "id": 48,
+   "text": "How do I use a disposable virtual card?",
+   "intent": "get_disposable_virtual_card",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 260.04962529987097,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.95,
+    "ms": 892.8384995087981,
+    "cost": 0.000986
+   }
+  },
+  {
+   "id": 49,
+   "text": "Can I still use my account, even though the identity verification has not passed yet?",
+   "intent": "why_verify_identity",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.28,
+    "probs": {
+     "support": 0.52,
+     "technical": 0.48,
+     "sales_billing": 0
+    },
+    "ms": 286.61066573113203,
+    "cost": 2.2596e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.8,
+    "ms": 1478.2941676676273,
+    "cost": 0.001854
+   }
+  },
+  {
+   "id": 50,
+   "text": "Where can I find the source of my available money?",
+   "intent": "verify_source_of_funds",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.33,
+    "probs": {
+     "support": 0.43,
+     "technical": 0.02,
+     "sales_billing": 0.55
+    },
+    "ms": 284.94391590356827,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.8,
+    "ms": 1993.748958222568,
+    "cost": 0.002254
+   }
+  },
+  {
+   "id": 51,
+   "text": "What is the process for activating my card?",
+   "intent": "activate_my_card",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 345.7777090370655,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.97,
+    "ms": 939.3908753991127,
+    "cost": 0.00098
+   }
+  },
+  {
+   "id": 52,
+   "text": "My statement has a dollar I have been charged showing up on it.",
+   "intent": "extra_charge_on_statement",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.97,
+    "probs": {
+     "support": 0,
+     "technical": 0.02,
+     "sales_billing": 0.98
+    },
+    "ms": 401.30104031413794,
+    "cost": 2.247e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.62,
+    "ms": 2172.0543326810002,
+    "cost": 0.002448
+   }
+  },
+  {
+   "id": 53,
+   "text": "Please tell me about SWIFT transfers at this bank.",
+   "intent": "top_up_by_bank_transfer_charge",
+   "team": "support",
+   "split": "fit",
+   "override": "2026-10-06 review: asks for information about SWIFT transfers; no fee or charge mentioned",
+   "jev": {
+    "pred": "support",
+    "conf": 0.88,
+    "probs": {
+     "support": 0.92,
+     "technical": 0,
+     "sales_billing": 0.08
+    },
+    "ms": 371.08045909553766,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.7,
+    "ms": 1831.91145863384,
+    "cost": 0.002228
+   }
+  },
+  {
+   "id": 54,
+   "text": "I'm going to be away for awhile, can I have it add money automatically in certain intervals?",
+   "intent": "automatic_top_up",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.37,
+    "probs": {
+     "support": 0.42,
+     "technical": 0,
+     "sales_billing": 0.58
+    },
+    "ms": 283.51037576794624,
+    "cost": 2.2722e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.86,
+    "ms": 1496.042083017528,
+    "cost": 0.001806
+   }
+  },
+  {
+   "id": 55,
+   "text": "How can I get a physical card",
+   "intent": "order_physical_card",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 312.6496244221926,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.93,
+    "ms": 857.5362507253885,
+    "cost": 0.000976
+   }
+  },
+  {
+   "id": 56,
+   "text": "I have received my card, can you help me put it in the app?",
+   "intent": "card_linking",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 270.8107093349099,
+    "cost": 2.2554e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.93,
+    "ms": 1266.7000414803624,
+    "cost": 0.000992
+   }
+  },
+  {
+   "id": 57,
+   "text": "Which forms of currency are accepted?",
+   "intent": "supported_cards_and_currencies",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 0,
+     "sales_billing": 1
+    },
+    "ms": 268.74454226344824,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.85,
+    "ms": 1488.344999961555,
+    "cost": 0.001024
+   }
+  },
+  {
+   "id": 58,
+   "text": "What is needed to prove my identity?",
+   "intent": "verify_my_identity",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 309.76654030382633,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.85,
+    "ms": 967.2936676070094,
+    "cost": 0.000982
+   }
+  },
+  {
+   "id": 59,
+   "text": "Is it possible to get a Visa here?",
+   "intent": "visa_or_mastercard",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.33,
+    "probs": {
+     "support": 0.55,
+     "technical": 0,
+     "sales_billing": 0.45
+    },
+    "ms": 353.37324999272823,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.6,
+    "ms": 3992.1616250649095,
+    "cost": 0.002856
+   }
+  },
+  {
+   "id": 60,
+   "text": "Why did you charge me for a cash withdrawal?",
+   "intent": "cash_withdrawal_charge",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 0,
+     "sales_billing": 1
+    },
+    "ms": 301.56049970537424,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.85,
+    "ms": 947.8070000186563,
+    "cost": 0.001034
+   }
+  },
+  {
+   "id": 61,
+   "text": "Can I open a bank account for my newborn baby?",
+   "intent": "age_limit",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.72,
+    "probs": {
+     "support": 0.19,
+     "technical": 0,
+     "sales_billing": 0.81
+    },
+    "ms": 247.12762515991926,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.82,
+    "ms": 2112.448708154261,
+    "cost": 0.001482
+   }
+  },
+  {
+   "id": 62,
+   "text": "I made a bank transfer a couple of hours ago from my UK account.  It hasn't appeared, can you check to make sure it went through?",
+   "intent": "balance_not_updated_after_bank_transfer",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.01,
+     "technical": 0.99,
+     "sales_billing": 0
+    },
+    "ms": 268.0704155936837,
+    "cost": 2.3184e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.9,
+    "ms": 2549.1195004433393,
+    "cost": 0.001056
+   }
+  },
+  {
+   "id": 63,
+   "text": "Can I hold money in other currencies?",
+   "intent": "fiat_currency_support",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.96,
+    "probs": {
+     "support": 0.03,
+     "technical": 0,
+     "sales_billing": 0.97
+    },
+    "ms": 267.774791456759,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.72,
+    "ms": 1731.1415411531925,
+    "cost": 0.001664
+   }
+  },
+  {
+   "id": 64,
+   "text": "My salary is in GBP; how can I note this in the app?",
+   "intent": "receiving_money",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.5,
+    "probs": {
+     "support": 0.67,
+     "technical": 0,
+     "sales_billing": 0.33
+    },
+    "ms": 281.62241727113724,
+    "cost": 2.2512e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.8,
+    "ms": 2210.5272505432367,
+    "cost": 0.001946
+   }
+  },
+  {
+   "id": 65,
+   "text": "How long until the money is in my account?",
+   "intent": "transfer_timing",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.64,
+    "probs": {
+     "support": 0.76,
+     "technical": 0.11,
+     "sales_billing": 0.13
+    },
+    "ms": 371.87108397483826,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.8,
+    "ms": 2047.4592503160238,
+    "cost": 0.00235
+   }
+  },
+  {
+   "id": 66,
+   "text": "i was supposed to get a refund but my balance hasn't changed, why not?",
+   "intent": "Refund_not_showing_up",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.56,
+    "probs": {
+     "support": 0,
+     "technical": 0.29,
+     "sales_billing": 0.71
+    },
+    "ms": 289.10983353853226,
+    "cost": 2.2596e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.72,
+    "ms": 2559.49283298105,
+    "cost": 0.002188
+   }
+  },
+  {
+   "id": 67,
+   "text": "I bought some stuff this morning but the payment shows as pending",
+   "intent": "pending_card_payment",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.14,
+    "probs": {
+     "support": 0.32,
+     "technical": 0.25,
+     "sales_billing": 0.43
+    },
+    "ms": 328.62375024706125,
+    "cost": 2.2386e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.6,
+    "ms": 2865.9509578719735,
+    "cost": 0.002528
+   }
+  },
+  {
+   "id": 68,
+   "text": "Why is the exchange rate wrong for my international withdrawal?",
+   "intent": "wrong_exchange_rate_for_cash_withdrawal",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 0,
+     "sales_billing": 1
+    },
+    "ms": 365.61658419668674,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.8,
+    "ms": 1576.4595000073314,
+    "cost": 0.001922
+   }
+  },
+  {
+   "id": 69,
+   "text": "When will I see the cash I deposited this morning as available?",
+   "intent": "balance_not_updated_after_cheque_or_cash_deposit",
+   "team": "support",
+   "split": "fit",
+   "override": "2026-10-06 review: timing question answerable from documentation (deposit availability)",
+   "jev": {
+    "pred": "support",
+    "conf": 0.89,
+    "probs": {
+     "support": 0.93,
+     "technical": 0.05,
+     "sales_billing": 0.02
+    },
+    "ms": 301.5573751181364,
+    "cost": 2.2428e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.8,
+    "ms": 1987.678125500679,
+    "cost": 0.001534
+   }
+  },
+  {
+   "id": 70,
+   "text": "What are the cards and currencies that are supported?",
+   "intent": "supported_cards_and_currencies",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.94,
+    "probs": {
+     "support": 0.04,
+     "technical": 0,
+     "sales_billing": 0.96
+    },
+    "ms": 313.22025042027235,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.85,
+    "ms": 979.0218323469162,
+    "cost": 0.001028
+   }
+  },
+  {
+   "id": 71,
+   "text": "I need to cancel a purchase I made.",
+   "intent": "request_refund",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.01,
+     "technical": 0,
+     "sales_billing": 0.99
+    },
+    "ms": 354.7571673989296,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.55,
+    "ms": 3412.934792228043,
+    "cost": 0.003136
+   }
+  },
+  {
+   "id": 72,
+   "text": "Can my children have their own account?",
+   "intent": "age_limit",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.58,
+    "probs": {
+     "support": 0.28,
+     "technical": 0,
+     "sales_billing": 0.72
+    },
+    "ms": 267.36600045114756,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.8,
+    "ms": 1144.0563341602683,
+    "cost": 0.001498
+   }
+  },
+  {
+   "id": 73,
+   "text": "I don't live in the UK.  Can I still get a card?",
+   "intent": "country_support",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.82,
+    "probs": {
+     "support": 0.12,
+     "technical": 0,
+     "sales_billing": 0.88
+    },
+    "ms": 363.51916659623384,
+    "cost": 2.2554e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.8,
+    "ms": 1625.306375324726,
+    "cost": 0.002036
+   }
+  },
+  {
+   "id": 74,
+   "text": "The expiration date of my card is approaching .",
+   "intent": "card_about_to_expire",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.88,
+    "probs": {
+     "support": 0.92,
+     "technical": 0,
+     "sales_billing": 0.08
+    },
+    "ms": 282.0408344268799,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.88,
+    "ms": 1572.2011253237724,
+    "cost": 0.001926
+   }
+  },
+  {
+   "id": 75,
+   "text": "When will my balance update after a transfer?",
+   "intent": "balance_not_updated_after_bank_transfer",
+   "team": "support",
+   "split": "fit",
+   "override": "2026-10-06 review: timing question answerable from documentation (transfer timing)",
+   "jev": {
+    "pred": "support",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.99,
+     "technical": 0,
+     "sales_billing": 0.01
+    },
+    "ms": 306.6336661577225,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.8,
+    "ms": 1477.728416211903,
+    "cost": 0.001764
+   }
+  },
+  {
+   "id": 76,
+   "text": "When will my transfer go through?",
+   "intent": "pending_transfer",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.42,
+    "probs": {
+     "support": 0.61,
+     "technical": 0.26,
+     "sales_billing": 0.13
+    },
+    "ms": 306.03466741740704,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.6,
+    "ms": 2344.7000002488494,
+    "cost": 0.001938
+   }
+  },
+  {
+   "id": 77,
+   "text": "How do I pay by check?",
+   "intent": "top_up_by_cash_or_cheque",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.43,
+    "probs": {
+     "support": 0.62,
+     "technical": 0,
+     "sales_billing": 0.38
+    },
+    "ms": 345.7305831834674,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.72,
+    "ms": 2968.271166086197,
+    "cost": 0.001856
+   }
+  },
+  {
+   "id": 78,
+   "text": "Please delete my account.",
+   "intent": "terminate_account",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.74,
+    "probs": {
+     "support": 0.16,
+     "technical": 0.01,
+     "sales_billing": 0.83
+    },
+    "ms": 322.1010835841298,
+    "cost": 2.2092e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.8,
+    "ms": 1619.406333193183,
+    "cost": 0.002024
+   }
+  },
+  {
+   "id": 79,
+   "text": "Can I freeze my card right now?",
+   "intent": "compromised_card",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.89,
+    "probs": {
+     "support": 0.93,
+     "technical": 0.07,
+     "sales_billing": 0
+    },
+    "ms": 298.1857927516103,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.86,
+    "ms": 1236.1537497490644,
+    "cost": 0.001772
+   }
+  },
+  {
+   "id": 80,
+   "text": "Where are the virtual cards located?",
+   "intent": "getting_virtual_card",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.97,
+    "probs": {
+     "support": 0.98,
+     "technical": 0.02,
+     "sales_billing": 0
+    },
+    "ms": 266.6125828400254,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.93,
+    "ms": 937.6453747972846,
+    "cost": 0.000982
+   }
+  },
+  {
+   "id": 81,
+   "text": "My beneficiary is not allowed, please may I have answer as to why this is?",
+   "intent": "beneficiary_not_allowed",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.31,
+    "probs": {
+     "support": 0.06,
+     "technical": 0.4,
+     "sales_billing": 0.54
+    },
+    "ms": 287.7476252615452,
+    "cost": 2.2596e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.6,
+    "ms": 1644.5970414206386,
+    "cost": 0.002038
+   }
+  },
+  {
+   "id": 82,
+   "text": "I see some fees for cash withdraw.",
+   "intent": "cash_withdrawal_charge",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.01,
+     "technical": 0,
+     "sales_billing": 0.99
+    },
+    "ms": 319.71179228276014,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.86,
+    "ms": 1098.0600425973535,
+    "cost": 0.001026
+   }
+  },
+  {
+   "id": 83,
+   "text": "My top-up has failed.",
+   "intent": "top_up_failed",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.97,
+    "probs": {
+     "support": 0,
+     "technical": 0.98,
+     "sales_billing": 0.02
+    },
+    "ms": 277.89808344095945,
+    "cost": 2.2134e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.86,
+    "ms": 953.2935842871666,
+    "cost": 0.000986
+   }
+  },
+  {
+   "id": 84,
+   "text": "I need my PIN",
+   "intent": "get_physical_card",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.99,
+     "technical": 0.01,
+     "sales_billing": 0
+    },
+    "ms": 277.09333319216967,
+    "cost": 2.205e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.8,
+    "ms": 1682.1929160505533,
+    "cost": 0.002162
+   }
+  },
+  {
+   "id": 85,
+   "text": "cash deposit to my account has shown a red flag.",
+   "intent": "balance_not_updated_after_cheque_or_cash_deposit",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.89,
+    "probs": {
+     "support": 0.01,
+     "technical": 0.93,
+     "sales_billing": 0.06
+    },
+    "ms": 300.28741620481014,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.8,
+    "ms": 2108.8628750294447,
+    "cost": 0.002372
+   }
+  },
+  {
+   "id": 86,
+   "text": "Are virtual cards available to get?",
+   "intent": "getting_virtual_card",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.89,
+    "probs": {
+     "support": 0.93,
+     "technical": 0,
+     "sales_billing": 0.07
+    },
+    "ms": 299.0330820903182,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.62,
+    "ms": 3285.237125121057,
+    "cost": 0.002912
+   }
+  },
+  {
+   "id": 87,
+   "text": "the card payment exchange rate is wrong",
+   "intent": "card_payment_wrong_exchange_rate",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 0,
+     "sales_billing": 1
+    },
+    "ms": 294.54012494534254,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.8,
+    "ms": 1308.7702495977283,
+    "cost": 0.001706
+   }
+  },
+  {
+   "id": 88,
+   "text": "How do I get a physical card?",
+   "intent": "order_physical_card",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 752.5495840236545,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.93,
+    "ms": 968.8160829246044,
+    "cost": 0.000978
+   }
+  },
+  {
+   "id": 89,
+   "text": "Where do I locate topping up with cash.",
+   "intent": "top_up_by_cash_or_cheque",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.94,
+    "probs": {
+     "support": 0.96,
+     "technical": 0,
+     "sales_billing": 0.04
+    },
+    "ms": 1077.4244582280517,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.93,
+    "ms": 1719.3826250731945,
+    "cost": 0.001926
+   }
+  },
+  {
+   "id": 90,
+   "text": "How do I get my salary through this account?",
+   "intent": "receiving_money",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.73,
+    "probs": {
+     "support": 0.82,
+     "technical": 0.01,
+     "sales_billing": 0.17
+    },
+    "ms": 456.8698750808835,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.88,
+    "ms": 1689.037791453302,
+    "cost": 0.002032
+   }
+  },
+  {
+   "id": 91,
+   "text": "My latest payment was declined, I was told everything was back to working order. What happened?",
+   "intent": "declined_card_payment",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.97,
+    "probs": {
+     "support": 0,
+     "technical": 0.98,
+     "sales_billing": 0.02
+    },
+    "ms": 435.8019158244133,
+    "cost": 2.268e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.93,
+    "ms": 916.5175827220082,
+    "cost": 0.001018
+   }
+  },
+  {
+   "id": 92,
+   "text": "Why isn't the transfer on my account showing up?",
+   "intent": "balance_not_updated_after_bank_transfer",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.98,
+    "probs": {
+     "support": 0,
+     "technical": 0.99,
+     "sales_billing": 0.01
+    },
+    "ms": 270.35695780068636,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.88,
+    "ms": 1266.2034155800939,
+    "cost": 0.001002
+   }
+  },
+  {
+   "id": 93,
+   "text": "Why is there a random withdrawal in my app?",
+   "intent": "cash_withdrawal_not_recognised",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.67,
+    "probs": {
+     "support": 0.03,
+     "technical": 0.78,
+     "sales_billing": 0.19
+    },
+    "ms": 293.99470798671246,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.72,
+    "ms": 2838.398207910359,
+    "cost": 0.00254
+   }
+  },
+  {
+   "id": 94,
+   "text": "What is this $1 charge on my statement?",
+   "intent": "extra_charge_on_statement",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.98,
+    "probs": {
+     "support": 0,
+     "technical": 0.01,
+     "sales_billing": 0.99
+    },
+    "ms": 264.31729178875685,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.62,
+    "ms": 1050.4389172419906,
+    "cost": 0.001026
+   }
+  },
+  {
+   "id": 95,
+   "text": "How do I add a card to the app?",
+   "intent": "card_linking",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 314.06145822256804,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.96,
+    "ms": 1512.2989574447274,
+    "cost": 0.00098
+   }
+  },
+  {
+   "id": 96,
+   "text": "Is there a top-up feature, if there isn't a lot of money left?",
+   "intent": "automatic_top_up",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.44,
+    "probs": {
+     "support": 0.37,
+     "technical": 0,
+     "sales_billing": 0.63
+    },
+    "ms": 241.50216672569513,
+    "cost": 2.2596e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.85,
+    "ms": 1677.9513750225306,
+    "cost": 0.001924
+   }
+  },
+  {
+   "id": 97,
+   "text": "I'm not familiar with a card payment.",
+   "intent": "card_payment_not_recognised",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.89,
+    "probs": {
+     "support": 0.93,
+     "technical": 0,
+     "sales_billing": 0.07
+    },
+    "ms": 415.5064169317484,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.82,
+    "ms": 1617.3644587397575,
+    "cost": 0.001996
+   }
+  },
+  {
+   "id": 98,
+   "text": "The day before yesterday, I performed a transfer which was within this country. It still hasn't gone through. Can you check on that? The account number is definitely correct, as I've checked and double checked.",
+   "intent": "transfer_not_received_by_recipient",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 1,
+     "sales_billing": 0
+    },
+    "ms": 298.40083327144384,
+    "cost": 2.3688e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.93,
+    "ms": 1369.9211673811078,
+    "cost": 0.001086
+   }
+  },
+  {
+   "id": 99,
+   "text": "Is the system down? I've been trying to do a transfer and have failed?",
+   "intent": "failed_transfer",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.01,
+     "technical": 0.99,
+     "sales_billing": 0
+    },
+    "ms": 264.16679192334414,
+    "cost": 2.2596e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.85,
+    "ms": 1002.1562501788139,
+    "cost": 0.001014
+   }
+  },
+  {
+   "id": 100,
+   "text": "How to change the PIN on my card?",
+   "intent": "change_pin",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 267.6731674000621,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.96,
+    "ms": 996.5732078999281,
+    "cost": 0.000982
+   }
+  },
+  {
+   "id": 101,
+   "text": "Can I use my card anywere?",
+   "intent": "card_acceptance",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.7,
+    "probs": {
+     "support": 0.8,
+     "technical": 0,
+     "sales_billing": 0.2
+    },
+    "ms": 271.6862503439188,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.6,
+    "ms": 3718.259582296014,
+    "cost": 0.00319
+   }
+  },
+  {
+   "id": 102,
+   "text": "Why was my transfer charged fees?",
+   "intent": "transfer_fee_charged",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 0,
+     "sales_billing": 1
+    },
+    "ms": 392.40020886063576,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.85,
+    "ms": 965.446375310421,
+    "cost": 0.001024
+   }
+  },
+  {
+   "id": 103,
+   "text": "How do you fix  my card payment?",
+   "intent": "declined_card_payment",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.94,
+    "probs": {
+     "support": 0.03,
+     "technical": 0.96,
+     "sales_billing": 0.01
+    },
+    "ms": 285.92429123818874,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.55,
+    "ms": 1917.4992917105556,
+    "cost": 0.002162
+   }
+  },
+  {
+   "id": 104,
+   "text": "Why does the app revert a payment?",
+   "intent": "reverted_card_payment?",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.42,
+    "probs": {
+     "support": 0.13,
+     "technical": 0.26,
+     "sales_billing": 0.61
+    },
+    "ms": 253.7810830399394,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.55,
+    "ms": 3974.28391687572,
+    "cost": 0.002862
+   }
+  },
+  {
+   "id": 105,
+   "text": "How long does the cash withdrawal take to pend?",
+   "intent": "pending_cash_withdrawal",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.99,
+     "technical": 0.01,
+     "sales_billing": 0
+    },
+    "ms": 344.77608278393745,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.8,
+    "ms": 2009.2357080429792,
+    "cost": 0.002432
+   }
+  },
+  {
+   "id": 106,
+   "text": "help me obtain a virtual card",
+   "intent": "getting_virtual_card",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 274.0536676719785,
+    "cost": 2.2134e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.9,
+    "ms": 920.5950004979968,
+    "cost": 0.00098
+   }
+  },
+  {
+   "id": 107,
+   "text": "what is this charge on my account",
+   "intent": "direct_debit_payment_not_recognised",
+   "team": "sales_billing",
+   "split": "fit",
+   "override": "2026-10-06 review: asks what a charge on the account is; charges route to sales_billing by the stated precedence",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.98,
+    "probs": {
+     "support": 0,
+     "technical": 0.01,
+     "sales_billing": 0.99
+    },
+    "ms": 292.14854165911674,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.55,
+    "ms": 1662.7500420436263,
+    "cost": 0.002246
+   }
+  },
+  {
+   "id": 108,
+   "text": "Do you know the closest ATM?",
+   "intent": "atm_support",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 244.4817079231143,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.9,
+    "ms": 1611.3897506147623,
+    "cost": 0.001992
+   }
+  },
+  {
+   "id": 109,
+   "text": "Can I use my American Express stored in Apple Pay to top up?",
+   "intent": "apple_pay_or_google_pay",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.61,
+    "probs": {
+     "support": 0.74,
+     "technical": 0,
+     "sales_billing": 0.26
+    },
+    "ms": 279.1023338213563,
+    "cost": 2.247e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.72,
+    "ms": 2541.7742086574435,
+    "cost": 0.002392
+   }
+  },
+  {
+   "id": 110,
+   "text": "What do i have to do to change my name?",
+   "intent": "edit_personal_details",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 276.67158376425505,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.85,
+    "ms": 947.6231671869755,
+    "cost": 0.000982
+   }
+  },
+  {
+   "id": 111,
+   "text": "Where on the website do I go to link my card?",
+   "intent": "card_linking",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 272.430207580328,
+    "cost": 2.2386e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.95,
+    "ms": 1051.4085423201323,
+    "cost": 0.000986
+   }
+  },
+  {
+   "id": 112,
+   "text": "Why was I charged extra for transferring money?",
+   "intent": "transfer_fee_charged",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 0,
+     "sales_billing": 1
+    },
+    "ms": 301.12879164516926,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.93,
+    "ms": 981.6770404577255,
+    "cost": 0.001028
+   }
+  },
+  {
+   "id": 113,
+   "text": "I've transferred money before without issue but now I am encountering an error stating that it isn't possible. Why is that?",
+   "intent": "beneficiary_not_allowed",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.97,
+    "probs": {
+     "support": 0.01,
+     "technical": 0.98,
+     "sales_billing": 0.01
+    },
+    "ms": 402.5924578309059,
+    "cost": 2.2932e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.82,
+    "ms": 1512.941375374794,
+    "cost": 0.002048
+   }
+  },
+  {
+   "id": 114,
+   "text": "Ordered awhile back, what is the ETA in the US?",
+   "intent": "card_delivery_estimate",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.48,
+    "probs": {
+     "support": 0.65,
+     "technical": 0.34,
+     "sales_billing": 0.01
+    },
+    "ms": 313.2877079769969,
+    "cost": 2.2386e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.55,
+    "ms": 3793.6390414834023,
+    "cost": 0.003258
+   }
+  },
+  {
+   "id": 115,
+   "text": "How are exchange rates calculated?",
+   "intent": "exchange_rate",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.97,
+    "probs": {
+     "support": 0.02,
+     "technical": 0,
+     "sales_billing": 0.98
+    },
+    "ms": 289.6431256085634,
+    "cost": 2.2134e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.9,
+    "ms": 974.1457924246788,
+    "cost": 0.001022
+   }
+  },
+  {
+   "id": 116,
+   "text": "I have a new card and I want to activate it",
+   "intent": "activate_my_card",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 274.0717502310872,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.96,
+    "ms": 1086.975791491568,
+    "cost": 0.000984
+   }
+  },
+  {
+   "id": 117,
+   "text": "Can someone please assist me with finding my nearest ATM?",
+   "intent": "atm_support",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 232.93404281139374,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.93,
+    "ms": 987.9620000720024,
+    "cost": 0.000998
+   }
+  },
+  {
+   "id": 118,
+   "text": "There was a transaction from two weeks ago from a business that I don't know. I'm fairly certain it wasn't me who made it, but is it an option to trace it to confirm?",
+   "intent": "direct_debit_payment_not_recognised",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.98,
+    "probs": {
+     "support": 0,
+     "technical": 0.99,
+     "sales_billing": 0.01
+    },
+    "ms": 334.5036255195737,
+    "cost": 2.3562e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.9,
+    "ms": 1666.221458464861,
+    "cost": 0.001938
+   }
+  },
+  {
+   "id": 119,
+   "text": "I would like to see the source of my money.",
+   "intent": "verify_source_of_funds",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.8,
+    "probs": {
+     "support": 0.04,
+     "technical": 0.09,
+     "sales_billing": 0.87
+    },
+    "ms": 371.2007077410817,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.5,
+    "ms": 4154.892709106207,
+    "cost": 0.004072
+   }
+  },
+  {
+   "id": 120,
+   "text": "Please stop my purchase.",
+   "intent": "request_refund",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.92,
+    "probs": {
+     "support": 0.02,
+     "technical": 0.03,
+     "sales_billing": 0.95
+    },
+    "ms": 320.04658319056034,
+    "cost": 2.2092e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.62,
+    "ms": 2209.692208096385,
+    "cost": 0.001858
+   }
+  },
+  {
+   "id": 121,
+   "text": "Is there a verification code for top-ups?",
+   "intent": "verify_top_up",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.91,
+    "probs": {
+     "support": 0.94,
+     "technical": 0,
+     "sales_billing": 0.06
+    },
+    "ms": 405.1590422168374,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.82,
+    "ms": 962.9639163613319,
+    "cost": 0.000986
+   }
+  },
+  {
+   "id": 122,
+   "text": "I received cash from the ATM earlier, but this shows up as pending in the app.  I've got the cash already.  How can this be still pending?",
+   "intent": "pending_cash_withdrawal",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.56,
+    "probs": {
+     "support": 0.25,
+     "technical": 0.71,
+     "sales_billing": 0.04
+    },
+    "ms": 256.2339995056391,
+    "cost": 2.331e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.68,
+    "ms": 2295.222499407828,
+    "cost": 0.002626
+   }
+  },
+  {
+   "id": 123,
+   "text": "How can I unlock my pin from too many tries?",
+   "intent": "pin_blocked",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.79,
+    "probs": {
+     "support": 0.86,
+     "technical": 0.14,
+     "sales_billing": 0
+    },
+    "ms": 282.3634995147586,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.55,
+    "ms": 5235.696749761701,
+    "cost": 0.00528
+   }
+  },
+  {
+   "id": 124,
+   "text": "I transferred my funds, why did it not go through?",
+   "intent": "failed_transfer",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 1,
+     "sales_billing": 0
+    },
+    "ms": 338.19954190403223,
+    "cost": 2.2386e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.88,
+    "ms": 1032.1204168722034,
+    "cost": 0.001
+   }
+  },
+  {
+   "id": 125,
+   "text": "what is the identity check?",
+   "intent": "why_verify_identity",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.99,
+     "technical": 0.01,
+     "sales_billing": 0
+    },
+    "ms": 312.4687084928155,
+    "cost": 2.2134e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.85,
+    "ms": 1144.3635830655694,
+    "cost": 0.000974
+   }
+  },
+  {
+   "id": 126,
+   "text": "What is the activation process on my new card?",
+   "intent": "activate_my_card",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 259.7675835713744,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.96,
+    "ms": 1271.52662537992,
+    "cost": 0.000982
+   }
+  },
+  {
+   "id": 127,
+   "text": "The exchange rate for my withdrawal isn't correct and doesn't match the actual exchange rate.",
+   "intent": "wrong_exchange_rate_for_cash_withdrawal",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 0,
+     "sales_billing": 1
+    },
+    "ms": 353.5937499254942,
+    "cost": 2.2638e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.9,
+    "ms": 1076.8594993278384,
+    "cost": 0.001066
+   }
+  },
+  {
+   "id": 128,
+   "text": "Can I top up using a cheque?",
+   "intent": "top_up_by_cash_or_cheque",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.26,
+    "probs": {
+     "support": 0.51,
+     "technical": 0,
+     "sales_billing": 0.49
+    },
+    "ms": 350.63066706061363,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.72,
+    "ms": 3281.9175412878394,
+    "cost": 0.002552
+   }
+  },
+  {
+   "id": 129,
+   "text": "Can I change the amount I made on a payment that I made to the payment is correct.",
+   "intent": "cancel_transfer",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.7,
+    "probs": {
+     "support": 0.04,
+     "technical": 0.16,
+     "sales_billing": 0.8
+    },
+    "ms": 1227.1323334425688,
+    "cost": 2.268e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.62,
+    "ms": 2403.9228335022926,
+    "cost": 0.003008
+   }
+  },
+  {
+   "id": 130,
+   "text": "I need help. I asked for a refund from a merchant a while ago, but I have not gotten my money back. I keep checking my account, but nothing is showing up. What should I do now?",
+   "intent": "Refund_not_showing_up",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.26,
+    "probs": {
+     "support": 0.01,
+     "technical": 0.48,
+     "sales_billing": 0.51
+    },
+    "ms": 464.69129249453545,
+    "cost": 2.3688e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.8,
+    "ms": 1841.891166754067,
+    "cost": 0.00215
+   }
+  },
+  {
+   "id": 131,
+   "text": "i want to close an account but im not sure about setting up a new one in the future, what do you recommend",
+   "intent": "terminate_account",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.96,
+    "probs": {
+     "support": 0.03,
+     "technical": 0,
+     "sales_billing": 0.97
+    },
+    "ms": 272.5721253082156,
+    "cost": 2.289e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.8,
+    "ms": 991.778957657516,
+    "cost": 0.001056
+   }
+  },
+  {
+   "id": 132,
+   "text": "Which country's currency do you support?",
+   "intent": "fiat_currency_support",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.01,
+     "technical": 0,
+     "sales_billing": 0.99
+    },
+    "ms": 311.5341253578663,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.95,
+    "ms": 1051.2512093409896,
+    "cost": 0.00102
+   }
+  },
+  {
+   "id": 133,
+   "text": "There is a withdrawal that isn't mind in the app.",
+   "intent": "cash_withdrawal_not_recognised",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.94,
+    "probs": {
+     "support": 0.01,
+     "technical": 0.96,
+     "sales_billing": 0.03
+    },
+    "ms": 271.5046666562557,
+    "cost": 2.2386e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.93,
+    "ms": 1574.4622498750687,
+    "cost": 0.001846
+   }
+  },
+  {
+   "id": 134,
+   "text": "I want a card. What is the procedure?",
+   "intent": "order_physical_card",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 306.7442076280713,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.93,
+    "ms": 968.2507077232003,
+    "cost": 0.000984
+   }
+  },
+  {
+   "id": 135,
+   "text": "Are you able to locate my card?",
+   "intent": "lost_or_stolen_card",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.92,
+    "probs": {
+     "support": 0.05,
+     "technical": 0.95,
+     "sales_billing": 0
+    },
+    "ms": 274.41370766609907,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.8,
+    "ms": 1798.9597925916314,
+    "cost": 0.00202
+   }
+  },
+  {
+   "id": 136,
+   "text": "Will there be additional costs of I make a withdrawal from a local ATM of British pounds? I need some cash to feel comfortable on the journey home",
+   "intent": "wrong_exchange_rate_for_cash_withdrawal",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.01,
+     "technical": 0,
+     "sales_billing": 0.99
+    },
+    "ms": 288.2417915388942,
+    "cost": 2.31e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.9,
+    "ms": 1088.778625242412,
+    "cost": 0.001092
+   }
+  },
+  {
+   "id": 137,
+   "text": "Do you support all cards and currencies?",
+   "intent": "supported_cards_and_currencies",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.92,
+    "probs": {
+     "support": 0.05,
+     "technical": 0,
+     "sales_billing": 0.95
+    },
+    "ms": 303.935625590384,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.82,
+    "ms": 984.433582983911,
+    "cost": 0.001024
+   }
+  },
+  {
+   "id": 138,
+   "text": "I've been charged more than once for the same transaction",
+   "intent": "transaction_charged_twice",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.8,
+    "probs": {
+     "support": 0,
+     "technical": 0.87,
+     "sales_billing": 0.13
+    },
+    "ms": 255.83374965935946,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.72,
+    "ms": 2428.7161249667406,
+    "cost": 0.002098
+   }
+  },
+  {
+   "id": 139,
+   "text": "I completed a money transaction but the recipient hasn't received it",
+   "intent": "transfer_not_received_by_recipient",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 1,
+     "sales_billing": 0
+    },
+    "ms": 286.12800035625696,
+    "cost": 2.2386e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.93,
+    "ms": 1050.6760412827134,
+    "cost": 0.001008
+   }
+  },
+  {
+   "id": 140,
+   "text": "Is there a fee for exchanging foreign currencies?",
+   "intent": "exchange_charge",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 0,
+     "sales_billing": 1
+    },
+    "ms": 264.1692915931344,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.97,
+    "ms": 1012.3597923666239,
+    "cost": 0.001036
+   }
+  },
+  {
+   "id": 141,
+   "text": "I need my card quickly",
+   "intent": "card_delivery_estimate",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.49,
+    "probs": {
+     "support": 0.66,
+     "technical": 0.34,
+     "sales_billing": 0
+    },
+    "ms": 245.17583288252354,
+    "cost": 2.2092e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.62,
+    "ms": 1651.1152079328895,
+    "cost": 0.001974
+   }
+  },
+  {
+   "id": 142,
+   "text": "If i'm not in the UK, can I still get a card?",
+   "intent": "country_support",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.58,
+    "probs": {
+     "support": 0.28,
+     "technical": 0,
+     "sales_billing": 0.72
+    },
+    "ms": 262.66866736114025,
+    "cost": 2.2512e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.62,
+    "ms": 1700.128166936338,
+    "cost": 0.001974
+   }
+  },
+  {
+   "id": 143,
+   "text": "What is the fee charged with this card payment?",
+   "intent": "card_payment_fee_charged",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 0,
+     "sales_billing": 1
+    },
+    "ms": 315.0115832686424,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.82,
+    "ms": 1042.697874829173,
+    "cost": 0.001026
+   }
+  },
+  {
+   "id": 144,
+   "text": "Why was I not able to complete a transfer?",
+   "intent": "failed_transfer",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.92,
+    "probs": {
+     "support": 0.02,
+     "technical": 0.95,
+     "sales_billing": 0.03
+    },
+    "ms": 332.4148338288069,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.8,
+    "ms": 1612.1852919459343,
+    "cost": 0.001888
+   }
+  },
+  {
+   "id": 145,
+   "text": "Can you get me my card fast?",
+   "intent": "card_delivery_estimate",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.62,
+    "probs": {
+     "support": 0.75,
+     "technical": 0.25,
+     "sales_billing": 0
+    },
+    "ms": 324.85062442719936,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.62,
+    "ms": 2573.9815002307296,
+    "cost": 0.00207
+   }
+  },
+  {
+   "id": 146,
+   "text": "How long does it take for a money transfer to show?",
+   "intent": "pending_transfer",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.99,
+     "technical": 0.01,
+     "sales_billing": 0
+    },
+    "ms": 282.5448326766491,
+    "cost": 2.2386e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.82,
+    "ms": 1272.7472493425012,
+    "cost": 0.001708
+   }
+  },
+  {
+   "id": 147,
+   "text": "Can I transfer money to my credit card?",
+   "intent": "topping_up_by_card",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.44,
+    "probs": {
+     "support": 0.63,
+     "technical": 0,
+     "sales_billing": 0.37
+    },
+    "ms": 260.8948750421405,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.82,
+    "ms": 2227.647458203137,
+    "cost": 0.002126
+   }
+  },
+  {
+   "id": 148,
+   "text": "How do I get the Top Up feature on my apple watch working?",
+   "intent": "apple_pay_or_google_pay",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.82,
+    "probs": {
+     "support": 0.88,
+     "technical": 0.11,
+     "sales_billing": 0.01
+    },
+    "ms": 517.170500010252,
+    "cost": 2.247e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.8,
+    "ms": 1019.0026257187128,
+    "cost": 0.000998
+   }
+  },
+  {
+   "id": 149,
+   "text": "I bought something in a foreign currency but the rate applied is wrong!",
+   "intent": "card_payment_wrong_exchange_rate",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 0,
+     "sales_billing": 1
+    },
+    "ms": 312.25033290684223,
+    "cost": 2.247e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.85,
+    "ms": 1784.6278743818402,
+    "cost": 0.002054
+   }
+  },
+  {
+   "id": 150,
+   "text": "How do I know why my card isn't working?",
+   "intent": "card_not_working",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.97,
+    "probs": {
+     "support": 0.02,
+     "technical": 0.98,
+     "sales_billing": 0
+    },
+    "ms": 404.2119160294533,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.62,
+    "ms": 2285.041625611484,
+    "cost": 0.002394
+   }
+  },
+  {
+   "id": 151,
+   "text": "How can I cancel a transfer?",
+   "intent": "cancel_transfer",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.79,
+    "probs": {
+     "support": 0.86,
+     "technical": 0.03,
+     "sales_billing": 0.11
+    },
+    "ms": 433.3456242457032,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.62,
+    "ms": 1071.9456253573298,
+    "cost": 0.000982
+   }
+  },
+  {
+   "id": 152,
+   "text": "When I tried to pay for my bus ride, the contactless payment wouldn't work. How can I prevent this in the future?",
+   "intent": "contactless_not_working",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.7,
+    "probs": {
+     "support": 0.2,
+     "technical": 0.8,
+     "sales_billing": 0
+    },
+    "ms": 326.16070937365294,
+    "cost": 2.3058e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.62,
+    "ms": 1847.1665000542998,
+    "cost": 0.002336
+   }
+  },
+  {
+   "id": 153,
+   "text": "I think my card is broken",
+   "intent": "card_not_working",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.01,
+     "technical": 0.99,
+     "sales_billing": 0
+    },
+    "ms": 334.888749755919,
+    "cost": 2.2134e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.8,
+    "ms": 2127.649541012943,
+    "cost": 0.002034
+   }
+  },
+  {
+   "id": 154,
+   "text": "i tried to make a transfer to a beneficiary and it didn't go through",
+   "intent": "beneficiary_not_allowed",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 1,
+     "sales_billing": 0
+    },
+    "ms": 344.98458355665207,
+    "cost": 2.2512e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.9,
+    "ms": 1024.0211244672537,
+    "cost": 0.001016
+   }
+  },
+  {
+   "id": 155,
+   "text": "What stores will take my credit card as payment?",
+   "intent": "card_acceptance",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.28,
+    "probs": {
+     "support": 0.52,
+     "technical": 0,
+     "sales_billing": 0.48
+    },
+    "ms": 348.11029117554426,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.8,
+    "ms": 2505.08941616863,
+    "cost": 0.001976
+   }
+  },
+  {
+   "id": 156,
+   "text": "The ATM didn't give me the the withdraw amount requested.",
+   "intent": "wrong_amount_of_cash_received",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 1,
+     "sales_billing": 0
+    },
+    "ms": 284.816624596715,
+    "cost": 2.2386e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.9,
+    "ms": 1479.9525421112776,
+    "cost": 0.00174
+   }
+  },
+  {
+   "id": 157,
+   "text": "I need help getting the virtual card to work.",
+   "intent": "virtual_card_not_working",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.46,
+    "probs": {
+     "support": 0.36,
+     "technical": 0.64,
+     "sales_billing": 0
+    },
+    "ms": 895.2552499249578,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.6,
+    "ms": 2149.2652082815766,
+    "cost": 0.002306
+   }
+  },
+  {
+   "id": 158,
+   "text": "The transfer I did hasn't arrived",
+   "intent": "transfer_not_received_by_recipient",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.91,
+    "probs": {
+     "support": 0.01,
+     "technical": 0.94,
+     "sales_billing": 0.05
+    },
+    "ms": 357.44133219122887,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.9,
+    "ms": 961.5962086245418,
+    "cost": 0.000996
+   }
+  },
+  {
+   "id": 159,
+   "text": "How old do my children need to be to open an account?",
+   "intent": "age_limit",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.01,
+     "technical": 0,
+     "sales_billing": 0.99
+    },
+    "ms": 360.33579148352146,
+    "cost": 2.2428e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.93,
+    "ms": 1161.4281674847007,
+    "cost": 0.001026
+   }
+  },
+  {
+   "id": 160,
+   "text": "What is the €1 fee for?",
+   "intent": "extra_charge_on_statement",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 0,
+     "sales_billing": 1
+    },
+    "ms": 255.43595757335424,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.93,
+    "ms": 1076.276708394289,
+    "cost": 0.00102
+   }
+  },
+  {
+   "id": 161,
+   "text": "Can I dispute a payment even if I notice it several weeks after it was made?",
+   "intent": "direct_debit_payment_not_recognised",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.44,
+    "probs": {
+     "support": 0.35,
+     "technical": 0.02,
+     "sales_billing": 0.63
+    },
+    "ms": 310.35683304071426,
+    "cost": 2.2596e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.62,
+    "ms": 2887.9730831831694,
+    "cost": 0.002538
+   }
+  },
+  {
+   "id": 162,
+   "text": "I want to change my address.",
+   "intent": "edit_personal_details",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.74,
+    "probs": {
+     "support": 0.83,
+     "technical": 0,
+     "sales_billing": 0.17
+    },
+    "ms": 280.8086248114705,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.9,
+    "ms": 1047.2987908869982,
+    "cost": 0.000974
+   }
+  },
+  {
+   "id": 163,
+   "text": "Will my transfer immediately show up in my account?",
+   "intent": "transfer_timing",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.85,
+    "probs": {
+     "support": 0.9,
+     "technical": 0.09,
+     "sales_billing": 0.01
+    },
+    "ms": 354.2787078768015,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.85,
+    "ms": 1426.3722086325288,
+    "cost": 0.00184
+   }
+  },
+  {
+   "id": 164,
+   "text": "I would like to know why I was charged twice for my purchase.",
+   "intent": "transaction_charged_twice",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.61,
+    "probs": {
+     "support": 0,
+     "technical": 0.74,
+     "sales_billing": 0.26
+    },
+    "ms": 282.65729174017906,
+    "cost": 2.247e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.77,
+    "ms": 3069.8643755167723,
+    "cost": 0.002686
+   }
+  },
+  {
+   "id": 165,
+   "text": "Can I use app to freeze my card and dispute fraud?",
+   "intent": "compromised_card",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.64,
+    "probs": {
+     "support": 0.76,
+     "technical": 0.23,
+     "sales_billing": 0.01
+    },
+    "ms": 345.681082457304,
+    "cost": 2.2386e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.62,
+    "ms": 2173.295416869223,
+    "cost": 0.001968
+   }
+  },
+  {
+   "id": 166,
+   "text": "I asked for $100 cash but only got $20?",
+   "intent": "wrong_amount_of_cash_received",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.35,
+    "probs": {
+     "support": 0.02,
+     "technical": 0.41,
+     "sales_billing": 0.57
+    },
+    "ms": 300.51741749048233,
+    "cost": 2.2512e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.9,
+    "ms": 1579.3077917769551,
+    "cost": 0.00181
+   }
+  },
+  {
+   "id": 167,
+   "text": "The service of this company sucks, I need to terminate my account.",
+   "intent": "terminate_account",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.01,
+     "technical": 0,
+     "sales_billing": 0.99
+    },
+    "ms": 313.43650072813034,
+    "cost": 2.247e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.8,
+    "ms": 1333.2549165934324,
+    "cost": 0.001536
+   }
+  },
+  {
+   "id": 168,
+   "text": "I am attempting to make a purchase online, but my card is not working.  I know there are funds available, is this an issue on the banks end?",
+   "intent": "reverted_card_payment?",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.01,
+     "technical": 0.99,
+     "sales_billing": 0
+    },
+    "ms": 353.79649978131056,
+    "cost": 2.3268e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.9,
+    "ms": 997.1661670133471,
+    "cost": 0.00105
+   }
+  },
+  {
+   "id": 169,
+   "text": "where in the app can i find out about my new pin",
+   "intent": "get_physical_card",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.99,
+     "technical": 0.01,
+     "sales_billing": 0
+    },
+    "ms": 756.8187918514013,
+    "cost": 2.2386e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.85,
+    "ms": 1076.2347495183349,
+    "cost": 0.000986
+   }
+  },
+  {
+   "id": 170,
+   "text": "How do I make my virtual card work?",
+   "intent": "virtual_card_not_working",
+   "team": "support",
+   "split": "eval",
+   "override": "2026-10-06 review: how do I make the virtual card work: a how-to, nothing reported broken",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 316.9056251645088,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.85,
+    "ms": 957.9814588651061,
+    "cost": 0.000982
+   }
+  },
+  {
+   "id": 171,
+   "text": "How can I create many temporary cards daily?",
+   "intent": "disposable_card_limits",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.97,
+    "probs": {
+     "support": 0.98,
+     "technical": 0.01,
+     "sales_billing": 0.01
+    },
+    "ms": 331.4723325893283,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.8,
+    "ms": 1564.3529584631324,
+    "cost": 0.001826
+   }
+  },
+  {
+   "id": 172,
+   "text": "How can I find out where my contactless works?",
+   "intent": "contactless_not_working",
+   "team": "support",
+   "split": "eval",
+   "override": "2026-10-06 review: where does contactless work: a where-do-I question",
+   "jev": {
+    "pred": "support",
+    "conf": 0.97,
+    "probs": {
+     "support": 0.98,
+     "technical": 0.01,
+     "sales_billing": 0.01
+    },
+    "ms": 565.1559997349977,
+    "cost": 2.2386e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.9,
+    "ms": 1561.2153746187687,
+    "cost": 0.001824
+   }
+  },
+  {
+   "id": 173,
+   "text": "If I wanted to make a change from GBP to AUD what is the process?",
+   "intent": "exchange_via_app",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.67,
+    "probs": {
+     "support": 0.22,
+     "technical": 0,
+     "sales_billing": 0.78
+    },
+    "ms": 259.60479211062193,
+    "cost": 2.2554e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.62,
+    "ms": 2005.8229574933648,
+    "cost": 0.002384
+   }
+  },
+  {
+   "id": 174,
+   "text": "Can I verify a top-up and what card is used?",
+   "intent": "verify_top_up",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.11,
+    "probs": {
+     "support": 0.26,
+     "technical": 0.41,
+     "sales_billing": 0.33
+    },
+    "ms": 397.4242927506566,
+    "cost": 2.2386e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.72,
+    "ms": 1958.9935410767794,
+    "cost": 0.00221
+   }
+  },
+  {
+   "id": 175,
+   "text": "My contactless is not working",
+   "intent": "contactless_not_working",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.01,
+     "technical": 0.99,
+     "sales_billing": 0
+    },
+    "ms": 320.3430827707052,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.8,
+    "ms": 1061.4662915468216,
+    "cost": 0.000984
+   }
+  },
+  {
+   "id": 176,
+   "text": "The ATM didn't give me the card back!",
+   "intent": "card_swallowed",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.97,
+    "probs": {
+     "support": 0.02,
+     "technical": 0.98,
+     "sales_billing": 0
+    },
+    "ms": 269.484874792397,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.9,
+    "ms": 969.4581255316734,
+    "cost": 0.000996
+   }
+  },
+  {
+   "id": 177,
+   "text": "I want information about the source of funds.",
+   "intent": "verify_source_of_funds",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.64,
+    "probs": {
+     "support": 0.18,
+     "technical": 0.06,
+     "sales_billing": 0.76
+    },
+    "ms": 307.8152500092983,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.8,
+    "ms": 2570.706750266254,
+    "cost": 0.00229
+   }
+  },
+  {
+   "id": 178,
+   "text": "Can I use a bank transfer to refill my account?",
+   "intent": "transfer_into_account",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.72,
+    "probs": {
+     "support": 0.81,
+     "technical": 0,
+     "sales_billing": 0.19
+    },
+    "ms": 308.637916110456,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.9,
+    "ms": 1864.5392078906298,
+    "cost": 0.002092
+   }
+  },
+  {
+   "id": 179,
+   "text": "Do you have an auto top-up option?",
+   "intent": "automatic_top_up",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.31,
+    "probs": {
+     "support": 0.54,
+     "technical": 0,
+     "sales_billing": 0.46
+    },
+    "ms": 275.75170807540417,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.62,
+    "ms": 3235.633791424334,
+    "cost": 0.002804
+   }
+  },
+  {
+   "id": 180,
+   "text": "Can I check somewhere if there will be a fee on my payment or not? Seems you are charging in some cases, what's the pattern there?",
+   "intent": "card_payment_fee_charged",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.01,
+     "technical": 0,
+     "sales_billing": 0.99
+    },
+    "ms": 283.2042910158634,
+    "cost": 2.3142e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.9,
+    "ms": 971.3634168729186,
+    "cost": 0.001084
+   }
+  },
+  {
+   "id": 181,
+   "text": "Why can't I use my American Express with Apple Pay to top up my account?",
+   "intent": "apple_pay_or_google_pay",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.37,
+    "probs": {
+     "support": 0.58,
+     "technical": 0.09,
+     "sales_billing": 0.33
+    },
+    "ms": 243.6710838228464,
+    "cost": 2.2596e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.55,
+    "ms": 3198.1829572468996,
+    "cost": 0.002696
+   }
+  },
+  {
+   "id": 182,
+   "text": "Help!  I can't find my card.",
+   "intent": "lost_or_stolen_card",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.88,
+    "probs": {
+     "support": 0.08,
+     "technical": 0.92,
+     "sales_billing": 0
+    },
+    "ms": 344.4773340597749,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.8,
+    "ms": 1664.2852909862995,
+    "cost": 0.002002
+   }
+  },
+  {
+   "id": 183,
+   "text": "I need to create several disposable cards per day.",
+   "intent": "disposable_card_limits",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.8,
+    "probs": {
+     "support": 0.87,
+     "technical": 0.01,
+     "sales_billing": 0.12
+    },
+    "ms": 618.8154583796859,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.8,
+    "ms": 1452.738874591887,
+    "cost": 0.001916
+   }
+  },
+  {
+   "id": 184,
+   "text": "Why is it taking so long for my cash withdrawal to no longer show as pending?",
+   "intent": "pending_cash_withdrawal",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.74,
+    "probs": {
+     "support": 0.83,
+     "technical": 0.17,
+     "sales_billing": 0
+    },
+    "ms": 350.98208393901587,
+    "cost": 2.2596e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.6,
+    "ms": 3225.326916202903,
+    "cost": 0.003362
+   }
+  },
+  {
+   "id": 185,
+   "text": "What is the auto top up function and where can I find that at?",
+   "intent": "automatic_top_up",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.96,
+    "probs": {
+     "support": 0.97,
+     "technical": 0,
+     "sales_billing": 0.03
+    },
+    "ms": 290.9027086570859,
+    "cost": 2.2512e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.93,
+    "ms": 905.8248326182365,
+    "cost": 0.000992
+   }
+  },
+  {
+   "id": 186,
+   "text": "Can i cancel a charge?",
+   "intent": "cancel_transfer",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.01,
+     "technical": 0,
+     "sales_billing": 0.99
+    },
+    "ms": 569.0754586830735,
+    "cost": 2.2134e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.5,
+    "ms": 3758.5064582526684,
+    "cost": 0.00366
+   }
+  },
+  {
+   "id": 187,
+   "text": "Will you deal with SWIFT transfers?",
+   "intent": "top_up_by_bank_transfer_charge",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.62,
+    "probs": {
+     "support": 0.25,
+     "technical": 0,
+     "sales_billing": 0.75
+    },
+    "ms": 317.49466713517904,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.55,
+    "ms": 1510.3288339450955,
+    "cost": 0.00196
+   }
+  },
+  {
+   "id": 188,
+   "text": "Why do you charge fees on card payments?",
+   "intent": "card_payment_fee_charged",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 0,
+     "sales_billing": 1
+    },
+    "ms": 292.4675000831485,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.9,
+    "ms": 965.4402500018477,
+    "cost": 0.001026
+   }
+  },
+  {
+   "id": 189,
+   "text": "The ATM did not allow me to withdraw",
+   "intent": "declined_cash_withdrawal",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 1,
+     "sales_billing": 0
+    },
+    "ms": 347.43737429380417,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.72,
+    "ms": 954.0791250765324,
+    "cost": 0.000998
+   }
+  },
+  {
+   "id": 190,
+   "text": "The ATM at Metro bank on High St. Kensington didn't return my card. What should I do now that the bank is closed?",
+   "intent": "card_swallowed",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.94,
+    "probs": {
+     "support": 0.04,
+     "technical": 0.96,
+     "sales_billing": 0
+    },
+    "ms": 242.86750052124262,
+    "cost": 2.3016e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.82,
+    "ms": 964.4233332946897,
+    "cost": 0.001046
+   }
+  },
+  {
+   "id": 191,
+   "text": "Nothing goes through on my card.",
+   "intent": "card_not_working",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.98,
+    "probs": {
+     "support": 0,
+     "technical": 0.99,
+     "sales_billing": 0.01
+    },
+    "ms": 259.425999596715,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.9,
+    "ms": 997.1611257642508,
+    "cost": 0.000992
+   }
+  },
+  {
+   "id": 192,
+   "text": "Heyy I tried to top up with my card today but it failed! I just got the couple days before but it has worked last time. What's going on, can you double check please?",
+   "intent": "top_up_failed",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 1,
+     "sales_billing": 0
+    },
+    "ms": 317.2326246276498,
+    "cost": 2.3562e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.93,
+    "ms": 994.3239586427808,
+    "cost": 0.001062
+   }
+  },
+  {
+   "id": 193,
+   "text": "How can I get the cash deposit to show up on my account?",
+   "intent": "balance_not_updated_after_cheque_or_cash_deposit",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.88,
+    "probs": {
+     "support": 0.07,
+     "technical": 0.92,
+     "sales_billing": 0.01
+    },
+    "ms": 321.6231670230627,
+    "cost": 2.247e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.72,
+    "ms": 1515.8738745376468,
+    "cost": 0.001734
+   }
+  },
+  {
+   "id": 194,
+   "text": "What is maximum top up?",
+   "intent": "top_up_limits",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.56,
+    "probs": {
+     "support": 0.71,
+     "technical": 0,
+     "sales_billing": 0.29
+    },
+    "ms": 319.8302499949932,
+    "cost": 2.2134e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.8,
+    "ms": 2261.9746243581176,
+    "cost": 0.001776
+   }
+  },
+  {
+   "id": 195,
+   "text": "How do I find the exchange rate?",
+   "intent": "exchange_rate",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.97,
+    "probs": {
+     "support": 0.02,
+     "technical": 0,
+     "sales_billing": 0.98
+    },
+    "ms": 401.9634583964944,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.62,
+    "ms": 2257.0759169757366,
+    "cost": 0.002112
+   }
+  },
+  {
+   "id": 196,
+   "text": "What do I need to do to activate my new card?",
+   "intent": "activate_my_card",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 434.17762499302626,
+    "cost": 2.2386e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.97,
+    "ms": 1183.6331244558096,
+    "cost": 0.000986
+   }
+  },
+  {
+   "id": 197,
+   "text": "My card payment did not complete.",
+   "intent": "declined_card_payment",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.98,
+    "probs": {
+     "support": 0,
+     "technical": 0.99,
+     "sales_billing": 0.01
+    },
+    "ms": 384.08770877867937,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.85,
+    "ms": 998.9475831389427,
+    "cost": 0.000988
+   }
+  },
+  {
+   "id": 198,
+   "text": "I'm still waiting on my card to be delivered.",
+   "intent": "card_arrival",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.01,
+     "technical": 0.99,
+     "sales_billing": 0
+    },
+    "ms": 306.7057505249977,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.68,
+    "ms": 1528.3115403726697,
+    "cost": 0.001992
+   }
+  },
+  {
+   "id": 199,
+   "text": "When will my top-up process?",
+   "intent": "pending_top_up",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.58,
+    "probs": {
+     "support": 0.72,
+     "technical": 0.16,
+     "sales_billing": 0.12
+    },
+    "ms": 316.16075057536364,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.5,
+    "ms": 3581.1062082648277,
+    "cost": 0.003356
+   }
+  },
+  {
+   "id": 200,
+   "text": "Was my top up reversed?",
+   "intent": "top_up_reverted",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.35,
+    "probs": {
+     "support": 0.01,
+     "technical": 0.57,
+     "sales_billing": 0.42
+    },
+    "ms": 275.4762498661876,
+    "cost": 2.2134e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.85,
+    "ms": 1423.534708097577,
+    "cost": 0.001678
+   }
+  },
+  {
+   "id": 201,
+   "text": "What is the fee to receive money?",
+   "intent": "top_up_by_bank_transfer_charge",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 0,
+     "sales_billing": 1
+    },
+    "ms": 306.99420906603336,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.95,
+    "ms": 1173.4106251969934,
+    "cost": 0.00102
+   }
+  },
+  {
+   "id": 202,
+   "text": "Is there an age minimum?",
+   "intent": "age_limit",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.96,
+    "probs": {
+     "support": 0.03,
+     "technical": 0,
+     "sales_billing": 0.97
+    },
+    "ms": 272.8493344038725,
+    "cost": 2.2134e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.9,
+    "ms": 1255.5471248924732,
+    "cost": 0.001018
+   }
+  },
+  {
+   "id": 203,
+   "text": "Is there any discount for someone that exchanges currencies frequently?",
+   "intent": "exchange_charge",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 0,
+     "sales_billing": 1
+    },
+    "ms": 292.6577078178525,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.95,
+    "ms": 1123.232625424862,
+    "cost": 0.001042
+   }
+  },
+  {
+   "id": 204,
+   "text": "Can I do a bank transfer to put additional money in my account because I am out of money?",
+   "intent": "transfer_into_account",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.79,
+    "probs": {
+     "support": 0.86,
+     "technical": 0.01,
+     "sales_billing": 0.13
+    },
+    "ms": 258.4668742492795,
+    "cost": 2.2722e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.88,
+    "ms": 1729.3764585629106,
+    "cost": 0.00195
+   }
+  },
+  {
+   "id": 205,
+   "text": "How do I send my account money through transfer?",
+   "intent": "transfer_into_account",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.92,
+    "probs": {
+     "support": 0.95,
+     "technical": 0,
+     "sales_billing": 0.05
+    },
+    "ms": 254.30029164999723,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.9,
+    "ms": 945.6927916035056,
+    "cost": 0.000984
+   }
+  },
+  {
+   "id": 206,
+   "text": "Why can't I see my topup in my wallet anymore?",
+   "intent": "topping_up_by_card",
+   "team": "technical",
+   "split": "eval",
+   "override": "2026-10-06 review: top-up missing from wallet; customer's own account must be examined",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.96,
+    "probs": {
+     "support": 0.01,
+     "technical": 0.97,
+     "sales_billing": 0.02
+    },
+    "ms": 258.19225050508976,
+    "cost": 2.2428e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.88,
+    "ms": 1937.99470923841,
+    "cost": 0.001846
+   }
+  },
+  {
+   "id": 207,
+   "text": "Someone has my card number, freeze my account.",
+   "intent": "compromised_card",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.97,
+    "probs": {
+     "support": 0.01,
+     "technical": 0.98,
+     "sales_billing": 0.01
+    },
+    "ms": 281.8116247653961,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.93,
+    "ms": 1372.3876252770424,
+    "cost": 0.000998
+   }
+  },
+  {
+   "id": 208,
+   "text": "Why is my card payment showing as pending?",
+   "intent": "pending_card_payment",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.58,
+    "probs": {
+     "support": 0.72,
+     "technical": 0.05,
+     "sales_billing": 0.23
+    },
+    "ms": 268.78554187715054,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.62,
+    "ms": 3617.9670421406627,
+    "cost": 0.002846
+   }
+  },
+  {
+   "id": 209,
+   "text": "How long does it take to process cheque deposits?",
+   "intent": "balance_not_updated_after_cheque_or_cash_deposit",
+   "team": "support",
+   "split": "fit",
+   "override": "2026-10-06 review: how long do cheque deposits take: documentation answer",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 421.488624997437,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.9,
+    "ms": 1104.878917336464,
+    "cost": 0.000988
+   }
+  },
+  {
+   "id": 210,
+   "text": "My phone was stolen",
+   "intent": "lost_or_stolen_phone",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.94,
+    "probs": {
+     "support": 0.04,
+     "technical": 0.96,
+     "sales_billing": 0
+    },
+    "ms": 319.6871653199196,
+    "cost": 2.205e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.9,
+    "ms": 993.136958219111,
+    "cost": 0.000984
+   }
+  },
+  {
+   "id": 211,
+   "text": "Is there a fee for using a European bank card to top up?",
+   "intent": "top_up_by_card_charge",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.01,
+     "technical": 0,
+     "sales_billing": 0.99
+    },
+    "ms": 326.36249996721745,
+    "cost": 2.247e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.93,
+    "ms": 977.2232500836253,
+    "cost": 0.001034
+   }
+  },
+  {
+   "id": 212,
+   "text": "When my card expires what happens to my account?",
+   "intent": "card_about_to_expire",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.85,
+    "probs": {
+     "support": 0.9,
+     "technical": 0,
+     "sales_billing": 0.1
+    },
+    "ms": 313.88241704553366,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.88,
+    "ms": 1401.850207708776,
+    "cost": 0.001764
+   }
+  },
+  {
+   "id": 213,
+   "text": "I was charge a fee for my transfer, why?",
+   "intent": "transfer_fee_charged",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 0,
+     "sales_billing": 1
+    },
+    "ms": 308.3884585648775,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.93,
+    "ms": 973.3484173193574,
+    "cost": 0.00103
+   }
+  },
+  {
+   "id": 214,
+   "text": "I need to order a  new card, mine is about to expire and I need to know how much it will cost and how long until I receive it.",
+   "intent": "card_about_to_expire",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.28,
+    "probs": {
+     "support": 0.52,
+     "technical": 0,
+     "sales_billing": 0.48
+    },
+    "ms": 350.04141740500927,
+    "cost": 2.3226e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.6,
+    "ms": 1943.5692504048347,
+    "cost": 0.002242
+   }
+  },
+  {
+   "id": 215,
+   "text": "I wasn't applied the correct exchange rate for an item I bought",
+   "intent": "card_payment_wrong_exchange_rate",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 0,
+     "sales_billing": 1
+    },
+    "ms": 267.61408243328333,
+    "cost": 2.2428e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.88,
+    "ms": 948.2691250741482,
+    "cost": 0.001042
+   }
+  },
+  {
+   "id": 216,
+   "text": "I've lost track of my phone or someone stole it.",
+   "intent": "lost_or_stolen_phone",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.96,
+    "probs": {
+     "support": 0.03,
+     "technical": 0.97,
+     "sales_billing": 0
+    },
+    "ms": 407.21908304840326,
+    "cost": 2.2386e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.85,
+    "ms": 2151.281291618943,
+    "cost": 0.002292
+   }
+  },
+  {
+   "id": 217,
+   "text": "How do people send me money?",
+   "intent": "receiving_money",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.86,
+    "probs": {
+     "support": 0.91,
+     "technical": 0,
+     "sales_billing": 0.09
+    },
+    "ms": 243.2781672105193,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.9,
+    "ms": 1325.7517078891397,
+    "cost": 0.001894
+   }
+  },
+  {
+   "id": 218,
+   "text": "How do I do a successful transfer to an account?",
+   "intent": "beneficiary_not_allowed",
+   "team": "support",
+   "split": "eval",
+   "override": "2026-10-06 review: how do I make a transfer: a how-to",
+   "jev": {
+    "pred": "support",
+    "conf": 0.94,
+    "probs": {
+     "support": 0.96,
+     "technical": 0,
+     "sales_billing": 0.04
+    },
+    "ms": 377.1290425211191,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.9,
+    "ms": 1050.142167136073,
+    "cost": 0.000988
+   }
+  },
+  {
+   "id": 219,
+   "text": "Can anyone help me, I lost my wallet and they've started withdrawing from my account.",
+   "intent": "cash_withdrawal_not_recognised",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.98,
+    "probs": {
+     "support": 0,
+     "technical": 0.99,
+     "sales_billing": 0.01
+    },
+    "ms": 356.87979217618704,
+    "cost": 2.2638e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.95,
+    "ms": 908.0255823209882,
+    "cost": 0.001026
+   }
+  },
+  {
+   "id": 220,
+   "text": "My passcode doesn't work",
+   "intent": "passcode_forgotten",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.77,
+    "probs": {
+     "support": 0.85,
+     "technical": 0.15,
+     "sales_billing": 0
+    },
+    "ms": 345.6620406359434,
+    "cost": 2.2134e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.72,
+    "ms": 2038.486790843308,
+    "cost": 0.002058
+   }
+  },
+  {
+   "id": 221,
+   "text": "I ordered my card 2 weeks ago and it still isn't here? What do I do?",
+   "intent": "card_arrival",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.01,
+     "technical": 0.99,
+     "sales_billing": 0
+    },
+    "ms": 291.635999456048,
+    "cost": 2.2722e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.82,
+    "ms": 1761.0592506825924,
+    "cost": 0.001914
+   }
+  },
+  {
+   "id": 222,
+   "text": "My PIN is not working and I need assistance.",
+   "intent": "pin_blocked",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.3,
+    "probs": {
+     "support": 0.53,
+     "technical": 0.47,
+     "sales_billing": 0
+    },
+    "ms": 294.0116673707962,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.5,
+    "ms": 3246.276875026524,
+    "cost": 0.003608
+   }
+  },
+  {
+   "id": 223,
+   "text": "What countries can I travel to and have access to their currencies?",
+   "intent": "fiat_currency_support",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.01,
+     "technical": 0,
+     "sales_billing": 0.99
+    },
+    "ms": 326.6148744150996,
+    "cost": 2.2428e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.77,
+    "ms": 1501.9142916426063,
+    "cost": 0.001854
+   }
+  },
+  {
+   "id": 224,
+   "text": "How do I unblock my pin after entering it wrong too many times?",
+   "intent": "pin_blocked",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.83,
+    "probs": {
+     "support": 0.89,
+     "technical": 0.11,
+     "sales_billing": 0
+    },
+    "ms": 268.19408405572176,
+    "cost": 2.2512e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.55,
+    "ms": 5220.410333015025,
+    "cost": 0.00478
+   }
+  },
+  {
+   "id": 225,
+   "text": "What do I need to do to change my PIN?",
+   "intent": "change_pin",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 260.58641634881496,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.95,
+    "ms": 936.0206248238683,
+    "cost": 0.000986
+   }
+  },
+  {
+   "id": 226,
+   "text": "When I top up what are the amoutn limits.",
+   "intent": "top_up_limits",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.89,
+    "probs": {
+     "support": 0.93,
+     "technical": 0,
+     "sales_billing": 0.07
+    },
+    "ms": 349.587082862854,
+    "cost": 2.2386e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.8,
+    "ms": 1965.3732078149915,
+    "cost": 0.001838
+   }
+  },
+  {
+   "id": 227,
+   "text": "Will any business take this card?",
+   "intent": "card_acceptance",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.56,
+    "probs": {
+     "support": 0.71,
+     "technical": 0.02,
+     "sales_billing": 0.27
+    },
+    "ms": 365.45608285814524,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.8,
+    "ms": 2278.4790843725204,
+    "cost": 0.001826
+   }
+  },
+  {
+   "id": 228,
+   "text": "Any hidden fees associated with the international card if money is added?",
+   "intent": "top_up_by_card_charge",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 0,
+     "sales_billing": 1
+    },
+    "ms": 276.3450834900141,
+    "cost": 2.2428e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.95,
+    "ms": 1006.8057077005506,
+    "cost": 0.001036
+   }
+  },
+  {
+   "id": 229,
+   "text": "What does a disposable virtual card do?",
+   "intent": "get_disposable_virtual_card",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.99,
+     "technical": 0,
+     "sales_billing": 0.01
+    },
+    "ms": 259.503916837275,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.9,
+    "ms": 1451.1815831065178,
+    "cost": 0.001624
+   }
+  },
+  {
+   "id": 230,
+   "text": "Is it possible to receive a Visa and a MasterCard?",
+   "intent": "visa_or_mastercard",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.3,
+    "probs": {
+     "support": 0.47,
+     "technical": 0,
+     "sales_billing": 0.53
+    },
+    "ms": 277.62170787900686,
+    "cost": 2.2428e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.55,
+    "ms": 3223.8558335229754,
+    "cost": 0.00293
+   }
+  },
+  {
+   "id": 231,
+   "text": "Help!  The atm won't give me my card back.",
+   "intent": "card_swallowed",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.89,
+    "probs": {
+     "support": 0.07,
+     "technical": 0.93,
+     "sales_billing": 0
+    },
+    "ms": 340.8371675759554,
+    "cost": 2.2428e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.88,
+    "ms": 1341.0695418715477,
+    "cost": 0.00181
+   }
+  },
+  {
+   "id": 232,
+   "text": "I did not make this card payment.",
+   "intent": "card_payment_not_recognised",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.62,
+    "probs": {
+     "support": 0,
+     "technical": 0.75,
+     "sales_billing": 0.25
+    },
+    "ms": 499.4535846635699,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.92,
+    "ms": 1703.820999711752,
+    "cost": 0.001878
+   }
+  },
+  {
+   "id": 233,
+   "text": "my phone is gone",
+   "intent": "lost_or_stolen_phone",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.94,
+    "probs": {
+     "support": 0.04,
+     "technical": 0.96,
+     "sales_billing": 0
+    },
+    "ms": 374.48370922356844,
+    "cost": 2.205e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.68,
+    "ms": 1792.9742503911257,
+    "cost": 0.002162
+   }
+  },
+  {
+   "id": 234,
+   "text": "If you send me more cards, are there any charges?",
+   "intent": "getting_spare_card",
+   "team": "sales_billing",
+   "split": "eval",
+   "override": "message asks about charges; sales_billing by precedence despite intent getting_spare_card",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.96,
+    "probs": {
+     "support": 0.03,
+     "technical": 0,
+     "sales_billing": 0.97
+    },
+    "ms": 263.97116761654615,
+    "cost": 2.2386e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.9,
+    "ms": 981.453625485301,
+    "cost": 0.001028
+   }
+  },
+  {
+   "id": 235,
+   "text": "Is it possible to get a card if I'm not in the UK?",
+   "intent": "country_support",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.46,
+    "probs": {
+     "support": 0.36,
+     "technical": 0,
+     "sales_billing": 0.64
+    },
+    "ms": 316.33799988776445,
+    "cost": 2.2512e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.72,
+    "ms": 1613.7308748438954,
+    "cost": 0.001958
+   }
+  },
+  {
+   "id": 236,
+   "text": "I think my statement has a fraudulent charge",
+   "intent": "card_payment_not_recognised",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.31,
+    "probs": {
+     "support": 0,
+     "technical": 0.46,
+     "sales_billing": 0.54
+    },
+    "ms": 272.660749964416,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.72,
+    "ms": 2731.9995425641537,
+    "cost": 0.002518
+   }
+  },
+  {
+   "id": 237,
+   "text": "The transfer is coming up as pending the payment is due today. Will I be charged a fee?",
+   "intent": "pending_transfer",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.98,
+    "probs": {
+     "support": 0.01,
+     "technical": 0,
+     "sales_billing": 0.99
+    },
+    "ms": 246.1722083389759,
+    "cost": 2.2722e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.6,
+    "ms": 2953.5796251147985,
+    "cost": 0.002636
+   }
+  },
+  {
+   "id": 238,
+   "text": "If my card payment is cancelled, what should I do?",
+   "intent": "reverted_card_payment?",
+   "team": "technical",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.11,
+    "probs": {
+     "support": 0.21,
+     "technical": 0.41,
+     "sales_billing": 0.38
+    },
+    "ms": 264.32404201477766,
+    "cost": 2.2386e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.6,
+    "ms": 3372.1167910844088,
+    "cost": 0.002682
+   }
+  },
+  {
+   "id": 239,
+   "text": "Does it cost extra to exchange currencies?",
+   "intent": "exchange_charge",
+   "team": "sales_billing",
+   "split": "fit",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 0,
+     "sales_billing": 1
+    },
+    "ms": 372.6119166240096,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.96,
+    "ms": 957.3184996843338,
+    "cost": 0.00103
+   }
+  },
+  {
+   "id": 240,
+   "text": "If I need GBP instead of AUD what do I do?",
+   "intent": "exchange_via_app",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 0.66,
+    "probs": {
+     "support": 0.23,
+     "technical": 0,
+     "sales_billing": 0.77
+    },
+    "ms": 324.1073749959469,
+    "cost": 2.2386e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.5,
+    "ms": 4082.645209506154,
+    "cost": 0.004444
+   }
+  },
+  {
+   "id": 241,
+   "text": "has my top-up has been cancelled",
+   "intent": "top_up_reverted",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.49,
+    "probs": {
+     "support": 0.02,
+     "technical": 0.66,
+     "sales_billing": 0.32
+    },
+    "ms": 284.0860830619931,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.8,
+    "ms": 1478.499624878168,
+    "cost": 0.001742
+   }
+  },
+  {
+   "id": 242,
+   "text": "The rate applied to my foreign purchase was incorrect",
+   "intent": "card_payment_wrong_exchange_rate",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 0,
+     "sales_billing": 1
+    },
+    "ms": 334.58587527275085,
+    "cost": 2.226e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.8,
+    "ms": 1904.781042598188,
+    "cost": 0.001976
+   }
+  },
+  {
+   "id": 243,
+   "text": "Do these virtual cards have any caps on using them?",
+   "intent": "disposable_card_limits",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.91,
+    "probs": {
+     "support": 0.94,
+     "technical": 0,
+     "sales_billing": 0.06
+    },
+    "ms": 340.12674912810326,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.72,
+    "ms": 2199.806666933,
+    "cost": 0.001912
+   }
+  },
+  {
+   "id": 244,
+   "text": "got married and need to change name",
+   "intent": "edit_personal_details",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 0.97,
+    "probs": {
+     "support": 0.98,
+     "technical": 0.01,
+     "sales_billing": 0.01
+    },
+    "ms": 292.20725037157536,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.88,
+    "ms": 1153.0647920444608,
+    "cost": 0.001544
+   }
+  },
+  {
+   "id": 245,
+   "text": "How long will it take to get to me?",
+   "intent": "card_delivery_estimate",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.67,
+    "probs": {
+     "support": 0.78,
+     "technical": 0.22,
+     "sales_billing": 0
+    },
+    "ms": 329.6882500872016,
+    "cost": 2.2302e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.7,
+    "ms": 2080.202165991068,
+    "cost": 0.0017
+   }
+  },
+  {
+   "id": 246,
+   "text": "Why is there a charge on my account for taking out cash?",
+   "intent": "cash_withdrawal_charge",
+   "team": "sales_billing",
+   "split": "eval",
+   "jev": {
+    "pred": "sales_billing",
+    "conf": 1,
+    "probs": {
+     "support": 0,
+     "technical": 0,
+     "sales_billing": 1
+    },
+    "ms": 272.1061250194907,
+    "cost": 2.2428e-05
+   },
+   "sonnet": {
+    "pred": "sales_billing",
+    "conf": 0.85,
+    "ms": 1547.5860415026546,
+    "cost": 0.001804
+   }
+  },
+  {
+   "id": 247,
+   "text": "It is impossible to verify my identity",
+   "intent": "unable_to_verify_identity",
+   "team": "technical",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.35,
+    "probs": {
+     "support": 0.57,
+     "technical": 0.43,
+     "sales_billing": 0
+    },
+    "ms": 277.0456252619624,
+    "cost": 2.2176e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.62,
+    "ms": 1891.3716655224562,
+    "cost": 0.001752
+   }
+  },
+  {
+   "id": 248,
+   "text": "How long does a transfer take from the point it's sent, to the point it arrives in my account?",
+   "intent": "transfer_timing",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "support",
+    "conf": 1,
+    "probs": {
+     "support": 1,
+     "technical": 0,
+     "sales_billing": 0
+    },
+    "ms": 263.2087506353855,
+    "cost": 2.2806e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.9,
+    "ms": 1007.1694161742926,
+    "cost": 0.001014
+   }
+  },
+  {
+   "id": 249,
+   "text": "Where's the verification code for the top-up card?",
+   "intent": "verify_top_up",
+   "team": "support",
+   "split": "fit",
+   "jev": {
+    "pred": "support",
+    "conf": 0.28,
+    "probs": {
+     "support": 0.52,
+     "technical": 0.48,
+     "sales_billing": 0
+    },
+    "ms": 296.26287519931793,
+    "cost": 2.2344e-05
+   },
+   "sonnet": {
+    "pred": "technical",
+    "conf": 0.5,
+    "ms": 6092.860125005245,
+    "cost": 0.006008
+   }
+  },
+  {
+   "id": 250,
+   "text": "Why isn't my PIN available yet?",
+   "intent": "get_physical_card",
+   "team": "support",
+   "split": "eval",
+   "jev": {
+    "pred": "technical",
+    "conf": 0.42,
+    "probs": {
+     "support": 0.39,
+     "technical": 0.61,
+     "sales_billing": 0
+    },
+    "ms": 376.1301673948765,
+    "cost": 2.2218e-05
+   },
+   "sonnet": {
+    "pred": "support",
+    "conf": 0.5,
+    "ms": 4059.5835419371724,
+    "cost": 0.003806
+   }
+  }
+ ]
+}

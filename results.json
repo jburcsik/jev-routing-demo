@@ -1,0 +1,1623 @@
+[
+ {
+  "id": 1,
+  "expected": "support",
+  "text": "Hi, how do I add a second admin to our account? I can't find it in settings anywhere",
+  "set": "clean",
+  "jev": {
+   "team": "support",
+   "conf": 1,
+   "probs": {
+    "support": 1,
+    "technical": 0,
+    "sales_billing": 0
+   },
+   "action": 0.98,
+   "ms": 317.0570833608508,
+   "cost": 2.3016e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.9,
+   "action": 0.85,
+   "ms": 987.8944996744394,
+   "cost": 0.001256,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 2,
+  "expected": "support",
+  "text": "can your service send attachments or just plain text emails?? need to know before thursday",
+  "set": "clean",
+  "jev": {
+   "team": "support",
+   "conf": 1,
+   "probs": {
+    "support": 1,
+    "technical": 0,
+    "sales_billing": 0
+   },
+   "action": 0.96,
+   "ms": 328.53545807302,
+   "cost": 2.289e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.88,
+   "action": 0.8,
+   "ms": 935.6431672349572,
+   "cost": 0.001246,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 3,
+  "expected": "support",
+  "text": "Bonjour, est-ce que je peux exporter les réponses d'un formulaire en CSV? Merci",
+  "set": "clean",
+  "jev": {
+   "team": "support",
+   "conf": 1,
+   "probs": {
+    "support": 1,
+    "technical": 0,
+    "sales_billing": 0
+   },
+   "action": 0.95,
+   "ms": 312.90812510997057,
+   "cost": 2.2848e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.95,
+   "action": 0.85,
+   "ms": 1019.1606255248189,
+   "cost": 0.001272,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 4,
+  "expected": "support",
+  "text": "Is there a way to schedule a message to go out at 9am instead of sending it right away. thx",
+  "set": "clean",
+  "jev": {
+   "team": "support",
+   "conf": 1,
+   "probs": {
+    "support": 1,
+    "technical": 0,
+    "sales_billing": 0
+   },
+   "action": 0.96,
+   "ms": 275.20325034856796,
+   "cost": 2.3142e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.93,
+   "action": 0.85,
+   "ms": 1044.0527088940144,
+   "cost": 0.001258,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 5,
+  "expected": "support",
+  "text": "quick q - does your product have a french date picker or do we build our own",
+  "set": "clean",
+  "jev": {
+   "team": "support",
+   "conf": 0.96,
+   "probs": {
+    "support": 0.97,
+    "technical": 0.02,
+    "sales_billing": 0.01
+   },
+   "action": 0.94,
+   "ms": 278.22574973106384,
+   "cost": 2.2848e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.8,
+   "action": 0.6,
+   "ms": 936.1339574679732,
+   "cost": 0.001238,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 6,
+  "expected": "support",
+  "text": "How do we set up a template so every team member sends the same wording? New to this sorry",
+  "set": "clean",
+  "jev": {
+   "team": "support",
+   "conf": 0.86,
+   "probs": {
+    "support": 0.91,
+    "technical": 0,
+    "sales_billing": 0.09
+   },
+   "action": 0.94,
+   "ms": 305.8118335902691,
+   "cost": 2.2974e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.93,
+   "action": 0.85,
+   "ms": 963.6305002495646,
+   "cost": 0.001248,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 7,
+  "expected": "technical",
+  "text": "My login is not working. I enter my password, it spins and then goes back to the login page. Tried chrome and edge.",
+  "set": "clean",
+  "jev": {
+   "team": "technical",
+   "conf": 1,
+   "probs": {
+    "support": 0,
+    "technical": 1,
+    "sales_billing": 0
+   },
+   "action": 0.96,
+   "ms": 262.82933447510004,
+   "cost": 2.3268e-05
+  },
+  "sonnet": {
+   "team": "technical",
+   "conf": 0.95,
+   "action": 0.95,
+   "ms": 989.5031256601214,
+   "cost": 0.00128,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 8,
+  "expected": "technical",
+  "text": "there is a bug, the submit button on our form is greyed out for some users but not others",
+  "set": "clean",
+  "jev": {
+   "team": "technical",
+   "conf": 1,
+   "probs": {
+    "support": 0,
+    "technical": 1,
+    "sales_billing": 0
+   },
+   "action": 0.96,
+   "ms": 332.3803748935461,
+   "cost": 2.3016e-05
+  },
+  "sonnet": {
+   "team": "technical",
+   "conf": 0.88,
+   "action": 0.9,
+   "ms": 1122.3754584789276,
+   "cost": 0.001258,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 9,
+  "expected": "technical",
+  "text": "Getting 502 errors from the API since about 10:30 this morning. Our batch job failed 3 times.",
+  "set": "clean",
+  "jev": {
+   "team": "technical",
+   "conf": 1,
+   "probs": {
+    "support": 0,
+    "technical": 1,
+    "sales_billing": 0
+   },
+   "action": 0.96,
+   "ms": 348.4112909063697,
+   "cost": 2.331e-05
+  },
+  "sonnet": {
+   "team": "technical",
+   "conf": 0.96,
+   "action": 0.95,
+   "ms": 1075.7273752242327,
+   "cost": 0.001278,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 10,
+  "expected": "technical",
+  "text": "les courriels ne partent plus depuis hier, le statut reste à 'sending' pendant des heures",
+  "set": "clean",
+  "jev": {
+   "team": "technical",
+   "conf": 1,
+   "probs": {
+    "support": 0,
+    "technical": 1,
+    "sales_billing": 0
+   },
+   "action": 0.95,
+   "ms": 275.20991768687963,
+   "cost": 2.3016e-05
+  },
+  "sonnet": {
+   "team": "technical",
+   "conf": 0.93,
+   "action": 0.95,
+   "ms": 952.1650411188602,
+   "cost": 0.001276,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 11,
+  "expected": "technical",
+  "text": "I think this is a bug?? The French version of our form shows English error messages. maybe we set it up wrong but it looks broken",
+  "set": "clean",
+  "jev": {
+   "team": "technical",
+   "conf": 1,
+   "probs": {
+    "support": 0,
+    "technical": 1,
+    "sales_billing": 0
+   },
+   "action": 0.93,
+   "ms": 306.4556661993265,
+   "cost": 2.331e-05
+  },
+  "sonnet": {
+   "team": "technical",
+   "conf": 0.62,
+   "action": 0.85,
+   "ms": 1439.4659157842398,
+   "cost": 0.001286,
+   "flag": "HUMAN (conf)"
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 12,
+  "expected": "technical",
+  "text": "2FA code never arrives on my phone. Already checked spam. Locked out for 2 days now, this is urgent",
+  "set": "clean",
+  "jev": {
+   "team": "technical",
+   "conf": 1,
+   "probs": {
+    "support": 0,
+    "technical": 1,
+    "sales_billing": 0
+   },
+   "action": 0.97,
+   "ms": 363.348750397563,
+   "cost": 2.3142e-05
+  },
+  "sonnet": {
+   "team": "technical",
+   "conf": 0.95,
+   "action": 0.97,
+   "ms": 1865.6112914904952,
+   "cost": 0.001282,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 13,
+  "expected": "sales_billing",
+  "text": "We are a regional agency and would like to use your messaging service for our customer alerts. Who do we talk to about onboarding?",
+  "set": "clean",
+  "jev": {
+   "team": "sales_billing",
+   "conf": 1,
+   "probs": {
+    "support": 0,
+    "technical": 0,
+    "sales_billing": 1
+   },
+   "action": 0.96,
+   "ms": 327.3259997367859,
+   "cost": 2.3352e-05
+  },
+  "sonnet": {
+   "team": "sales_billing",
+   "conf": 0.93,
+   "action": 0.9,
+   "ms": 1246.3595001026988,
+   "cost": 0.001316,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 14,
+  "expected": "sales_billing",
+  "text": "how much does this cost? our director wants a number before we commit to anything",
+  "set": "clean",
+  "jev": {
+   "team": "sales_billing",
+   "conf": 1,
+   "probs": {
+    "support": 0,
+    "technical": 0,
+    "sales_billing": 1
+   },
+   "action": 0.95,
+   "ms": 404.8404172062874,
+   "cost": 2.2806e-05
+  },
+  "sonnet": {
+   "team": "sales_billing",
+   "conf": 0.97,
+   "action": 0.9,
+   "ms": 925.8255418390036,
+   "cost": 0.00128,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 15,
+  "expected": "sales_billing",
+  "text": "Our company is evaluating form builders. Could you do a 30 min demo for our VP next week?",
+  "set": "clean",
+  "jev": {
+   "team": "sales_billing",
+   "conf": 1,
+   "probs": {
+    "support": 0,
+    "technical": 0,
+    "sales_billing": 1
+   },
+   "action": 0.97,
+   "ms": 297.8928340598941,
+   "cost": 2.3058e-05
+  },
+  "sonnet": {
+   "team": "sales_billing",
+   "conf": 0.97,
+   "action": 0.93,
+   "ms": 1106.0922499746084,
+   "cost": 0.0013,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 16,
+  "expected": "sales_billing",
+  "text": "Nous aimerions explorer un partenariat entre nos deux équipes pour la prochaine année financière",
+  "set": "clean",
+  "jev": {
+   "team": "sales_billing",
+   "conf": 1,
+   "probs": {
+    "support": 0,
+    "technical": 0,
+    "sales_billing": 1
+   },
+   "action": 0.64,
+   "ms": 284.1130830347538,
+   "cost": 2.2764e-05
+  },
+  "sonnet": {
+   "team": "sales_billing",
+   "conf": 0.93,
+   "action": 0.6,
+   "ms": 1016.4529168978333,
+   "cost": 0.001308,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 17,
+  "expected": "sales_billing",
+  "text": "Is there an enterprise tier with an SLA? We'd need 99.9% for a program launching in Q4.",
+  "set": "clean",
+  "jev": {
+   "team": "sales_billing",
+   "conf": 0.97,
+   "probs": {
+    "support": 0.02,
+    "technical": 0,
+    "sales_billing": 0.98
+   },
+   "action": 0.96,
+   "ms": 251.04812532663345,
+   "cost": 2.3226e-05
+  },
+  "sonnet": {
+   "team": "sales_billing",
+   "conf": 0.93,
+   "action": 0.85,
+   "ms": 995.9821244701743,
+   "cost": 0.00131,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 18,
+  "expected": "sales_billing",
+  "text": "Can we partner together on a pilot? We have budget for a small proof of concept",
+  "set": "clean",
+  "jev": {
+   "team": "sales_billing",
+   "conf": 1,
+   "probs": {
+    "support": 0,
+    "technical": 0,
+    "sales_billing": 1
+   },
+   "action": 0.94,
+   "ms": 287.8924170508981,
+   "cost": 2.2848e-05
+  },
+  "sonnet": {
+   "team": "sales_billing",
+   "conf": 0.96,
+   "action": 0.85,
+   "ms": 995.0797911733389,
+   "cost": 0.001288,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 19,
+  "expected": "mixed",
+  "text": "My login stopped working this morning, also how much would it cost to add 50 more users to our account?",
+  "set": "mixed",
+  "jev": {
+   "team": "technical",
+   "conf": 0.66,
+   "probs": {
+    "support": 0.02,
+    "technical": 0.77,
+    "sales_billing": 0.21
+   },
+   "action": 0.98,
+   "ms": 320.25091629475355,
+   "cost": 2.3142e-05
+  },
+  "sonnet": {
+   "team": "sales_billing",
+   "conf": 0.5,
+   "action": 0.95,
+   "ms": 1901.4882920309901,
+   "cost": 0.002456,
+   "flag": "HUMAN (conf)"
+  },
+  "jev_flag": "HUMAN (conf)"
+ },
+ {
+  "id": 20,
+  "expected": "mixed",
+  "text": "How do I export responses to CSV? Also the export button throws an error when I click it so maybe that's the problem",
+  "set": "mixed",
+  "jev": {
+   "team": "technical",
+   "conf": 0.79,
+   "probs": {
+    "support": 0.14,
+    "technical": 0.86,
+    "sales_billing": 0
+   },
+   "action": 0.96,
+   "ms": 319.64291725307703,
+   "cost": 2.3184e-05
+  },
+  "sonnet": {
+   "team": "technical",
+   "conf": 0.8,
+   "action": 0.93,
+   "ms": 1349.0885002538562,
+   "cost": 0.001276,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 21,
+  "expected": "mixed",
+  "text": "We want to roll this out to the whole branch (about 400 people). Can someone walk us through pricing, and also can the forms do conditional logic?",
+  "set": "mixed",
+  "jev": {
+   "team": "sales_billing",
+   "conf": 0.97,
+   "probs": {
+    "support": 0.02,
+    "technical": 0,
+    "sales_billing": 0.98
+   },
+   "action": 0.97,
+   "ms": 261.6101671010256,
+   "cost": 2.3562e-05
+  },
+  "sonnet": {
+   "team": "sales_billing",
+   "conf": 0.85,
+   "action": 0.9,
+   "ms": 953.3024579286575,
+   "cost": 0.00133,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 22,
+  "expected": "mixed",
+  "text": "bug report: emails going to spam. unrelated but we'd love to talk about a partnership for the fall campaign",
+  "set": "mixed",
+  "jev": {
+   "team": "technical",
+   "conf": 0.38,
+   "probs": {
+    "support": 0.02,
+    "technical": 0.59,
+    "sales_billing": 0.39
+   },
+   "action": 0.91,
+   "ms": 348.6956665292382,
+   "cost": 2.3058e-05
+  },
+  "sonnet": {
+   "team": "sales_billing",
+   "conf": 0.55,
+   "action": 0.9,
+   "ms": 1095.3551242128015,
+   "cost": 0.00131,
+   "flag": "HUMAN (conf)"
+  },
+  "jev_flag": "HUMAN (conf)"
+ },
+ {
+  "id": 23,
+  "expected": "mixed",
+  "text": "Quick how-to question about templates and also our API key seems to have stopped authenticating since yesterday",
+  "set": "mixed",
+  "jev": {
+   "team": "technical",
+   "conf": 0.98,
+   "probs": {
+    "support": 0.01,
+    "technical": 0.99,
+    "sales_billing": 0
+   },
+   "action": 0.95,
+   "ms": 273.67679215967655,
+   "cost": 2.3016e-05
+  },
+  "sonnet": {
+   "team": "technical",
+   "conf": 0.8,
+   "action": 0.95,
+   "ms": 921.6533750295639,
+   "cost": 0.001272,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 24,
+  "expected": "mixed",
+  "text": "hi, our VP wants a demo next week. before that can you tell me why the dashboard shows 0 sent messages when we sent 200 yesterday",
+  "set": "mixed",
+  "jev": {
+   "team": "technical",
+   "conf": 0.88,
+   "probs": {
+    "support": 0,
+    "technical": 0.92,
+    "sales_billing": 0.08
+   },
+   "action": 0.98,
+   "ms": 284.9719589576125,
+   "cost": 2.3478e-05
+  },
+  "sonnet": {
+   "team": "sales_billing",
+   "conf": 0.5,
+   "action": 0.95,
+   "ms": 997.4628742784262,
+   "cost": 0.001334,
+   "flag": "HUMAN (conf)"
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 25,
+  "set": "noise",
+  "expected": "noise",
+  "text": "Hey team, just circling back on the login thing we talked about at the townhall, not urgent, no bug or anything, just wanted to say the new dashboard looks great, pricing aside haha. Anyway have a good long weekend",
+  "jev": {
+   "team": "support",
+   "conf": 0.56,
+   "probs": {
+    "support": 0.71,
+    "technical": 0.13,
+    "sales_billing": 0.16
+   },
+   "action": 0.09,
+   "ms": 299.0707503631711,
+   "cost": 2.4108e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.6,
+   "action": 0.08,
+   "ms": 983.1201247870922,
+   "cost": 0.001342,
+   "flag": "HUMAN (conf,action)"
+  },
+  "jev_flag": "HUMAN (conf,action)"
+ },
+ {
+  "id": 26,
+  "set": "noise",
+  "expected": "noise",
+  "text": "Following up on my earlier follow up. Not sure if this is a technical thing or a sales thing or what. Just wanted to flag that I flagged it. Thanks!",
+  "jev": {
+   "team": "support",
+   "conf": 0.73,
+   "probs": {
+    "support": 0.82,
+    "technical": 0.11,
+    "sales_billing": 0.07
+   },
+   "action": 0.2,
+   "ms": 297.8449994698167,
+   "cost": 2.3562e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.4,
+   "action": 0.1,
+   "ms": 1015.6021658331156,
+   "cost": 0.001306,
+   "flag": "HUMAN (conf,action)"
+  },
+  "jev_flag": "HUMAN (action)"
+ },
+ {
+  "id": 27,
+  "set": "noise",
+  "expected": "noise",
+  "text": "Bonjour! Petit message pour dire merci pour la démo la semaine passée, pas de question, pas de bug, juste un merci. Bonne journée",
+  "jev": {
+   "team": "sales_billing",
+   "conf": 0.82,
+   "probs": {
+    "support": 0.12,
+    "technical": 0,
+    "sales_billing": 0.88
+   },
+   "action": 0.02,
+   "ms": 390.07020741701126,
+   "cost": 2.3394e-05
+  },
+  "sonnet": {
+   "team": "sales_billing",
+   "conf": 0.55,
+   "action": 0.03,
+   "ms": 995.6928752362728,
+   "cost": 0.001342,
+   "flag": "HUMAN (conf,action)"
+  },
+  "jev_flag": "HUMAN (action)"
+ },
+ {
+  "id": 28,
+  "set": "noise",
+  "expected": "noise",
+  "text": "Random thought: has anyone ever considered that forms are kind of like emails but for data? Anyway, partnership vibes. Cheers",
+  "jev": {
+   "team": "sales_billing",
+   "conf": 0.43,
+   "probs": {
+    "support": 0.38,
+    "technical": 0,
+    "sales_billing": 0.62
+   },
+   "action": 0.07,
+   "ms": 331.9987077265978,
+   "cost": 2.3142e-05
+  },
+  "sonnet": {
+   "team": "sales_billing",
+   "conf": 0.45,
+   "action": 0.08,
+   "ms": 1077.0354168489575,
+   "cost": 0.001326,
+   "flag": "HUMAN (conf,action)"
+  },
+  "jev_flag": "HUMAN (conf,action)"
+ },
+ {
+  "id": 29,
+  "set": "noise",
+  "expected": "noise",
+  "text": "test test is this thing on. ignore this. or don't. login, api, pricing, lol. just checking the contact form works",
+  "jev": {
+   "team": "technical",
+   "conf": 0.64,
+   "probs": {
+    "support": 0.24,
+    "technical": 0.76,
+    "sales_billing": 0
+   },
+   "action": 0.6,
+   "ms": 309.1071667149663,
+   "cost": 2.331e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.6,
+   "action": 0.04,
+   "ms": 1226.333082653582,
+   "cost": 0.001272,
+   "flag": "HUMAN (conf,action)"
+  },
+  "jev_flag": "HUMAN (conf)"
+ },
+ {
+  "id": 30,
+  "set": "noise",
+  "expected": "noise",
+  "text": "Per my last email (see below, see above, see attached), no action needed, I just like to keep everyone in the loop re: the whole situation with the thing.",
+  "jev": {
+   "team": "support",
+   "conf": 0.97,
+   "probs": {
+    "support": 0.98,
+    "technical": 0.01,
+    "sales_billing": 0.01
+   },
+   "action": 0.05,
+   "ms": 309.71416644752026,
+   "cost": 2.3646e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.6,
+   "action": 0.04,
+   "ms": 1083.2967078313231,
+   "cost": 0.001292,
+   "flag": "HUMAN (conf,action)"
+  },
+  "jev_flag": "HUMAN (action)"
+ },
+ {
+  "id": 31,
+  "set": "trap",
+  "expected": "support",
+  "text": "Bug: my colleague says there's a bug but really she just can't find the export button. Where is it?",
+  "jev": {
+   "team": "support",
+   "conf": 1,
+   "probs": {
+    "support": 1,
+    "technical": 0,
+    "sales_billing": 0
+   },
+   "action": 0.79,
+   "ms": 270.6624995917082,
+   "cost": 2.3142e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.9,
+   "action": 0.85,
+   "ms": 913.7140410020947,
+   "cost": 0.00126,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 32,
+  "set": "trap",
+  "expected": "technical",
+  "text": "I'd like to buy more credits for our account but the checkout page returns a 500 error every time I click pay",
+  "jev": {
+   "team": "technical",
+   "conf": 0.96,
+   "probs": {
+    "support": 0,
+    "technical": 0.97,
+    "sales_billing": 0.03
+   },
+   "action": 0.98,
+   "ms": 280.9967081993818,
+   "cost": 2.3226e-05
+  },
+  "sonnet": {
+   "team": "technical",
+   "conf": 0.6,
+   "action": 0.95,
+   "ms": 1880.5187502875924,
+   "cost": 0.002674,
+   "flag": "HUMAN (conf)"
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 33,
+  "set": "trap",
+  "expected": "sales_billing",
+  "text": "How do I get our whole organisation set up? We'd need about 300 user licences and a signed agreement our VP can approve",
+  "jev": {
+   "team": "sales_billing",
+   "conf": 1,
+   "probs": {
+    "support": 0,
+    "technical": 0,
+    "sales_billing": 1
+   },
+   "action": 0.97,
+   "ms": 525.6029162555933,
+   "cost": 2.331e-05
+  },
+  "sonnet": {
+   "team": "sales_billing",
+   "conf": 0.95,
+   "action": 0.93,
+   "ms": 1014.3413338810205,
+   "cost": 0.001314,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 34,
+  "set": "trap",
+  "expected": "support",
+  "text": "My login is not working because I forgot which email address I signed up with. How do I find out which one it was?",
+  "jev": {
+   "team": "technical",
+   "conf": 0.6,
+   "probs": {
+    "support": 0.27,
+    "technical": 0.73,
+    "sales_billing": 0
+   },
+   "action": 0.96,
+   "ms": 548.1246244162321,
+   "cost": 2.3226e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.55,
+   "action": 0.8,
+   "ms": 3558.909749612212,
+   "cost": 0.003078,
+   "flag": "HUMAN (conf)"
+  },
+  "jev_flag": "HUMAN (conf)"
+ },
+ {
+  "id": 35,
+  "set": "trap",
+  "expected": "support",
+  "text": "We partnered with another team and they shared a form with us. How do I edit a form someone else shared with me?",
+  "jev": {
+   "team": "support",
+   "conf": 1,
+   "probs": {
+    "support": 1,
+    "technical": 0,
+    "sales_billing": 0
+   },
+   "action": 0.95,
+   "ms": 341.2830410525203,
+   "cost": 2.3184e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.93,
+   "action": 0.8,
+   "ms": 950.8521668612957,
+   "cost": 0.001262,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 36,
+  "set": "trap",
+  "expected": "technical",
+  "text": "How do I make the form stop deleting my responses? Every submission since Monday just vanishes from the dashboard",
+  "jev": {
+   "team": "technical",
+   "conf": 1,
+   "probs": {
+    "support": 0,
+    "technical": 1,
+    "sales_billing": 0
+   },
+   "action": 0.97,
+   "ms": 262.4444579705596,
+   "cost": 2.3058e-05
+  },
+  "sonnet": {
+   "team": "technical",
+   "conf": 0.85,
+   "action": 0.93,
+   "ms": 968.7522919848561,
+   "cost": 0.001278,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 37,
+  "set": "hard",
+  "expected": "technical",
+  "text": "Something's off with the thing we set up last month, the numbers don't look like they did before. Not sure if it's us or you.",
+  "jev": {
+   "team": "technical",
+   "conf": 0.98,
+   "probs": {
+    "support": 0,
+    "technical": 0.99,
+    "sales_billing": 0.01
+   },
+   "action": 0.83,
+   "ms": 884.3595003709197,
+   "cost": 2.3436e-05
+  },
+  "sonnet": {
+   "team": "technical",
+   "conf": 0.6,
+   "action": 0.7,
+   "ms": 2462.293582968414,
+   "cost": 0.003094,
+   "flag": "HUMAN (conf)"
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 38,
+  "set": "hard",
+  "expected": "sales_billing",
+  "text": "We've been going back and forth internally about whether to keep going with this. Would be good to chat.",
+  "jev": {
+   "team": "sales_billing",
+   "conf": 0.73,
+   "probs": {
+    "support": 0.16,
+    "technical": 0.02,
+    "sales_billing": 0.82
+   },
+   "action": 0.75,
+   "ms": 289.66408316046,
+   "cost": 2.3058e-05
+  },
+  "sonnet": {
+   "team": "sales_billing",
+   "conf": 0.8,
+   "action": 0.7,
+   "ms": 1524.300042539835,
+   "cost": 0.002156,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 39,
+  "set": "hard",
+  "expected": "support",
+  "text": "Is it normal that it takes this long?",
+  "relabelled": "2026-10-06: timing question answerable from documentation; support under the do-based buckets",
+  "jev": {
+   "team": "support",
+   "conf": 0.97,
+   "probs": {
+    "support": 0.98,
+    "technical": 0.02,
+    "sales_billing": 0
+   },
+   "action": 0.47,
+   "ms": 252.6634158566594,
+   "cost": 2.2512e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.5,
+   "action": 0.4,
+   "ms": 1951.0878743603826,
+   "cost": 0.002484,
+   "flag": "HUMAN (conf,action)"
+  },
+  "jev_flag": "HUMAN (action)"
+ },
+ {
+  "id": 40,
+  "set": "hard",
+  "expected": "sales_billing",
+  "text": "My director asked me to reach out. She had some concerns after the meeting.",
+  "jev": {
+   "team": "sales_billing",
+   "conf": 0.89,
+   "probs": {
+    "support": 0.07,
+    "technical": 0,
+    "sales_billing": 0.93
+   },
+   "action": 0.55,
+   "ms": 260.4959588497877,
+   "cost": 2.2806e-05
+  },
+  "sonnet": {
+   "team": "sales_billing",
+   "conf": 0.8,
+   "action": 0.6,
+   "ms": 997.5982923060656,
+   "cost": 0.001284,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 41,
+  "set": "hard",
+  "expected": "technical",
+  "text": "I did what the guide said and it still looks the same.",
+  "jev": {
+   "team": "technical",
+   "conf": 0.55,
+   "probs": {
+    "support": 0.3,
+    "technical": 0.7,
+    "sales_billing": 0
+   },
+   "action": 0.71,
+   "ms": 267.6097499206662,
+   "cost": 2.268e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.55,
+   "action": 0.6,
+   "ms": 1125.8993335068226,
+   "cost": 0.00123,
+   "flag": "HUMAN (conf)"
+  },
+  "jev_flag": "HUMAN (conf)"
+ },
+ {
+  "id": 42,
+  "set": "hard",
+  "expected": "sales_billing",
+  "text": "Hello, we are looking at options for next year and your name came up. Also one of our people couldn't get in last week, not sure if related.",
+  "jev": {
+   "team": "sales_billing",
+   "conf": 0.49,
+   "probs": {
+    "support": 0.02,
+    "technical": 0.32,
+    "sales_billing": 0.66
+   },
+   "action": 0.66,
+   "ms": 288.8805838301778,
+   "cost": 2.352e-05
+  },
+  "sonnet": {
+   "team": "sales_billing",
+   "conf": 0.6,
+   "action": 0.65,
+   "ms": 3110.6061674654484,
+   "cost": 0.00359,
+   "flag": "HUMAN (conf)"
+  },
+  "jev_flag": "HUMAN (conf)"
+ },
+ {
+  "id": 43,
+  "set": "hard",
+  "expected": "technical",
+  "text": "The French is wrong.",
+  "jev": {
+   "team": "support",
+   "conf": 0.64,
+   "probs": {
+    "support": 0.76,
+    "technical": 0.2,
+    "sales_billing": 0.04
+   },
+   "action": 0.1,
+   "ms": 307.86212533712387,
+   "cost": 2.2344e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.6,
+   "action": 0.45,
+   "ms": 1999.02275018394,
+   "cost": 0.002494,
+   "flag": "HUMAN (conf,action)"
+  },
+  "jev_flag": "HUMAN (conf,action)"
+ },
+ {
+  "id": 44,
+  "set": "hard",
+  "expected": "sales_billing",
+  "text": "Can you point me to whoever handles the agreement side of things? Our procurement people have questions.",
+  "jev": {
+   "team": "sales_billing",
+   "conf": 1,
+   "probs": {
+    "support": 0,
+    "technical": 0,
+    "sales_billing": 1
+   },
+   "action": 0.95,
+   "ms": 269.0743329003453,
+   "cost": 2.2932e-05
+  },
+  "sonnet": {
+   "team": "sales_billing",
+   "conf": 0.9,
+   "action": 0.85,
+   "ms": 942.6104165613651,
+   "cost": 0.001298,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 45,
+  "set": "hard",
+  "expected": "technical",
+  "text": "Honestly not sure this is the right place to ask, but when we send to a big list some people say they got nothing and others got it twice.",
+  "jev": {
+   "team": "technical",
+   "conf": 0.92,
+   "probs": {
+    "support": 0.05,
+    "technical": 0.95,
+    "sales_billing": 0
+   },
+   "action": 0.81,
+   "ms": 270.518041215837,
+   "cost": 2.3436e-05
+  },
+  "sonnet": {
+   "team": "technical",
+   "conf": 0.85,
+   "action": 0.85,
+   "ms": 1327.6463756337762,
+   "cost": 0.001288,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 46,
+  "set": "hard",
+  "expected": "support",
+  "text": "Is there a way to make it do the other thing instead? The thing it does now isn't what we expected.",
+  "jev": {
+   "team": "support",
+   "conf": 0.46,
+   "probs": {
+    "support": 0.64,
+    "technical": 0.36,
+    "sales_billing": 0
+   },
+   "action": 0.78,
+   "ms": 409.4625413417816,
+   "cost": 2.3142e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.6,
+   "action": 0.45,
+   "ms": 1025.2247918397188,
+   "cost": 0.00126,
+   "flag": "HUMAN (conf,action)"
+  },
+  "jev_flag": "HUMAN (conf)"
+ },
+ {
+  "id": 47,
+  "set": "hard",
+  "expected": "sales_billing",
+  "text": "Following our chat on Tuesday, where do we go from here?",
+  "jev": {
+   "team": "support",
+   "conf": 0.68,
+   "probs": {
+    "support": 0.79,
+    "technical": 0.01,
+    "sales_billing": 0.2
+   },
+   "action": 0.73,
+   "ms": 267.45816599577665,
+   "cost": 2.268e-05
+  },
+  "sonnet": {
+   "team": "sales_billing",
+   "conf": 0.4,
+   "action": 0.6,
+   "ms": 2252.2388752549887,
+   "cost": 0.003028,
+   "flag": "HUMAN (conf)"
+  },
+  "jev_flag": "HUMAN (conf)"
+ },
+ {
+  "id": 48,
+  "set": "hard",
+  "expected": "support",
+  "text": "Our team lead left and nobody knows how any of this was set up. Help.",
+  "jev": {
+   "team": "technical",
+   "conf": 0.72,
+   "probs": {
+    "support": 0.18,
+    "technical": 0.81,
+    "sales_billing": 0.01
+   },
+   "action": 0.9,
+   "ms": 290.1291670277715,
+   "cost": 2.2848e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.4,
+   "action": 0.55,
+   "ms": 2818.389999680221,
+   "cost": 0.003456,
+   "flag": "HUMAN (conf)"
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 49,
+  "set": "hard",
+  "expected": "technical",
+  "text": "It's doing it again.",
+  "jev": {
+   "team": "technical",
+   "conf": 0.94,
+   "probs": {
+    "support": 0.04,
+    "technical": 0.96,
+    "sales_billing": 0
+   },
+   "action": 0.19,
+   "ms": 278.21158338338137,
+   "cost": 2.2386e-05
+  },
+  "sonnet": {
+   "team": "technical",
+   "conf": 0.6,
+   "action": 0.6,
+   "ms": 1607.75366704911,
+   "cost": 0.002164,
+   "flag": "HUMAN (conf)"
+  },
+  "jev_flag": "HUMAN (action)"
+ },
+ {
+  "id": 50,
+  "set": "hard",
+  "expected": "sales_billing",
+  "text": "Circling back on the thing from before. Any movement on your end?",
+  "jev": {
+   "team": "support",
+   "conf": 0.66,
+   "probs": {
+    "support": 0.77,
+    "technical": 0.07,
+    "sales_billing": 0.16
+   },
+   "action": 0.51,
+   "ms": 280.4500004276633,
+   "cost": 2.2764e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.4,
+   "action": 0.6,
+   "ms": 1577.6550006121397,
+   "cost": 0.002098,
+   "flag": "HUMAN (conf)"
+  },
+  "jev_flag": "HUMAN (conf)"
+ },
+ {
+  "id": 51,
+  "set": "hard",
+  "expected": "support",
+  "text": "Which one am I supposed to click?",
+  "jev": {
+   "team": "support",
+   "conf": 0.83,
+   "probs": {
+    "support": 0.89,
+    "technical": 0.11,
+    "sales_billing": 0
+   },
+   "action": 0.68,
+   "ms": 472.7037502452731,
+   "cost": 2.247e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.6,
+   "action": 0.4,
+   "ms": 913.6874582618475,
+   "cost": 0.001222,
+   "flag": "HUMAN (conf,action)"
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 52,
+  "set": "hard",
+  "expected": "technical",
+  "text": "Since the update nothing feels right.",
+  "jev": {
+   "team": "technical",
+   "conf": 0.76,
+   "probs": {
+    "support": 0.16,
+    "technical": 0.84,
+    "sales_billing": 0
+   },
+   "action": 0.32,
+   "ms": 276.03837475180626,
+   "cost": 2.2428e-05
+  },
+  "sonnet": {
+   "team": "technical",
+   "conf": 0.5,
+   "action": 0.45,
+   "ms": 2252.9339576140046,
+   "cost": 0.002582,
+   "flag": "HUMAN (conf,action)"
+  },
+  "jev_flag": "HUMAN (action)"
+ },
+ {
+  "id": 53,
+  "set": "hard",
+  "expected": "sales_billing",
+  "text": "Our CEO's office has taken an interest.",
+  "jev": {
+   "team": "sales_billing",
+   "conf": 0.98,
+   "probs": {
+    "support": 0.01,
+    "technical": 0,
+    "sales_billing": 0.99
+   },
+   "action": 0.13,
+   "ms": 428.31699922680855,
+   "cost": 2.2512e-05
+  },
+  "sonnet": {
+   "team": "sales_billing",
+   "conf": 0.6,
+   "action": 0.3,
+   "ms": 1484.1806255280972,
+   "cost": 0.002138,
+   "flag": "HUMAN (conf,action)"
+  },
+  "jev_flag": "HUMAN (action)"
+ },
+ {
+  "id": 54,
+  "set": "hard",
+  "expected": "support",
+  "text": "What's the difference between the two?",
+  "jev": {
+   "team": "support",
+   "conf": 1,
+   "probs": {
+    "support": 1,
+    "technical": 0,
+    "sales_billing": 0
+   },
+   "action": 0.56,
+   "ms": 357.52133280038834,
+   "cost": 2.247e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.5,
+   "action": 0.35,
+   "ms": 1946.2440414354205,
+   "cost": 0.002248,
+   "flag": "HUMAN (conf,action)"
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 55,
+  "set": "hard",
+  "expected": "technical",
+  "text": "Half of them came back.",
+  "jev": {
+   "team": "support",
+   "conf": 0.55,
+   "probs": {
+    "support": 0.7,
+    "technical": 0.28,
+    "sales_billing": 0.02
+   },
+   "action": 0.07,
+   "ms": 409.6683328971267,
+   "cost": 2.2386e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.35,
+   "action": 0.15,
+   "ms": 2047.0397919416428,
+   "cost": 0.002334,
+   "flag": "HUMAN (conf,action)"
+  },
+  "jev_flag": "HUMAN (conf,action)"
+ },
+ {
+  "id": 56,
+  "set": "hard",
+  "expected": "sales_billing",
+  "text": "We'd need something in writing before we can go further.",
+  "jev": {
+   "team": "sales_billing",
+   "conf": 1,
+   "probs": {
+    "support": 0,
+    "technical": 0,
+    "sales_billing": 1
+   },
+   "action": 0.85,
+   "ms": 296.553541906178,
+   "cost": 2.2638e-05
+  },
+  "sonnet": {
+   "team": "sales_billing",
+   "conf": 0.6,
+   "action": 0.6,
+   "ms": 936.0594162717462,
+   "cost": 0.001268,
+   "flag": "HUMAN (conf)"
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 57,
+  "set": "hard",
+  "expected": "support",
+  "text": "Can it do the thing where you pick from a list?",
+  "jev": {
+   "team": "support",
+   "conf": 1,
+   "probs": {
+    "support": 1,
+    "technical": 0,
+    "sales_billing": 0
+   },
+   "action": 0.55,
+   "ms": 289.21587485820055,
+   "cost": 2.2638e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.8,
+   "action": 0.3,
+   "ms": 944.0359594300389,
+   "cost": 0.00123,
+   "flag": "HUMAN (action)"
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 58,
+  "set": "hard",
+  "expected": "technical",
+  "text": "Error. Screenshot attached.",
+  "jev": {
+   "team": "technical",
+   "conf": 1,
+   "probs": {
+    "support": 0,
+    "technical": 1,
+    "sales_billing": 0
+   },
+   "action": 0.77,
+   "ms": 308.45354218035936,
+   "cost": 2.2428e-05
+  },
+  "sonnet": {
+   "team": "technical",
+   "conf": 0.8,
+   "action": 0.8,
+   "ms": 1008.4187919273973,
+   "cost": 0.001232,
+   "flag": ""
+  },
+  "jev_flag": ""
+ },
+ {
+  "id": 59,
+  "set": "hard",
+  "expected": "sales_billing",
+  "text": "Who owns this relationship now that Marc has moved on?",
+  "jev": {
+   "team": "sales_billing",
+   "conf": 1,
+   "probs": {
+    "support": 0,
+    "technical": 0,
+    "sales_billing": 1
+   },
+   "action": 0.42,
+   "ms": 292.0354586094618,
+   "cost": 2.2596e-05
+  },
+  "sonnet": {
+   "team": "sales_billing",
+   "conf": 0.85,
+   "action": 0.8,
+   "ms": 982.0792078971863,
+   "cost": 0.001276,
+   "flag": ""
+  },
+  "jev_flag": "HUMAN (action)"
+ },
+ {
+  "id": 60,
+  "set": "hard",
+  "expected": "support",
+  "text": "Where did the old version go? The new layout confuses our staff.",
+  "jev": {
+   "team": "support",
+   "conf": 0.91,
+   "probs": {
+    "support": 0.94,
+    "technical": 0.06,
+    "sales_billing": 0
+   },
+   "action": 0.94,
+   "ms": 306.6408336162567,
+   "cost": 2.2764e-05
+  },
+  "sonnet": {
+   "team": "support",
+   "conf": 0.72,
+   "action": 0.7,
+   "ms": 2109.9162083119154,
+   "cost": 0.002888,
+   "flag": ""
+  },
+  "jev_flag": ""
+ }
+]
