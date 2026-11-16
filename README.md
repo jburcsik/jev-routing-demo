@@ -1,5 +1,7 @@
 # Jev ticket routing benchmark
 
+<p align="center"><img src="explainer.gif" width="720" alt="Animated explainer. A support ticket comes in and an AI model picks a team. When the model is confident the ticket goes straight to the team; when it is unsure a person decides. Three models were tested: Jev, Claude Sonnet 5.5 and OpenJev 4B. Out of 125 tickets, Sonnet sent 96 straight to the right team, 28 to a person and 1 to the wrong team; Jev 91, 30 and 4. Jev is 5x faster and 80x cheaper than Sonnet."></p>
+
 Jev (TypeSafe AI, `typesafe/jev-1.13`) is a decision model: it takes a message and a closed set of options and returns one option with a probability for each. It generates no text. [OpenRouter docs](https://openrouter.ai/docs/guides/community/jev).
 
 This repo routes support tickets to one of three teams with three systems: Jev, Claude Sonnet 5.5, and OpenJev 4B (an open Jev-style model) on a laptop. Same tickets, team definitions and flag rule for all three. Run on Nov 10 2026.
@@ -35,7 +37,7 @@ This repo routes support tickets to one of three teams with three systems: Jev, 
 
 - Accuracy on Banking77: Sonnet 92.4%, Jev 84.0%, OpenJev 4B 79.6%.
 - At a 0.70 cut-off, Sonnet lets 1 of 125 held-out tickets reach the wrong queue; Jev 4; OpenJev 9.
-- Jev is 4.2x faster than Sonnet on the invented set and 79x cheaper on Banking77.
+- Jev is 4.2x faster than Sonnet on the invented set and 80x cheaper on Banking77.
 - No system reliably flags tickets with two requests: Jev 2/6, Sonnet 3/6.
 
 **Limits**
@@ -86,12 +88,13 @@ Example Jev request and response (ticket 19):
   "model": "typesafe/jev-1.13-20260917",
   "answers": {
     "team":   {"type": "choice", "choice": "technical",
-               "probabilities": {"technical": 0.60, "support": 0.25, "sales_billing": 0.15}, "confidence": 0.40},
+               "probabilities": {"technical": 0.77, "sales_billing": 0.21, "support": 0.02}, "confidence": 0.66},
     "action": {"type": "noul", "noul": 0.98}
-  },
-  "usage": {"input_tokens": 448, "output_tokens": 71, "cost": 0.000018816}
+  }
 }
 ```
+
+Confidence 0.66 is under 0.70, so ticket 19 goes to a human.
 
 ## Data
 
